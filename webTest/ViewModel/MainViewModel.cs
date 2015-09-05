@@ -25,12 +25,16 @@ namespace webTest.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        public ICommand ShowPopUp { get; private set; }
+        private BackgroundWorker backgroundWorker;
+        private string _htmlResponse;
+        private string _requestUrl;
+        private string _requestBtn;
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
         /// 
-        private BackgroundWorker backgroundWorker;
-
         public MainViewModel()
         {
             ////if (IsInDesignMode)
@@ -43,18 +47,21 @@ namespace webTest.ViewModel
             ////}
 
             ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => true);
-            RequestUrl = "http://";
-            HtmlResponse = "";
+
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
-        }
 
-        public ICommand ShowPopUp { get; private set; }
+            RequestUrl = "http://";
+            HtmlResponse = "";
+            RequestBtn = "Request";
+            
+        }
 
         private void ShowPopUpExecute()
         {
             Requester rq = new Requester(RequestUrl);
+            RequestBtn = "Requesting...";
             try
             {
                 backgroundWorker.RunWorkerAsync(rq);
@@ -65,8 +72,7 @@ namespace webTest.ViewModel
             }
             
         }
-
-        private string _htmlResponse;
+        
         public string HtmlResponse
         {
             get
@@ -82,7 +88,6 @@ namespace webTest.ViewModel
             }
         }
 
-        private string _requestUrl;
         public string RequestUrl
         {
             get
@@ -95,6 +100,21 @@ namespace webTest.ViewModel
                     return;
                 _requestUrl = value;
                 RaisePropertyChanged("RequestUrl");
+            }
+        }
+
+        public string RequestBtn
+        {
+            get
+            {
+                return _requestBtn;
+            }
+            set
+            {
+                if (_requestBtn == value)
+                    return;
+                _requestBtn = value;
+                RaisePropertyChanged("RequestBtn");
             }
         }
 
@@ -116,6 +136,7 @@ namespace webTest.ViewModel
         {
             // Access the result through the Result property. 
             HtmlResponse = (string)e.Result;
+            RequestBtn = "Request Done!";
         }
     }
 }
