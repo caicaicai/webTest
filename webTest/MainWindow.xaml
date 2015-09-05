@@ -1,0 +1,15 @@
+﻿<Window x:Class="webTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        DataContext="{Binding Main, Source={StaticResource Locator}}"
+        Title="MainWindow" Height="350" Width="525" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="316*"/>
+            <ColumnDefinition Width="201*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Request" Command="{Binding ShowPopUp}" Name="btn" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="118" />
+        <TextBox  Height="23" Margin="133,9,10,0" TextWrapping="Wrap" Text="{Binding RequestUrl}" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <TextBox Text="{Binding HtmlResponse}" Margin="10,37,10,10" TextWrapping="Wrap" ScrollViewer.CanContentScroll="True"  Grid.ColumnSpan="2" VerticalScrollBarVisibility="Auto" />
+    </Grid>
+</Window>
