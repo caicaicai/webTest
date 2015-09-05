@@ -1,11 +1,13 @@
+using System;
+using System.Windows;
+using System.Windows.Input;
+using System.ComponentModel;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
-using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
-using System.Windows;
-using System.ComponentModel;
-using System;
+using webTest.Model;
+
 
 namespace webTest.ViewModel
 {
