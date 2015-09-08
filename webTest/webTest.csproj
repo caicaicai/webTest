@@ -70,6 +70,7 @@
     </ApplicationDefinition>
     <Compile Include="3rd\SimpleJson.cs" />
     <Compile Include="Model\Requester.cs" />
+    <Compile Include="Model\TabItem.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">

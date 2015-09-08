@@ -7,6 +7,8 @@ using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 using GalaSoft.MvvmLight.Command;
 using webTest.Model;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 
 namespace webTest.ViewModel
@@ -26,10 +28,14 @@ namespace webTest.ViewModel
     public class MainViewModel : ViewModelBase
     {
         public ICommand ShowPopUp { get; private set; }
+        public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
         private string _htmlResponse;
         private string _requestUrl;
         private string _requestBtn;
+
+        private ObservableCollection<TabItem> _tabItems;
+        private int _selectedTabIndex;
 
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
@@ -48,6 +54,8 @@ namespace webTest.ViewModel
 
             ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => true);
 
+            TabSelectionChanged = new RelayCommand(() => TabSelectionChangedExecute(), () => true);
+
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
@@ -55,6 +63,14 @@ namespace webTest.ViewModel
             RequestUrl = "http://";
             HtmlResponse = "";
             RequestBtn = "Request";
+
+            TabItem _tabAdd = new TabItem();
+            _tabAdd.Header = "test";
+            _tabAdd.Content = "One's content";
+
+            TabItems = new ObservableCollection<TabItem>();
+            TabItems.Add(_tabAdd);
+            TabItems.Add(new TabItem { Header = "Two", Content = "Two's content" });
             
         }
 
@@ -71,6 +87,11 @@ namespace webTest.ViewModel
                 MessageBox.Show(e.Message);
             }
             
+        }
+
+        private void TabSelectionChangedExecute()
+        {
+            Console.WriteLine("changing..");
         }
         
         public string HtmlResponse
@@ -134,9 +155,42 @@ namespace webTest.ViewModel
 
         private void BackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
+            TabItem _tabAdd = new TabItem();
+            _tabAdd.Header = "new";
+            _tabAdd.Content = (string)e.Result;
+            TabItems.Add(_tabAdd);
             // Access the result through the Result property. 
             HtmlResponse = (string)e.Result;
             RequestBtn = "Request Done!";
         }
+
+
+        public ObservableCollection<TabItem> TabItems
+        {
+            get
+            {
+                return _tabItems;
+            }
+            set
+            {
+                _tabItems = value;
+                RaisePropertyChanged("TabItems");
+                Console.WriteLine("adding...");
+            }
+        }
+
+        public int SelectedTabIndex
+        {
+            get
+            {
+                return _selectedTabIndex;
+            }
+            set
+            {
+                _selectedTabIndex = value;
+            }
+        }
     }
+
+    
 }
