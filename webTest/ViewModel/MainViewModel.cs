@@ -6,6 +6,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Messaging;
 using webTest.Model;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -30,9 +31,6 @@ namespace webTest.ViewModel
         public ICommand ShowPopUp { get; private set; }
         public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
-        private string _htmlResponse;
-        private string _requestUrl;
-        private string _requestBtn;
 
         private ObservableCollection<TabItem> _tabItems;
         private int _selectedTabIndex;
@@ -52,92 +50,58 @@ namespace webTest.ViewModel
             ////    // Code runs "for real"
             ////}
 
-            ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => true);
-
-            TabSelectionChanged = new RelayCommand(() => TabSelectionChangedExecute(), () => true);
+            ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => { return TabItems[SelectedTabIndex].IsRequesting == false; });
 
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
 
-            RequestUrl = "http://";
-            HtmlResponse = "";
-            RequestBtn = "Request";
-
-            TabItem _tabAdd = new TabItem();
-            _tabAdd.Header = "test";
-            _tabAdd.Content = "One's content";
+            SelectedTabIndex = 0;
 
             TabItems = new ObservableCollection<TabItem>();
-            TabItems.Add(_tabAdd);
-            TabItems.Add(new TabItem { Header = "Two", Content = "Two's content" });
-            
+            TabItems.Add(new TabItem());
+
+
+            // Registers for incoming Notification messages.
+            Messenger.Default.Register<NotificationMessage>(this, (message) =>
+            {
+                // Checks the actual content of the message.
+                switch (message.Notification)
+                {
+                    case "GotoDetailsPage":
+                        break;
+
+                    case "OtherMessage":
+                        break;
+                    default:
+                        break;
+                }
+            });
+ 
         }
 
         private void ShowPopUpExecute()
         {
-            Requester rq = new Requester(RequestUrl);
-            RequestBtn = "Requesting...";
+            // Sends a notification message with a string content.
+            Messenger.Default.Send(new NotificationMessage("GotoDetailsPage"));
+
+
+            if (SelectedTabIndex == TabItems.Count - 1)
+            {
+                TabItems.Add(new TabItem());
+            }
+            Requester rq = new Requester(TabItems[SelectedTabIndex]);
             try
             {
+                TabItems[SelectedTabIndex].IsRequesting = true;
                 backgroundWorker.RunWorkerAsync(rq);
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
-            
-        }
-
-        private void TabSelectionChangedExecute()
-        {
-            Console.WriteLine("changing..");
         }
         
-        public string HtmlResponse
-        {
-            get
-            {
-                return _htmlResponse;
-            }
-            set
-            {
-                if (_htmlResponse == value)
-                    return;
-                _htmlResponse = value;
-                RaisePropertyChanged("HtmlResponse");
-            }
-        }
-
-        public string RequestUrl
-        {
-            get
-            {
-                return _requestUrl;
-            }
-            set
-            {
-                if (_requestUrl == value)
-                    return;
-                _requestUrl = value;
-                RaisePropertyChanged("RequestUrl");
-            }
-        }
-
-        public string RequestBtn
-        {
-            get
-            {
-                return _requestBtn;
-            }
-            set
-            {
-                if (_requestBtn == value)
-                    return;
-                _requestBtn = value;
-                RaisePropertyChanged("RequestBtn");
-            }
-        }
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -145,7 +109,8 @@ namespace webTest.ViewModel
             {
                 Requester rq = (Requester)e.Argument;
                 // Return the value through the Result property.
-                e.Result = rq.DoRequest();
+                //e.Result = rq.DoRequest();
+                rq.DoRequest();
             }catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -155,15 +120,26 @@ namespace webTest.ViewModel
 
         private void BackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            TabItem _tabAdd = new TabItem();
-            _tabAdd.Header = "new";
-            _tabAdd.Content = (string)e.Result;
-            TabItems.Add(_tabAdd);
-            // Access the result through the Result property. 
-            HtmlResponse = (string)e.Result;
-            RequestBtn = "Request Done!";
+            //TabItems[SelectedTabIndex].ResponseContent = (string)e.Result;
+            if (TabItems[SelectedTabIndex].Title.Length == 0)
+            {
+                TabItems[SelectedTabIndex].Title = TabItems[SelectedTabIndex].RequestUrl.Substring(0, 6);
+            }
+            TabItems[SelectedTabIndex].IsRequesting = false;
         }
 
+        public string RequestBtn
+        {
+            get
+            {
+                if(TabItems[SelectedTabIndex].IsRequesting == true)
+                {
+                    return "«Î«Û÷–..";
+                }else{
+                    return "«Î«Û";
+                }
+            }
+        }
 
         public ObservableCollection<TabItem> TabItems
         {
@@ -175,7 +151,6 @@ namespace webTest.ViewModel
             {
                 _tabItems = value;
                 RaisePropertyChanged("TabItems");
-                Console.WriteLine("adding...");
             }
         }
 
@@ -188,9 +163,28 @@ namespace webTest.ViewModel
             set
             {
                 _selectedTabIndex = value;
+                RaisePropertyChanged("SelectedTabIndex");
+                RaisePropertyChanged("CurrentItem");
             }
         }
-    }
 
+        public TabItem CurrentItem
+        {
+            get
+            {
+                return TabItems[SelectedTabIndex];
+            }
+            set
+            {
+                if (TabItems[SelectedTabIndex] == value)
+                    return;
+
+                TabItems[SelectedTabIndex] = value;
+
+                RaisePropertyChanged("CurrentItem");
+            }
+        }
+
+    }
     
 }

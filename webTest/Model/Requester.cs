@@ -10,18 +10,18 @@ namespace webTest.Model
 {
     class Requester
     {
-        private string url;
+        private TabItem tabItem;
 
-        public Requester(string url_)
+        public Requester(TabItem _tabItem)
         {
-            url = url_;
+            tabItem = _tabItem;
         }
 
-        public string DoRequest()
+        public void DoRequest()
         {
-            var request = (HttpWebRequest)WebRequest.Create(url);
+            var request = (HttpWebRequest)WebRequest.Create(tabItem.RequestUrl);
             var response = (HttpWebResponse)request.GetResponse();
-            return new StreamReader(response.GetResponseStream()).ReadToEnd();
+            tabItem.ResponseContent =  new StreamReader(response.GetResponseStream()).ReadToEnd();
         }
 
     }
