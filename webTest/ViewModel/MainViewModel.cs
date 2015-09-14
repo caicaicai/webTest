@@ -5,7 +5,7 @@ using System.ComponentModel;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
-using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.CommandWpf;
 using GalaSoft.MvvmLight.Messaging;
 using webTest.Model;
 using System.Collections.Generic;
@@ -29,11 +29,13 @@ namespace webTest.ViewModel
     public class MainViewModel : ViewModelBase
     {
         public ICommand ShowPopUp { get; private set; }
+        public ICommand DeleteItem { get; private set; }
         public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
 
         private ObservableCollection<TabItem> _tabItems;
         private int _selectedTabIndex;
+
 
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
@@ -51,6 +53,7 @@ namespace webTest.ViewModel
             ////}
 
             ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => { return TabItems[SelectedTabIndex].IsRequesting == false; });
+            DeleteItem = new RelayCommand(() => DeleteItemExecute(), () => { return SelectedTabIndex != TabItems.Count - 1; });
 
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
@@ -101,7 +104,27 @@ namespace webTest.ViewModel
                 MessageBox.Show(e.Message);
             }
         }
-        
+
+        private void DeleteItemExecute()
+        {
+
+            if (SelectedTabIndex == TabItems.Count - 1)
+            {
+                //Of course, this statement will never be executed
+                MessageBox.Show("不能移除未保存的项目！");
+            }
+
+            try
+            {
+                SelectedTabIndex++;
+                TabItems.RemoveAt(SelectedTabIndex - 1);
+                
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {

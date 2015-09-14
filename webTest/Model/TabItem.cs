@@ -7,20 +7,23 @@ using System.ComponentModel;
 
 namespace webTest.Model
 {
-    public class TabItem : INotifyPropertyChanged 
+    public class TabItem : INotifyPropertyChanged
     {
-        private string _title;
-        private string _responseContent;
-        private string _requestUrl;
-        private bool _isRequesting;
 
+        #region Constructors
         public TabItem()
         {
             RequestUrl = "http://";
             Title = "NEW";
+            ReqMethod = RequestMethod.GET;
+            MethodListData = Enum.GetValues(typeof(RequestMethod));
         }
+        #endregion
 
-        public string Title {
+        #region Properties
+        private string _title;
+        public string Title
+        {
             get
             {
                 return _title;
@@ -34,6 +37,8 @@ namespace webTest.Model
                 RaisePropertyChanged("Title");
             }
         }
+
+        private string _responseContent;
         public string ResponseContent
         {
             get
@@ -49,6 +54,8 @@ namespace webTest.Model
                 RaisePropertyChanged("ResponseContent");
             }
         }
+
+        private string _requestUrl;
         public string RequestUrl
         {
             get
@@ -64,6 +71,8 @@ namespace webTest.Model
                 RaisePropertyChanged("RequestUrl");
             }
         }
+
+        private bool _isRequesting;
         public bool IsRequesting
         {
             get
@@ -80,6 +89,7 @@ namespace webTest.Model
                 RaisePropertyChanged("RequestButton");
             }
         }
+
         public string RequestButton
         {
             get
@@ -95,6 +105,34 @@ namespace webTest.Model
             }
         }
 
+        private RequestMethod _reqMethod;
+        public RequestMethod ReqMethod
+        {
+            get
+            {
+                return _reqMethod;
+            }
+            set
+            {
+                if (_reqMethod == value)
+                    return;
+
+                _reqMethod = value;
+                RaisePropertyChanged("ReqMethod");
+            }
+        }
+
+        private Array _methodListData;
+        public Array MethodListData
+        {
+            get { return _methodListData; }
+            set
+            {
+                _methodListData = value;
+                RaisePropertyChanged("MethodListData");
+            }
+        }
+        #endregion
 
         #region INotifyPropertyChanged Members
 
@@ -115,6 +153,7 @@ namespace webTest.Model
         }
         #endregion
 
+        #region private class JsonSerializerStrategy
         private class JsonSerializerStrategy : SimpleJson.PocoJsonSerializerStrategy
         {
             // convert string to int
@@ -127,6 +166,7 @@ namespace webTest.Model
                 return base.DeserializeObject(value, type);
             }
         }
+        #endregion
 
     }
 }

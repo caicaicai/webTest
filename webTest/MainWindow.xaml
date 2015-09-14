@@ -40,7 +40,7 @@
                                 </DataTemplate>
                             </ListBox.ItemTemplate>
                         </ListBox>
-                        <Button Content="Delete" Height="23" VerticalAlignment="Bottom" Margin="0,0,10,0"/>
+                        <Button Content="Delete" Command="{Binding DeleteItem}" Height="23" VerticalAlignment="Bottom" Margin="0,0,10,0"/>
                     </Grid>
                     <Grid Grid.Column="1" DataContext="{Binding CurrentItem}">
                         <Label Content="请求地址" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,6,0,0" VerticalAlignment="Top" Width="80" Height="25"/>
@@ -48,6 +48,14 @@
                         <Button Content="{Binding RequestButton}" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.ShowPopUp}" Name="btn"  Height="25" VerticalAlignment="Top" Margin="0,6,10,0" HorizontalAlignment="Right" Width="90"/>
                         <Label Content="标题" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="10,36,0,0" VerticalAlignment="Top" Width="80" Height="25"/>
                         <TextBox HorizontalAlignment="Left" Height="25" Margin="96,36,0,0" TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" VerticalContentAlignment="Center"  Width="120"/>
+                        <Label Content="Method" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="221,36,0,0" VerticalAlignment="Top" Width="80" Height="25" RenderTransformOrigin="0.525,1.76"/>
+                        <ComboBox ItemsSource="{Binding MethodListData}" SelectedItem="{Binding ReqMethod}" HorizontalAlignment="Left" Height="25" Margin="306,36,0,0" VerticalAlignment="Top" Width="100">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" />
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
                     </Grid>
                 </Grid>
             </GroupBox>

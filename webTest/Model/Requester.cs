@@ -8,6 +8,19 @@ using System.IO;
 
 namespace webTest.Model
 {
+    #region Method GET, HEAD, POST, PUT, DELETE, TRACE, or OPTIONS.
+    public enum RequestMethod
+    {
+        GET,
+        HEAD,
+        POST,
+        PUT,
+        DELETE,
+        TRACE,
+        OPTIONS
+    };
+    #endregion
+
     class Requester
     {
         private TabItem tabItem;
@@ -20,9 +33,11 @@ namespace webTest.Model
         public void DoRequest()
         {
             var request = (HttpWebRequest)WebRequest.Create(tabItem.RequestUrl);
+            request.Method = Enum.GetName(typeof(RequestMethod), tabItem.ReqMethod);
             var response = (HttpWebResponse)request.GetResponse();
-            tabItem.ResponseContent =  new StreamReader(response.GetResponseStream()).ReadToEnd();
+            tabItem.ResponseContent = new StreamReader(response.GetResponseStream()).ReadToEnd();
         }
 
     }
+
 }
