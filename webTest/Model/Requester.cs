@@ -9,6 +9,7 @@ using System.IO;
 namespace webTest.Model
 {
     #region Method GET, HEAD, POST, PUT, DELETE, TRACE, or OPTIONS.
+    [Serializable]
     public enum RequestMethod
     {
         GET,

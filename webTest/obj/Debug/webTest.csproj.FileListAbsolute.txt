@@ -28,8 +28,6 @@ C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Debug\GeneratedInternalTy
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Debug\webTest_MarkupCompile.lref
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Debug\App.baml
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Debug\webTest.exe.config
-C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.exe
-C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.pdb
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Debug\webTest.exe
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Debug\webTest.pdb
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Debug\GalaSoft.MvvmLight.dll
@@ -45,7 +43,6 @@ C:\Users\94763_000\Desktop\webTest\webTest\bin\Debug\GalaSoft.MvvmLight.Platform
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Debug\GalaSoft.MvvmLight.Platform.xml
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Debug\Microsoft.Practices.ServiceLocation.xml
-C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.csprojResolveAssemblyReference.cache
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\MainWindow.baml
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\MainWindow.g.cs
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\App.g.cs
@@ -56,3 +53,6 @@ C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\App.baml
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.g.resources
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.Properties.Resources.resources
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.csproj.GenerateResource.Cache
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.exe
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.pdb
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.csprojResolveAssemblyReference.cache

@@ -7,6 +7,7 @@ using System.ComponentModel;
 
 namespace webTest.Model
 {
+    [Serializable()]
     public class TabItem : INotifyPropertyChanged
     {
 
@@ -16,7 +17,6 @@ namespace webTest.Model
             RequestUrl = "http://";
             Title = "NEW";
             ReqMethod = RequestMethod.GET;
-            MethodListData = Enum.GetValues(typeof(RequestMethod));
         }
         #endregion
 
@@ -122,20 +122,15 @@ namespace webTest.Model
             }
         }
 
-        private Array _methodListData;
         public Array MethodListData
         {
-            get { return _methodListData; }
-            set
-            {
-                _methodListData = value;
-                RaisePropertyChanged("MethodListData");
-            }
+            get { return Enum.GetValues(typeof(RequestMethod)); }
         }
         #endregion
 
         #region INotifyPropertyChanged Members
 
+        [field: NonSerialized]
         public event PropertyChangedEventHandler PropertyChanged;
 
         #endregion
@@ -149,21 +144,6 @@ namespace webTest.Model
             if (handler != null)
             {
                 handler(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-        #endregion
-
-        #region private class JsonSerializerStrategy
-        private class JsonSerializerStrategy : SimpleJson.PocoJsonSerializerStrategy
-        {
-            // convert string to int
-            public override object DeserializeObject(object value, Type type)
-            {
-                if (type == typeof(Int32) && value.GetType() == typeof(string))
-                {
-                    return Int32.Parse(value.ToString());
-                }
-                return base.DeserializeObject(value, type);
             }
         }
         #endregion

@@ -6,19 +6,48 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using System.Windows;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace webTest.Model
 {
+    [Serializable()]
     class Config
     {
         public ObservableCollection<TabItem> TabItems;
+
+        public Config(ObservableCollection<TabItem> TabItems)
+        {
+            this.TabItems = TabItems;
+        }
+
+        public Config(SerializationInfo info, StreamingContext ctxt)
+        {
+        this.TabItems = (ObservableCollection<TabItem>)info.GetValue("TabItems", typeof(ObservableCollection<TabItem>));
+        }
+
+        public void GetObjectData(SerializationInfo info, StreamingContext ctxt)
+        {
+        info.AddValue("TabItems", this.TabItems);
+        }
         
         public static Config Load(string config_file_path)
         {
             try
             {
+                /*
                 string configContent = File.ReadAllText(config_file_path);
-                Config config = SimpleJson.SimpleJson.DeserializeObject<Config>(configContent, new JsonSerializerStrategy());
+                Config config = SimpleJson.SimpleJson.DeserializeObject<Config>(configContent, new SimpleJson.PocoJsonSerializerStrategy());
+                return config;
+                 * */
+
+                //Open the file written above and read values from it.
+                Stream stream = File.Open(config_file_path, FileMode.Open);
+                BinaryFormatter bformatter = new BinaryFormatter();
+
+                Console.WriteLine("Reading Config Information");
+                Config config = (Config)bformatter.Deserialize(stream);
+                stream.Close();
                 return config;
             }
             catch (Exception e)
@@ -27,11 +56,9 @@ namespace webTest.Model
                 {
                     Console.WriteLine(e);
                 }
+                Console.WriteLine(e.Message);
                 MessageBox.Show("配置文件读取失败!{0}",e.Message);
-                return new Config
-                {
-                    TabItems = new ObservableCollection<TabItem>(){ }
-                };
+                return new Config(new ObservableCollection<TabItem>());
             }
         }
 
@@ -39,12 +66,12 @@ namespace webTest.Model
         {
             try
             {
-                using (StreamWriter sw = new StreamWriter(File.Open(config_file_path, FileMode.Create)))
-                {
-                    string jsonString = SimpleJson.SimpleJson.SerializeObject(config);
-                    sw.Write(jsonString);
-                    sw.Flush();
-                }
+                Stream stream = File.Open(config_file_path, FileMode.Create);
+                BinaryFormatter bformatter = new BinaryFormatter();
+
+                Console.WriteLine("Writing Config Information");
+                bformatter.Serialize(stream, config);
+                stream.Close();
             }
             catch (IOException e)
             {

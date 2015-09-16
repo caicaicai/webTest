@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Windows;
 using System.Windows.Input;
 using System.ComponentModel;
@@ -10,7 +11,6 @@ using GalaSoft.MvvmLight.Messaging;
 using webTest.Model;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-
 
 namespace webTest.ViewModel
 {
@@ -30,6 +30,8 @@ namespace webTest.ViewModel
     {
         public ICommand ShowPopUp { get; private set; }
         public ICommand DeleteItem { get; private set; }
+        public ICommand Save { get; private set; }
+        public ICommand Open { get; private set; }
         public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
 
@@ -52,9 +54,16 @@ namespace webTest.ViewModel
             ////    // Code runs "for real"
             ////}
 
-            ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => { return TabItems[SelectedTabIndex].IsRequesting == false; });
+            ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => { 
+                if(TabItems.Count == 0 )
+                {
+                    return false;
+                }
+                return TabItems[SelectedTabIndex].IsRequesting == false; 
+            });
             DeleteItem = new RelayCommand(() => DeleteItemExecute(), () => { return SelectedTabIndex != TabItems.Count - 1; });
-
+            Save = new RelayCommand(() => SaveExecute(), () => {return true;});
+            Open = new RelayCommand(() => OpenExecute(), () => { return true; });
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
@@ -118,11 +127,51 @@ namespace webTest.ViewModel
             {
                 SelectedTabIndex++;
                 TabItems.RemoveAt(SelectedTabIndex - 1);
-                
+
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
+            }
+        }
+
+        private void SaveExecute()
+        {
+            // Configure save file dialog box
+            Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
+            dlg.FileName = "config"; // Default file name
+            dlg.DefaultExt = ".osl"; // Default file extension
+            dlg.Filter = "Text documents (.osl)|*.osl"; // Filter files by extension 
+
+            // Show save file dialog box
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Process save file dialog box results 
+            if (result == true)
+            {
+                // Save Config 
+                Config.Save(dlg.FileName, new Config(TabItems));
+            }
+        }
+
+        private void OpenExecute()
+        {
+            // Configure save file dialog box
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            dlg.FileName = "config"; // Default file name
+            dlg.DefaultExt = ".osl"; // Default file extension
+            dlg.Filter = "Text documents (.osl)|*.osl"; // Filter files by extension 
+
+            // Show save file dialog box
+            Nullable<bool> result = dlg.ShowDialog();
+
+            // Process save file dialog box results 
+            if (result == true)
+            {
+                SelectedTabIndex = 0;
+                // Load Config 
+                Config cfg = Config.Load(dlg.FileName);
+                TabItems = cfg.TabItems;
             }
         }
 
@@ -134,7 +183,8 @@ namespace webTest.ViewModel
                 // Return the value through the Result property.
                 //e.Result = rq.DoRequest();
                 rq.DoRequest();
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -155,10 +205,12 @@ namespace webTest.ViewModel
         {
             get
             {
-                if(TabItems[SelectedTabIndex].IsRequesting == true)
+                if (TabItems[SelectedTabIndex].IsRequesting == true)
                 {
                     return "ÇëÇóÖÐ..";
-                }else{
+                }
+                else
+                {
                     return "ÇëÇó";
                 }
             }
@@ -195,7 +247,18 @@ namespace webTest.ViewModel
         {
             get
             {
-                return TabItems[SelectedTabIndex];
+                if(TabItems.Count > 0)
+                {
+                    if(SelectedTabIndex < 0)
+                    {
+                        return TabItems[0];
+                    }
+                    return TabItems[SelectedTabIndex];
+                }
+                else
+                {
+                    return null;
+                }
             }
             set
             {
@@ -209,5 +272,5 @@ namespace webTest.ViewModel
         }
 
     }
-    
+
 }
