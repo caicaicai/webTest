@@ -14,8 +14,6 @@ C:\Users\94763_000\Desktop\webTest\webTest\bin\Release\GalaSoft.MvvmLight.Platfo
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Release\GalaSoft.MvvmLight.Platform.xml
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Release\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\94763_000\Desktop\webTest\webTest\bin\Release\Microsoft.Practices.ServiceLocation.xml
-C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\MainWindow.baml
-C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\MainWindow.g.cs
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\App.g.cs
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\GeneratedInternalTypeHelper.g.cs
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest_MarkupCompile.cache
@@ -55,3 +53,5 @@ C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\App.baml
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.g.resources
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.Properties.Resources.resources
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.csproj.GenerateResource.Cache
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\MainWindow.baml
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\MainWindow.g.cs

@@ -66,22 +66,34 @@
         </Grid>
         <Grid Grid.Row="2">
             <GroupBox Header="Result" Margin="0">
-                <TabControl ItemsSource="{Binding TabItems}" SelectedIndex="{Binding SelectedTabIndex}"  TabStripPlacement="Bottom" Margin="10" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
-                    <TabControl.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Title}" >
-                                <TextBlock.InputBindings>
-                                    <MouseBinding MouseAction="LeftClick" Command="{Binding JsonView}"/>
-                                </TextBlock.InputBindings>
-                            </TextBlock>
-                        </DataTemplate>
-                    </TabControl.ItemTemplate>
-                    <TabControl.ContentTemplate>
-                        <DataTemplate>
-                            <TextBox Text="{Binding ResponseContent}" BorderThickness="0" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap"/>
-                        </DataTemplate>
-                    </TabControl.ContentTemplate>
-                </TabControl>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Label Content="状态:" Margin="5" Width="40" Height="25" HorizontalAlignment="Left"/>
+                        <TextBlock  Width="auto" HorizontalAlignment="Left" Margin="50,8,0,10" Text="500"/>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <TabControl ItemsSource="{Binding TabItems}" SelectedIndex="{Binding SelectedTabIndex}"  TabStripPlacement="Bottom" Margin="10" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
+                            <TabControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Title}" >
+                                        <TextBlock.InputBindings>
+                                            <MouseBinding MouseAction="LeftClick" Command="{Binding }"/>
+                                        </TextBlock.InputBindings>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </TabControl.ItemTemplate>
+                            <TabControl.ContentTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding ResponseContent, Mode=OneWay}" BorderThickness="0" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap"/>
+                                </DataTemplate>
+                            </TabControl.ContentTemplate>
+                        </TabControl>
+                    </Grid>
+                </Grid>
             </GroupBox>
         </Grid>
     </Grid>

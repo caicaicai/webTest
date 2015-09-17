@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Net;
+using System.IO;
 
 namespace webTest.Model
 {
@@ -59,21 +60,33 @@ namespace webTest.Model
                 RaisePropertyChanged("Title");
             }
         }
+        private HttpWebResponse _response;
+        public HttpWebResponse Response
+        {
+            get
+            {
+                return _response;
+            }
+            set
+            {
+                if (_response == value)
+                    return;
 
-        private string _responseContent;
+                _response = value;
+                RaisePropertyChanged("Response");
+                RaisePropertyChanged("ResponseContent");
+            }
+        }
+
         public string ResponseContent
         {
             get
             {
-                return _responseContent;
-            }
-            set
-            {
-                if (_responseContent == value)
-                    return;
-
-                _responseContent = value;
-                RaisePropertyChanged("ResponseContent");
+                if (Response != null)
+                {
+                    return new StreamReader(Response.GetResponseStream()).ReadToEnd();
+                }
+                return String.Empty;
             }
         }
 

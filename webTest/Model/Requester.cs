@@ -61,7 +61,7 @@ namespace webTest.Model
             // Display the status.
             Console.WriteLine(((HttpWebResponse)response).StatusDescription);
 
-            tabItem.ResponseContent = new StreamReader(response.GetResponseStream()).ReadToEnd();
+            tabItem.Response = (HttpWebResponse)request.GetResponse();
         }
 
         public static Uri UriBuilder(string urlBase, string queryStr)
