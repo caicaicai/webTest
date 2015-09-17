@@ -32,6 +32,7 @@ namespace webTest.ViewModel
         public ICommand DeleteItem { get; private set; }
         public ICommand Save { get; private set; }
         public ICommand Open { get; private set; }
+        public ICommand JsonView { get; private set; }
         public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
 
@@ -64,6 +65,7 @@ namespace webTest.ViewModel
             DeleteItem = new RelayCommand(() => DeleteItemExecute(), () => { return SelectedTabIndex != TabItems.Count - 1; });
             Save = new RelayCommand(() => SaveExecute(), () => {return true;});
             Open = new RelayCommand(() => OpenExecute(), () => { return true; });
+            JsonView = new RelayCommand(() => JsonViewExecute(), () => { return true; });
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
@@ -110,7 +112,8 @@ namespace webTest.ViewModel
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                //MessageBox.Show(e.Message);
+                Console.WriteLine(e);
             }
         }
 
@@ -173,6 +176,11 @@ namespace webTest.ViewModel
                 Config cfg = Config.Load(dlg.FileName);
                 TabItems = cfg.TabItems;
             }
+        }
+
+        private void JsonViewExecute()
+        {
+            Console.WriteLine("json view...");
         }
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)

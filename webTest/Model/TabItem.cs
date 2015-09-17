@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Net;
 
 namespace webTest.Model
 {
@@ -17,6 +18,10 @@ namespace webTest.Model
             RequestUrl = "http://";
             Title = "NEW";
             ReqMethod = RequestMethod.GET;
+            PostData = "";
+            QueryStr = "";
+            Note = "";
+            
         }
         #endregion
 
@@ -34,6 +39,23 @@ namespace webTest.Model
                     return;
 
                 _title = value;
+                RaisePropertyChanged("Title");
+            }
+        }
+
+        private string _note;
+        public string Note
+        {
+            get
+            {
+                return _note;
+            }
+            set
+            {
+                if (_note == value)
+                    return;
+
+                _note = value;
                 RaisePropertyChanged("Title");
             }
         }
@@ -126,6 +148,55 @@ namespace webTest.Model
         {
             get { return Enum.GetValues(typeof(RequestMethod)); }
         }
+
+        private string _userAgent;
+        public string UserAgent
+        {
+            get
+            {
+                return _userAgent;
+            }
+            set
+            {
+                if (_userAgent == value)
+                    return;
+                _userAgent = value;
+                RaisePropertyChanged("UserAgent");
+            }
+        }
+
+        private string _postData;
+        public string PostData
+        {
+            get
+            {
+                return _postData;
+            }
+            set
+            {
+                if (_postData == value)
+                    return;
+                _postData = value;
+                RaisePropertyChanged("PostData");
+            }
+        }
+
+        private string _queryStr;
+        public string QueryStr
+        {
+            get
+            {
+                return _queryStr;
+            }
+            set
+            {
+                if (_queryStr == value)
+                    return;
+                _queryStr = value;
+                RaisePropertyChanged("QueryStr");
+            }
+        }
+
         #endregion
 
         #region INotifyPropertyChanged Members
