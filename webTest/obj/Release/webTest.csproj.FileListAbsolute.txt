@@ -24,7 +24,6 @@ C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.Properties.Resour
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.csproj.GenerateResource.Cache
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.exe
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.pdb
-C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.csprojResolveAssemblyReference.cache
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\webTest.exe.config
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.exe
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.pdb

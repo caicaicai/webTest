@@ -71,9 +71,9 @@
                         <RowDefinition Height="40"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Grid Grid.Row="0">
-                        <Label Content="状态:" Margin="5" Width="40" Height="25" HorizontalAlignment="Left"/>
-                        <TextBlock  Width="auto" HorizontalAlignment="Left" Margin="50,8,0,10" Text="500"/>
+                    <Grid Grid.Row="0" >
+                        <Label Content="状态 :" Margin="5" Width="40" Height="25" HorizontalAlignment="Left"/>
+                        <Label Content="{Binding CurrentItem.Response.StatusCode}" Margin="45,8,0,8" Width="40" Height="25" HorizontalAlignment="Left"/>
                     </Grid>
                     <Grid Grid.Row="1">
                         <TabControl ItemsSource="{Binding TabItems}" SelectedIndex="{Binding SelectedTabIndex}"  TabStripPlacement="Bottom" Margin="10" ScrollViewer.VerticalScrollBarVisibility="Disabled" >

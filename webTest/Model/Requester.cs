@@ -59,7 +59,7 @@ namespace webTest.Model
             var response = (HttpWebResponse)request.GetResponse();
 
             // Display the status.
-            Console.WriteLine(((HttpWebResponse)response).StatusDescription);
+            //Console.WriteLine(((HttpWebResponse)response).StatusDescription);
 
             tabItem.Response = (HttpWebResponse)request.GetResponse();
         }
