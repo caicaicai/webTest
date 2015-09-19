@@ -1,0 +1,12 @@
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\bin\debug\JsonView.exe
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\bin\debug\JsonView.pdb
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\bin\debug\JsonViewer.dll
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\bin\debug\Newtonsoft.Json.dll
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\bin\debug\JsonViewer.pdb
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Debug\JsonView.csprojResolveAssemblyReference.cache
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Debug\EPocalipse.Json.JsonView.AboutJsonViewer.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Debug\EPocalipse.Json.JsonView.MainForm.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Debug\EPocalipse.Json.JsonView.Properties.Resources.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Debug\JsonView.csproj.GenerateResource.Cache
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Debug\JsonView.exe
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Debug\JsonView.pdb

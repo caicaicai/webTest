@@ -9,6 +9,7 @@ using System.IO;
 
 namespace webTest.Model
 {
+
     [Serializable()]
     public class TabItem : INotifyPropertyChanged
     {
@@ -60,6 +61,7 @@ namespace webTest.Model
                 RaisePropertyChanged("Title");
             }
         }
+
         private HttpWebResponse _response;
         public HttpWebResponse Response
         {
@@ -73,20 +75,24 @@ namespace webTest.Model
                     return;
 
                 _response = value;
+                ResponseContent = new StreamReader(value.GetResponseStream()).ReadToEnd();
                 RaisePropertyChanged("Response");
-                RaisePropertyChanged("ResponseContent");
             }
         }
 
+        private string _responseContent;
         public string ResponseContent
         {
             get
             {
-                if (Response != null)
-                {
-                    return new StreamReader(Response.GetResponseStream()).ReadToEnd();
-                }
-                return String.Empty;
+                return _responseContent;
+            }
+            set
+            {
+                if (_responseContent == value)
+                    return;
+                _responseContent = value;
+                RaisePropertyChanged("ResponseContent");
             }
         }
 

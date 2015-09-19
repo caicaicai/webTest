@@ -1,0 +1,8 @@
+C:\Users\94763_000\Desktop\jsonviewer-73287\Bin\JsonView\JsonView.exe
+C:\Users\94763_000\Desktop\jsonviewer-73287\Bin\JsonView\JsonView.pdb
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Release\EPocalipse.Json.JsonView.AboutJsonViewer.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Release\EPocalipse.Json.JsonView.MainForm.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Release\EPocalipse.Json.JsonView.Properties.Resources.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Release\JsonView.csproj.GenerateResource.Cache
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Release\JsonView.exe
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonView\obj\Release\JsonView.pdb

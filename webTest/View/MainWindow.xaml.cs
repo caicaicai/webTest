@@ -15,8 +15,9 @@ using System.Windows.Shapes;
 using System.Net;
 using System.IO;
 using System.Threading;
+using GalaSoft.MvvmLight.Messaging;
 
-namespace webTest
+namespace webTest.View
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -28,7 +29,23 @@ namespace webTest
         public MainWindow()
         {
             InitializeComponent();
+            Messenger.Default.Register<NotificationMessage<string>>(this, NotificationMessageReceived);
         }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            ((TextBox)sender).CaretIndex = ((TextBox)sender).Text.Length;
+        }
+
+        private void NotificationMessageReceived(NotificationMessage<string> msg)
+        {
+            if (msg.Notification == "ShowJsonView")
+            {
+                var jsonView = new JsonViewForm(msg.Content);
+                jsonView.Show();
+            }
+        }
+
 
     }
 }

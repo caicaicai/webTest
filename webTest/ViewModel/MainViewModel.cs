@@ -180,7 +180,8 @@ namespace webTest.ViewModel
 
         private void JsonViewExecute()
         {
-            Console.WriteLine("json view...");
+            Console.WriteLine("JsonViewExecute...");
+            Messenger.Default.Send(new NotificationMessage<string>(CurrentItem.ResponseContent, "ShowJsonView"));
         }
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)

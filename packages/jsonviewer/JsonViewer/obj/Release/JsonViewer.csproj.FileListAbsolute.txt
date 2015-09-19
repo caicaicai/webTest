@@ -1,0 +1,10 @@
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\bin\Release\JsonViewer.dll
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\bin\Release\JsonViewer.pdb
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\bin\Release\Newtonsoft.Json.dll
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\obj\Release\EPocalipse.Json.Viewer.GridVisualizer.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\obj\Release\EPocalipse.Json.Viewer.JsonViewer.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\obj\Release\EPocalipse.Json.Viewer.JsonObjectVisualizer.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\obj\Release\EPocalipse.Json.Viewer.Properties.Resources.resources
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\obj\Release\JsonViewer.csproj.GenerateResource.Cache
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\obj\Release\JsonViewer.dll
+C:\Users\94763_000\Desktop\jsonviewer-73287\JsonViewer\obj\Release\JsonViewer.pdb
