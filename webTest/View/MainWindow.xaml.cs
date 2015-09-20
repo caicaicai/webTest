@@ -16,6 +16,7 @@ using System.Net;
 using System.IO;
 using System.Threading;
 using GalaSoft.MvvmLight.Messaging;
+using webTest.Model;
 
 namespace webTest.View
 {
@@ -30,6 +31,7 @@ namespace webTest.View
         {
             InitializeComponent();
             Messenger.Default.Register<NotificationMessage<string>>(this, NotificationMessageReceived);
+            Messenger.Default.Register<NotificationMessage<Option>>(this, NotificationMessageReceived);
         }
 
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)
@@ -39,16 +41,38 @@ namespace webTest.View
 
         private void NotificationMessageReceived(NotificationMessage<string> msg)
         {
-            if (msg.Notification == "ShowJsonView")
+            
+            if (msg.Notification == "About")
+            {
+                var aboutView = new AboutBox();
+                aboutView.Show();
+            }
+            if (msg.Notification == "JSON")
             {
                 var jsonView = new JsonViewForm(msg.Content);
                 jsonView.Show();
             }
-            if (msg.Notification == "ShowXMLView")
+            if (msg.Notification == "XML")
             {
-                var jsonView = new XMLViewerWindow(msg.Content);
-                jsonView.Show();
+                var XMLView = new XMLViewerWindow(msg.Content);
+                XMLView.Show();
             }
+            if (msg.Notification == "HTML")
+            {
+                var HTMLView = new HTMLViewWindow(msg.Content);
+                HTMLView.Show();
+            }
+        }
+        private void NotificationMessageReceived(NotificationMessage<Option> msg)
+        {
+            if (msg.Notification == "option")
+            {
+                var aboutView = new OptionWindow(msg.Content);
+                aboutView.ShowInTaskbar = false;
+                aboutView.Owner = this;
+                aboutView.ShowDialog();
+            }
+
         }
 
 

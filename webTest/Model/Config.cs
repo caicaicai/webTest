@@ -15,20 +15,24 @@ namespace webTest.Model
     class Config
     {
         public ObservableCollection<TabItem> TabItems;
+        public Option option;
 
-        public Config(ObservableCollection<TabItem> TabItems)
+        public Config(ObservableCollection<TabItem> TabItems, Option option)
         {
             this.TabItems = TabItems;
+            this.option = option;
         }
 
         public Config(SerializationInfo info, StreamingContext ctxt)
         {
-        this.TabItems = (ObservableCollection<TabItem>)info.GetValue("TabItems", typeof(ObservableCollection<TabItem>));
+            this.TabItems = (ObservableCollection<TabItem>)info.GetValue("TabItems", typeof(ObservableCollection<TabItem>));
+            this.option = (Option)info.GetValue("option", typeof(Option));
         }
 
         public void GetObjectData(SerializationInfo info, StreamingContext ctxt)
         {
-        info.AddValue("TabItems", this.TabItems);
+            info.AddValue("TabItems", this.TabItems);
+            info.AddValue("option", this.option);
         }
         
         public static Config Load(string config_file_path)
@@ -58,7 +62,7 @@ namespace webTest.Model
                 }
                 Console.WriteLine(e.Message);
                 MessageBox.Show("配置文件读取失败!{0}",e.Message);
-                return new Config(new ObservableCollection<TabItem>());
+                return new Config(new ObservableCollection<TabItem>(),new Option());
             }
         }
 
@@ -79,17 +83,5 @@ namespace webTest.Model
             }
         }
 
-        private class JsonSerializerStrategy : SimpleJson.PocoJsonSerializerStrategy
-        {
-            // convert string to int
-            public override object DeserializeObject(object value, Type type)
-            {
-                if (type == typeof(Int32) && value.GetType() == typeof(string))
-                {
-                    return Int32.Parse(value.ToString());
-                }
-                return base.DeserializeObject(value, type);
-            }
-        }
     }
 }

@@ -28,18 +28,22 @@ namespace webTest.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+
         public ICommand ShowPopUp { get; private set; }
         public ICommand DeleteItem { get; private set; }
         public ICommand Save { get; private set; }
         public ICommand Open { get; private set; }
-        public ICommand JsonView { get; private set; }
-        public ICommand XMLView { get; private set; }
+        public ICommand OpenOption { get; private set; }
+        public ICommand About { get; private set; }
+
+
+        public ICommand SpecialView { get; private set; }
         public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
 
         private ObservableCollection<TabItem> _tabItems;
+        private Option _option;
         private int _selectedTabIndex;
-
 
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
@@ -66,8 +70,9 @@ namespace webTest.ViewModel
             DeleteItem = new RelayCommand(() => DeleteItemExecute(), () => { return SelectedTabIndex != TabItems.Count - 1; });
             Save = new RelayCommand(() => SaveExecute(), () => {return true;});
             Open = new RelayCommand(() => OpenExecute(), () => { return true; });
-            JsonView = new RelayCommand(() => JsonViewExecute(), () => { return true; });
-            XMLView = new RelayCommand(() => XMLViewExecute(), () => { return true; });
+            OpenOption = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<Option>(option, "option")); });
+            About = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<string>("PlaceHolder","About")); });
+            SpecialView = new RelayCommand<object>((param) => SpecialViewExecute(param), (param) => { return true; });
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
@@ -77,22 +82,7 @@ namespace webTest.ViewModel
             TabItems = new ObservableCollection<TabItem>();
             TabItems.Add(new TabItem());
 
-
-            // Registers for incoming Notification messages.
-            Messenger.Default.Register<NotificationMessage>(this, (message) =>
-            {
-                // Checks the actual content of the message.
-                switch (message.Notification)
-                {
-                    case "GotoDetailsPage":
-                        break;
-
-                    case "OtherMessage":
-                        break;
-                    default:
-                        break;
-                }
-            });
+            option = new Option();
  
         }
 
@@ -100,7 +90,6 @@ namespace webTest.ViewModel
         {
             // Sends a notification message with a string content.
             Messenger.Default.Send(new NotificationMessage("GotoDetailsPage"));
-
 
             if (SelectedTabIndex == TabItems.Count - 1)
             {
@@ -155,7 +144,7 @@ namespace webTest.ViewModel
             if (result == true)
             {
                 // Save Config 
-                Config.Save(dlg.FileName, new Config(TabItems));
+                Config.Save(dlg.FileName, new Config(TabItems, option));
             }
         }
 
@@ -180,24 +169,17 @@ namespace webTest.ViewModel
             }
         }
 
-        private void JsonViewExecute()
-        {
-            if (CurrentItem.ResponseContent == null || CurrentItem.ResponseContent.Length == 0)
-            {
-                MessageBox.Show("Stuff Needed.");
-                return; 
-            }
-            Messenger.Default.Send(new NotificationMessage<string>(CurrentItem.ResponseContent, "ShowJsonView"));
-        }
-
-        private void XMLViewExecute()
+        private void SpecialViewExecute(object obj)
         {
             if (CurrentItem.ResponseContent == null || CurrentItem.ResponseContent.Length == 0)
             {
                 MessageBox.Show("Stuff Needed.");
                 return;
             }
-            Messenger.Default.Send(new NotificationMessage<string>(CurrentItem.ResponseContent, "ShowXMLView"));
+
+            Messenger.Default.Send(new NotificationMessage<string>(CurrentItem.ResponseContent, obj.ToString()));
+            
+            
         }
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
@@ -293,6 +275,23 @@ namespace webTest.ViewModel
                 TabItems[SelectedTabIndex] = value;
 
                 RaisePropertyChanged("CurrentItem");
+            }
+        }
+
+        public Option option
+        {
+            get
+            {
+                return _option;
+            }
+            set
+            {
+                if (_option == value)
+                    return;
+
+                _option = value;
+
+                RaisePropertyChanged("option");
             }
         }
 
