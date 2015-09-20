@@ -1,0 +1,11 @@
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\bin\Debug\XMLViewer.dll
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\bin\Debug\XMLViewer.pdb
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.csprojResolveAssemblyReference.cache
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\Viewer.baml
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\Viewer.g.cs
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer_MarkupCompile.cache
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.g.resources
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.Properties.Resources.resources
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.csproj.GenerateResource.Cache
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.dll
+C:\Users\94763_000\Desktop\XMLViewerDomo\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.pdb

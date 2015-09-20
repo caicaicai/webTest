@@ -33,6 +33,7 @@ namespace webTest.ViewModel
         public ICommand Save { get; private set; }
         public ICommand Open { get; private set; }
         public ICommand JsonView { get; private set; }
+        public ICommand XMLView { get; private set; }
         public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
 
@@ -55,17 +56,18 @@ namespace webTest.ViewModel
             ////    // Code runs "for real"
             ////}
 
-            ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => { 
+            ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => {
                 if(TabItems.Count == 0 )
                 {
                     return false;
                 }
-                return TabItems[SelectedTabIndex].IsRequesting == false; 
+                return CurrentItem.IsRequesting == false; 
             });
             DeleteItem = new RelayCommand(() => DeleteItemExecute(), () => { return SelectedTabIndex != TabItems.Count - 1; });
             Save = new RelayCommand(() => SaveExecute(), () => {return true;});
             Open = new RelayCommand(() => OpenExecute(), () => { return true; });
             JsonView = new RelayCommand(() => JsonViewExecute(), () => { return true; });
+            XMLView = new RelayCommand(() => XMLViewExecute(), () => { return true; });
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
@@ -180,8 +182,22 @@ namespace webTest.ViewModel
 
         private void JsonViewExecute()
         {
-            Console.WriteLine("JsonViewExecute...");
+            if (CurrentItem.ResponseContent == null || CurrentItem.ResponseContent.Length == 0)
+            {
+                MessageBox.Show("Stuff Needed.");
+                return; 
+            }
             Messenger.Default.Send(new NotificationMessage<string>(CurrentItem.ResponseContent, "ShowJsonView"));
+        }
+
+        private void XMLViewExecute()
+        {
+            if (CurrentItem.ResponseContent == null || CurrentItem.ResponseContent.Length == 0)
+            {
+                MessageBox.Show("Stuff Needed.");
+                return;
+            }
+            Messenger.Default.Send(new NotificationMessage<string>(CurrentItem.ResponseContent, "ShowXMLView"));
         }
 
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)

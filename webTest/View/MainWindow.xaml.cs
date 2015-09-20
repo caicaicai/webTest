@@ -44,6 +44,11 @@ namespace webTest.View
                 var jsonView = new JsonViewForm(msg.Content);
                 jsonView.Show();
             }
+            if (msg.Notification == "ShowXMLView")
+            {
+                var jsonView = new XMLViewerWindow(msg.Content);
+                jsonView.Show();
+            }
         }
 
 

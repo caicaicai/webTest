@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLViewer", "XMLViewer\XMLViewer.csproj", "{11D17F23-E54C-47D3-A04C-1338F456AC87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApplication", "DemoApplication\DemoApplication.csproj", "{D4DBD131-C5B6-4B1F-9E6B-294DA726F009}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11D17F23-E54C-47D3-A04C-1338F456AC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D17F23-E54C-47D3-A04C-1338F456AC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D17F23-E54C-47D3-A04C-1338F456AC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D17F23-E54C-47D3-A04C-1338F456AC87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DBD131-C5B6-4B1F-9E6B-294DA726F009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DBD131-C5B6-4B1F-9E6B-294DA726F009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DBD131-C5B6-4B1F-9E6B-294DA726F009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DBD131-C5B6-4B1F-9E6B-294DA726F009}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
