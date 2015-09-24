@@ -33,10 +33,12 @@
             // 
             // jsonViewer1
             // 
+            this.jsonViewer1.AutoSize = true;
+            this.jsonViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.jsonViewer1.Json = null;
-            this.jsonViewer1.Location = new System.Drawing.Point(12, 12);
+            this.jsonViewer1.Location = new System.Drawing.Point(0, 0);
             this.jsonViewer1.Name = "jsonViewer1";
-            this.jsonViewer1.Size = new System.Drawing.Size(796, 567);
+            this.jsonViewer1.Size = new System.Drawing.Size(820, 591);
             this.jsonViewer1.TabIndex = 0;
             // 
             // JsonViewForm
@@ -48,6 +50,7 @@
             this.Name = "JsonViewForm";
             this.Text = "JSON Viewer";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

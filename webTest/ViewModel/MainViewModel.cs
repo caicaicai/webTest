@@ -11,6 +11,7 @@ using GalaSoft.MvvmLight.Messaging;
 using webTest.Model;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace webTest.ViewModel
 {
@@ -41,9 +42,12 @@ namespace webTest.ViewModel
         public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
 
-        private ObservableCollection<TabItem> _tabItems;
+        
         private Option _option;
+        //private ObservableCollection<TabItem> _tabItems;
         private int _selectedTabIndex;
+        private Dictionary<string, ObservableCollection<TabItem>> _tabItemsGroup;
+        private string _selectedGroupIndex;
 
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
@@ -61,13 +65,9 @@ namespace webTest.ViewModel
             ////}
 
             ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => {
-                if(TabItems.Count == 0 )
-                {
-                    return false;
-                }
                 return CurrentItem.IsRequesting == false; 
             });
-            DeleteItem = new RelayCommand(() => DeleteItemExecute(), () => { return SelectedTabIndex != TabItems.Count - 1; });
+            DeleteItem = new RelayCommand(() => DeleteItemExecute(), () => { return SelectedTabIndex != CurrentTabItems.Count - 1; });
             Save = new RelayCommand(() => SaveExecute(), () => {return true;});
             Open = new RelayCommand(() => OpenExecute(), () => { return true; });
             OpenOption = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<Option>(option, "option")); });
@@ -77,28 +77,27 @@ namespace webTest.ViewModel
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
 
+            TabItemsGroup = new Dictionary<string, ObservableCollection<TabItem>> { { "default", new ObservableCollection<TabItem> { new TabItem() } } };
+            SelectedGroupIndex = TabItemsGroup.First().Key;
             SelectedTabIndex = 0;
-
-            TabItems = new ObservableCollection<TabItem>();
-            TabItems.Add(new TabItem());
-
             option = new Option();
- 
+
         }
+
 
         private void ShowPopUpExecute()
         {
             // Sends a notification message with a string content.
             Messenger.Default.Send(new NotificationMessage("GotoDetailsPage"));
 
-            if (SelectedTabIndex == TabItems.Count - 1)
+            if (SelectedTabIndex == CurrentTabItems.Count - 1)
             {
-                TabItems.Add(new TabItem());
+                CurrentTabItems.Add(new TabItem());
             }
-            Requester rq = new Requester(TabItems[SelectedTabIndex]);
+            Requester rq = new Requester(CurrentTabItems[SelectedTabIndex]);
             try
             {
-                TabItems[SelectedTabIndex].IsRequesting = true;
+                CurrentTabItems[SelectedTabIndex].IsRequesting = true;
                 backgroundWorker.RunWorkerAsync(rq);
             }
             catch (Exception e)
@@ -111,7 +110,7 @@ namespace webTest.ViewModel
         private void DeleteItemExecute()
         {
 
-            if (SelectedTabIndex == TabItems.Count - 1)
+            if (SelectedTabIndex == CurrentTabItems.Count - 1)
             {
                 //Of course, this statement will never be executed
                 MessageBox.Show("不能移除未保存的项目！");
@@ -120,7 +119,7 @@ namespace webTest.ViewModel
             try
             {
                 SelectedTabIndex++;
-                TabItems.RemoveAt(SelectedTabIndex - 1);
+                CurrentTabItems.RemoveAt(SelectedTabIndex - 1);
 
             }
             catch (Exception e)
@@ -144,7 +143,7 @@ namespace webTest.ViewModel
             if (result == true)
             {
                 // Save Config 
-                Config.Save(dlg.FileName, new Config(TabItems, option));
+                Config.Save(dlg.FileName, new Config(TabItemsGroup, option));
             }
         }
 
@@ -165,7 +164,7 @@ namespace webTest.ViewModel
                 SelectedTabIndex = 0;
                 // Load Config 
                 Config cfg = Config.Load(dlg.FileName);
-                TabItems = cfg.TabItems;
+                TabItemsGroup = cfg.TabItemsGroup;
             }
         }
 
@@ -201,18 +200,18 @@ namespace webTest.ViewModel
         private void BackgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             //TabItems[SelectedTabIndex].ResponseContent = (string)e.Result;
-            if (TabItems[SelectedTabIndex].Title.Length == 0)
+            if (CurrentItem.Title.Length == 0)
             {
-                TabItems[SelectedTabIndex].Title = TabItems[SelectedTabIndex].RequestUrl.Substring(0, 6);
+                CurrentItem.Title = CurrentItem.RequestUrl.Substring(0, 6);
             }
-            TabItems[SelectedTabIndex].IsRequesting = false;
+            CurrentItem.IsRequesting = false;
         }
 
         public string RequestBtn
         {
             get
             {
-                if (TabItems[SelectedTabIndex].IsRequesting == true)
+                if (CurrentItem.IsRequesting == true)
                 {
                     return "请求中..";
                 }
@@ -223,19 +222,50 @@ namespace webTest.ViewModel
             }
         }
 
-        public ObservableCollection<TabItem> TabItems
+        public Dictionary<string, ObservableCollection<TabItem>> TabItemsGroup
         {
             get
             {
-                return _tabItems;
+                return _tabItemsGroup;
             }
             set
             {
-                _tabItems = value;
-                RaisePropertyChanged("TabItems");
+                if (_tabItemsGroup == value)
+                    return;
+
+                _tabItemsGroup = value;
+                RaisePropertyChanged("TabItemsGroup");
+            }
+        }
+        public string SelectedGroupIndex
+        {
+            get
+            {
+                return _selectedGroupIndex;
+            }
+            set
+            {
+                _selectedGroupIndex = value;
+                RaisePropertyChanged("SelectedGroupIndex");
+                RaisePropertyChanged("CurrentItem");
             }
         }
 
+        public ObservableCollection<TabItem> CurrentTabItems
+        {
+            get
+            {
+                return TabItemsGroup[SelectedGroupIndex];
+            }
+            set
+            {
+                if (TabItemsGroup[SelectedGroupIndex] == value)
+                    return;
+
+                TabItemsGroup[SelectedGroupIndex] = value;
+
+            }
+        }
         public int SelectedTabIndex
         {
             get
@@ -254,13 +284,13 @@ namespace webTest.ViewModel
         {
             get
             {
-                if(TabItems.Count > 0)
+                if (CurrentTabItems.Count > 0)
                 {
-                    if(SelectedTabIndex < 0)
+                    if (SelectedTabIndex < 0)
                     {
-                        return TabItems[0];
+                        return CurrentTabItems[0];
                     }
-                    return TabItems[SelectedTabIndex];
+                    return CurrentTabItems[SelectedTabIndex];
                 }
                 else
                 {
@@ -269,11 +299,10 @@ namespace webTest.ViewModel
             }
             set
             {
-                if (TabItems[SelectedTabIndex] == value)
+                if (CurrentTabItems[SelectedTabIndex] == value)
                     return;
 
-                TabItems[SelectedTabIndex] = value;
-
+                CurrentTabItems[SelectedTabIndex] = value;
                 RaisePropertyChanged("CurrentItem");
             }
         }

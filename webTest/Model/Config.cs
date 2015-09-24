@@ -14,24 +14,24 @@ namespace webTest.Model
     [Serializable()]
     class Config
     {
-        public ObservableCollection<TabItem> TabItems;
+        public Dictionary<string, ObservableCollection<TabItem>> TabItemsGroup;
         public Option option;
 
-        public Config(ObservableCollection<TabItem> TabItems, Option option)
+        public Config(Dictionary<string, ObservableCollection<TabItem>> TabItemsGroup, Option option)
         {
-            this.TabItems = TabItems;
+            this.TabItemsGroup = TabItemsGroup;
             this.option = option;
         }
 
         public Config(SerializationInfo info, StreamingContext ctxt)
         {
-            this.TabItems = (ObservableCollection<TabItem>)info.GetValue("TabItems", typeof(ObservableCollection<TabItem>));
+            this.TabItemsGroup = (Dictionary<string, ObservableCollection<TabItem>>)info.GetValue("TabItemsGroup", typeof(Dictionary<string, ObservableCollection<TabItem>>));
             this.option = (Option)info.GetValue("option", typeof(Option));
         }
 
         public void GetObjectData(SerializationInfo info, StreamingContext ctxt)
         {
-            info.AddValue("TabItems", this.TabItems);
+            info.AddValue("TabItemsGroup", this.TabItemsGroup);
             info.AddValue("option", this.option);
         }
         
@@ -62,7 +62,7 @@ namespace webTest.Model
                 }
                 Console.WriteLine(e.Message);
                 MessageBox.Show("配置文件读取失败!{0}",e.Message);
-                return new Config(new ObservableCollection<TabItem>(),new Option());
+                return new Config(new Dictionary<string, ObservableCollection<TabItem>> { { "default", new ObservableCollection<TabItem> { new TabItem() } } }, new Option());
             }
         }
 

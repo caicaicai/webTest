@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace webTest.Model
 {
+    [Serializable()]
     public class Option
     {
     }
