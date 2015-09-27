@@ -14,10 +14,10 @@ namespace webTest.Model
     [Serializable()]
     class Config
     {
-        public Dictionary<string, ObservableCollection<TabItem>> TabItemsGroup;
+        public ObservableCollection<TabItemsGroup> TabItemsGroup;
         public Option option;
 
-        public Config(Dictionary<string, ObservableCollection<TabItem>> TabItemsGroup, Option option)
+        public Config(ObservableCollection<TabItemsGroup> TabItemsGroup, Option option)
         {
             this.TabItemsGroup = TabItemsGroup;
             this.option = option;
@@ -25,7 +25,7 @@ namespace webTest.Model
 
         public Config(SerializationInfo info, StreamingContext ctxt)
         {
-            this.TabItemsGroup = (Dictionary<string, ObservableCollection<TabItem>>)info.GetValue("TabItemsGroup", typeof(Dictionary<string, ObservableCollection<TabItem>>));
+            this.TabItemsGroup = (ObservableCollection<TabItemsGroup>)info.GetValue("TabItemsGroup", typeof(ObservableCollection<TabItemsGroup>));
             this.option = (Option)info.GetValue("option", typeof(Option));
         }
 
@@ -62,7 +62,7 @@ namespace webTest.Model
                 }
                 Console.WriteLine(e.Message);
                 MessageBox.Show("配置文件读取失败!{0}",e.Message);
-                return new Config(new Dictionary<string, ObservableCollection<TabItem>> { { "default", new ObservableCollection<TabItem> { new TabItem() } } }, new Option());
+                return new Config(new ObservableCollection<TabItemsGroup>(), new Option());
             }
         }
 

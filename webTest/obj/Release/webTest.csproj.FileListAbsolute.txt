@@ -67,3 +67,4 @@ C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\HTMLViewWindow.g.cs
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.View.AboutBox.resources
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\OptionWindow.baml
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\OptionWindow.g.cs
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.csprojResolveAssemblyReference.cache

@@ -85,6 +85,7 @@
     <Compile Include="Model\Option.cs" />
     <Compile Include="Model\Requester.cs" />
     <Compile Include="Model\TabItem.cs" />
+    <Compile Include="Model\TabItemsGroup.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\OptionViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
