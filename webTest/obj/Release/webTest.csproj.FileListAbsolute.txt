@@ -42,8 +42,6 @@ C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\GalaSoft.MvvmLigh
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\GalaSoft.MvvmLight.Platform.xml
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\Microsoft.Practices.ServiceLocation.xml
-C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\MainWindow.baml
-C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\MainWindow.g.cs
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\App.g.cs
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\GeneratedInternalTypeHelper.g.cs
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest_MarkupCompile.cache
@@ -68,3 +66,18 @@ C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.View.AboutBox.res
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\OptionWindow.baml
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\OptionWindow.g.cs
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.csprojResolveAssemblyReference.cache
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\JsonViewer.dll
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\XMLViewer.dll
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\Newtonsoft.Json.dll
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\JsonViewer.pdb
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\XMLViewer.pdb
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\HTMLViewWindow.baml
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\MainWindow.baml
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\OptionWindow.baml
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\XMLViewerWindow.baml
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\HTMLViewWindow.g.cs
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\MainWindow.g.cs
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\OptionWindow.g.cs
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\XMLViewerWindow.g.cs
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.View.AboutBox.resources
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.View.JsonViewForm.resources

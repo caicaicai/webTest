@@ -75,6 +75,11 @@ namespace webTest.View
 
         }
 
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            tb.Visibility = Visibility.Hidden;
+        }
 
     }
 }

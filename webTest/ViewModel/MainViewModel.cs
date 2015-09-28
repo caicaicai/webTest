@@ -12,7 +12,6 @@ using webTest.Model;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Windows;
 
 namespace webTest.ViewModel
 {
@@ -37,6 +36,7 @@ namespace webTest.ViewModel
 
         public ICommand ShowPopUp { get; private set; }
         public ICommand DeleteGroup { get; private set; }
+        public ICommand AddGroup { get; private set; }
         public ICommand TabItemsGroupRename { get; private set; }
 
 
@@ -44,7 +44,9 @@ namespace webTest.ViewModel
         public ICommand TabSelectionChanged { get; private set; }
         private BackgroundWorker backgroundWorker;
 
-        
+        public ICommand SaveGroupName { get; private set; }
+
+
         private Option _option;
 
         private ObservableCollection<TabItemsGroup> _tabItemsGroup;
@@ -69,12 +71,14 @@ namespace webTest.ViewModel
                 return CurrentTabItemsGroup.CurrentItem.IsRequesting == false; 
             });
             DeleteGroup = new RelayCommand(() => DeleteGroupExecute(), () => { return SelectedGroupIndex != TabItemsGroup.Count - 1; });
+            AddGroup = new RelayCommand(() => AddGroupExecute(), () => { return true; });
             TabItemsGroupRename = new RelayCommand<object>((param) => TabItemsGroupRenameExecute(param), (param) => { return true; });
             Save = new RelayCommand(() => SaveExecute(), () => {return true;});
             Open = new RelayCommand(() => OpenExecute(), () => { return true; });
             OpenOption = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<Option>(option, "option")); });
             About = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<string>("PlaceHolder","About")); });
             SpecialView = new RelayCommand<object>((param) => SpecialViewExecute(param), (param) => { return true; });
+            SaveGroupName = new RelayCommand(() => SaveGroupNameExecute(), () => { return true; });
             backgroundWorker = new BackgroundWorker();
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
@@ -130,6 +134,11 @@ namespace webTest.ViewModel
             }
         }
 
+        private void AddGroupExecute()
+        {
+            TabItemsGroup.Add(new TabItemsGroup());
+        }
+
         private void SaveExecute()
         {
             // Configure save file dialog box
@@ -163,10 +172,10 @@ namespace webTest.ViewModel
             // Process save file dialog box results 
             if (result == true)
             {
-                SelectedGroupIndex = 0;
                 // Load Config 
                 Config cfg = Config.Load(dlg.FileName);
                 TabItemsGroup = cfg.TabItemsGroup;
+                SelectedGroupIndex = 0;
             }
         }
 
@@ -187,11 +196,20 @@ namespace webTest.ViewModel
         {
             //Visibility vb = (Visibility)obj;
             //vb = Visibility.Visible;
+            SaveGroupNameExecute();
             CurrentTabItemsGroup.IsEditing = Visibility.Visible;
-            Console.WriteLine("it works.{0}",obj.ToString());
         }
+
+        private void SaveGroupNameExecute()
+        {
+            foreach(TabItemsGroup tig in TabItemsGroup)
+            {
+                tig.IsEditing = Visibility.Hidden;
+            }
+        }
+
         #endregion
-        
+
         #region BackgroundWorker
         private void BackgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -256,12 +274,17 @@ namespace webTest.ViewModel
         {
             get
             {
+                if (_selectedGroupIndex < 0)
+                    return 0;
                 return _selectedGroupIndex;
             }
             set
             {
+                if (value < 0)
+                    return;
                 _selectedGroupIndex = value;
                 RaisePropertyChanged("SelectedGroupIndex");
+                RaisePropertyChanged("CurrentTabItemsGroup");
             }
         }
 
@@ -269,6 +292,8 @@ namespace webTest.ViewModel
         {
             get
             {
+                if (TabItemsGroup.Count == 0)
+                    return null;
                 return TabItemsGroup[SelectedGroupIndex];
             }
             set

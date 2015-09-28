@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Windows;
+using GalaSoft.MvvmLight.CommandWpf;
+using System.Windows.Input;
 
 namespace webTest.Model
 {
@@ -17,6 +15,8 @@ namespace webTest.Model
         private int _selectedTabIndex;
         private Visibility _isEditing;
 
+        
+
         /// <summary>
         /// Initializes a new instance of the TabItemsGroup class.
         /// </summary>
@@ -26,6 +26,13 @@ namespace webTest.Model
             tabItems = new ObservableCollection<TabItem> { new TabItem() };
             SelectedTabIndex = 0;
             IsEditing = Visibility.Hidden;
+
+            
+        }
+
+        public void test()
+        {
+            Console.WriteLine("haha");
         }
 
         /// <summary>
@@ -178,6 +185,7 @@ namespace webTest.Model
 
         [field: NonSerialized]
         public event PropertyChangedEventHandler PropertyChanged;
+        
 
         #endregion
 
