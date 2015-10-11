@@ -26,10 +26,12 @@ namespace webTest.Model
     class Requester
     {
         private TabItem tabItem;
+        private Option option;
 
-        public Requester(TabItem _tabItem)
+        public Requester(TabItem _tabItem, Option _option)
         {
             tabItem = _tabItem;
+            option = _option;
         }
 
         public void DoRequest()
@@ -39,6 +41,35 @@ namespace webTest.Model
             var targetUri = UriBuilder(tabItem.RequestUrl, tabItem.QueryStr);
 
             var request = (HttpWebRequest)WebRequest.Create(targetUri);
+
+
+            if(option.Proxy.Count > 0){
+                WebProxy myProxy = new WebProxy();
+                string proxyAddress;
+
+                proxyAddress = "http://proxy.server/";
+                if (proxyAddress.Length > 0)
+                {
+                    /*
+                    Console.WriteLine("\nPlease enter the Credentials (may not be needed)");
+                    Console.WriteLine("Username:");
+                    string username;
+                    username =Console.ReadLine();
+                    Console.WriteLine("\nPassword:");
+                    string password;
+                    password =Console.ReadLine();
+                        */
+                    // Create a new Uri object.
+                    Uri newUri = new Uri(proxyAddress);
+                    // Associate the newUri object to 'myProxy' object so that new myProxy settings can be set.
+                    myProxy.Address = newUri;
+                    // Create a NetworkCredential object and associate it with the 
+                    // Proxy property of request object.
+                    //myProxy.Credentials = new NetworkCredential(username, password);
+                    request.Proxy = myProxy;
+                }
+            }
+            
             request.Method = Enum.GetName(typeof(RequestMethod), tabItem.ReqMethod);
 
             if(tabItem.ReqMethod == RequestMethod.POST)

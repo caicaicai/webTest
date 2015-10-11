@@ -44,6 +44,7 @@ namespace webTest.ViewModel
             ////}
 
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<OptionViewModel>();
         }
 
         public MainViewModel Main
@@ -51,6 +52,14 @@ namespace webTest.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
+            }
+        }
+
+        public OptionViewModel Option
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<OptionViewModel>();
             }
         }
         

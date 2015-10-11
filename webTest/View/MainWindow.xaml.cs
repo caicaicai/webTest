@@ -67,10 +67,10 @@ namespace webTest.View
         {
             if (msg.Notification == "option")
             {
-                var aboutView = new OptionWindow(msg.Content);
-                aboutView.ShowInTaskbar = false;
-                aboutView.Owner = this;
-                aboutView.ShowDialog();
+                var optionView = new OptionWindow(msg.Content);
+                optionView.ShowInTaskbar = false;
+                optionView.Owner = this;
+                optionView.ShowDialog();
             }
 
         }

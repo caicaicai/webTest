@@ -100,7 +100,7 @@ namespace webTest.ViewModel
             {
                 CurrentTabItemsGroup.NewTab();
             }
-            Requester rq = new Requester(CurrentTabItemsGroup.CurrentItem);
+            Requester rq = new Requester(CurrentTabItemsGroup.CurrentItem, option);
             try
             {
                 CurrentTabItemsGroup.CurrentItem.IsRequesting = true;

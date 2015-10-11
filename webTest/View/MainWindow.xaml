@@ -204,7 +204,7 @@
                             </TabControl.ItemTemplate>
                             <TabControl.ContentTemplate>
                                 <DataTemplate>
-                                    <TextBox Text="{Binding ResponseContent}" BorderThickness="0" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap"/>
+                                    <TextBox Text="{Binding ResponseContent}" BorderThickness="0" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True"/>
                                 </DataTemplate>
                             </TabControl.ContentTemplate>
                         </TabControl>

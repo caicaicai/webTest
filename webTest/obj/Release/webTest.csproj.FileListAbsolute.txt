@@ -65,7 +65,6 @@ C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\HTMLViewWindow.g.cs
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.View.AboutBox.resources
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\OptionWindow.baml
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\OptionWindow.g.cs
-C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.csprojResolveAssemblyReference.cache
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\JsonViewer.dll
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\XMLViewer.dll
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\Newtonsoft.Json.dll
@@ -81,3 +80,4 @@ C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\OptionWindow
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\XMLViewerWindow.g.cs
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.View.AboutBox.resources
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.View.JsonViewForm.resources
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.csprojResolveAssemblyReference.cache

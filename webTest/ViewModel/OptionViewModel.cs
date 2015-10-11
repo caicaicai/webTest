@@ -16,11 +16,14 @@ namespace webTest.ViewModel
     {
         private Option _option;
 
+        private string selectedUserAgent;
+
+
         public OptionViewModel(Option option)
         {
-            this.option = option;
+            this._option = option;
+            Random rand = new Random();
         }
-
         public Option option
         {
             get
@@ -36,5 +39,22 @@ namespace webTest.ViewModel
                 RaisePropertyChanged("option");
             }
         }
+
+        public string SelectedUserAgent
+        {
+            get
+            {
+                return selectedUserAgent;
+            }
+            set
+            {
+                selectedUserAgent = value;
+                RaisePropertyChanged("SelectedUserAgent");
+                option.UserAgent = value;
+                option.UseUserAgent = true;
+            }
+        }
+
+
     }
 }

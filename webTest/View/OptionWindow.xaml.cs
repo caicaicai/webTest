@@ -24,7 +24,6 @@ namespace webTest.View
         public OptionWindow(Option option)
         {
             InitializeComponent();
-
             DataContext = new OptionViewModel(option);
             
         }
