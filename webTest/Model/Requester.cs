@@ -42,6 +42,31 @@ namespace webTest.Model
 
             var request = (HttpWebRequest)WebRequest.Create(targetUri);
 
+            if (option.UseUserAgent)
+            {
+                request.UserAgent = option.UserAgent;
+            }
+
+            if(option.UseCookie)
+            {
+                CookieContainer myContainer = new CookieContainer();
+
+                Dictionary<string, string> cookies = new Dictionary<string, string>();
+
+                //the option.coolie should be key:value;key:value;
+                foreach(string cookie in option.Cookie.Split(';'))
+                {
+                    string[] s = cookie.Split(':');
+                    cookies.Add(s[0], s[1]);
+                }
+
+                foreach(KeyValuePair<string, string> cookie in cookies){
+                    myContainer.Add(new Cookie(cookie.Key, cookie.Value) { Domain = targetUri.Host });
+                }
+
+                request.CookieContainer = myContainer;
+            }
+
 
             if(option.Proxy.Count > 0){
                 WebProxy myProxy = new WebProxy();

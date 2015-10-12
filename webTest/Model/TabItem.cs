@@ -137,11 +137,11 @@ namespace webTest.Model
             {
                 if (IsRequesting == true)
                 {
-                    return "请求中..";
+                    return "Processing..";
                 }
                 else
                 {
-                    return "请求";
+                    return "Request";
                 }
             }
         }

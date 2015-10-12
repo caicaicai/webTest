@@ -31,7 +31,7 @@ namespace webTest.Model
             // ++ before its been return
             currentProxy = -1;
 
-            Cookie = "";
+            Cookie = "key1:value1;key2:value2";
             UseCookie = false;
 
             UserAgentTemplate = new Dictionary<string, string>();
@@ -48,7 +48,7 @@ namespace webTest.Model
             UserAgentTemplate.Add("Maxthon", "Mozilla/5.0 (Windows; U; Windows NT 5.1; ) AppleWebKit/534.12 (KHTML, like Gecko) Maxthon/3.0 Safari/534.12");
             UserAgentTemplate.Add("TheWorld", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; TheWorld)");
             UserAgent = UserAgentTemplate["Chrome"];
-            UseUserAgent = true;
+            UseUserAgent = false;
             
         }
         #endregion

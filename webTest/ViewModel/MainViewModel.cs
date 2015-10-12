@@ -68,7 +68,7 @@ namespace webTest.ViewModel
             ////}
 
             ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => {
-                return CurrentTabItemsGroup.CurrentItem.IsRequesting == false; 
+                return true; 
             });
             DeleteGroup = new RelayCommand(() => DeleteGroupExecute(), () => { return SelectedGroupIndex != TabItemsGroup.Count - 1; });
             AddGroup = new RelayCommand(() => AddGroupExecute(), () => { return true; });
@@ -238,22 +238,6 @@ namespace webTest.ViewModel
         }
         #endregion
         
-
-        public string RequestBtn
-        {
-            get
-            {
-                if (CurrentTabItemsGroup.CurrentItem.IsRequesting == true)
-                {
-                    return "«Î«Û÷–..";
-                }
-                else
-                {
-                    return "«Î«Û";
-                }
-            }
-        }
-
         public ObservableCollection<TabItemsGroup> TabItemsGroup
         {
             get
