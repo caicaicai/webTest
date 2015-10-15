@@ -56,8 +56,8 @@ namespace webTest.Model
                 //the option.coolie should be key:value;key:value;
                 foreach(string cookie in option.Cookie.Split(';'))
                 {
-                    string[] s = cookie.Split(':');
-                    cookies.Add(s[0], s[1]);
+                    string[] s = cookie.Split('=');
+                    cookies.Add(s[0].Trim(), s[1].Trim());
                 }
 
                 foreach(KeyValuePair<string, string> cookie in cookies){

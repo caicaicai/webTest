@@ -4,9 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Collections.ObjectModel;
 
 namespace webTest.Model
 {
+    public class ProxyServer{
+        public string Server{ get; set;}
+        public bool Available { get; set; }
+        public ProxyServer(string server, bool available)
+        {
+            this.Server = server;
+            this.Available = available;
+        }
+    }
+
     [Serializable()]
     public class Option : INotifyPropertyChanged
     {
@@ -22,6 +33,9 @@ namespace webTest.Model
         private bool useUserAgent;
         private Dictionary<string,string> userAgentTemplate;
 
+        private ObservableCollection<ProxyServer> proxys;
+        private int selectedPorxyIndex;
+
         #region 构造函数
         public Option()
         {
@@ -31,7 +45,7 @@ namespace webTest.Model
             // ++ before its been return
             currentProxy = -1;
 
-            Cookie = "key1:value1;key2:value2";
+            Cookie = "key1=value1;key2=value2";
             UseCookie = false;
 
             UserAgentTemplate = new Dictionary<string, string>();
@@ -49,6 +63,10 @@ namespace webTest.Model
             UserAgentTemplate.Add("TheWorld", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; TheWorld)");
             UserAgent = UserAgentTemplate["Chrome"];
             UseUserAgent = false;
+
+            Proxys = new ObservableCollection<ProxyServer>();
+            Proxys.Add(new ProxyServer("127.0.0.1:1080", true ));
+            SelectedProxyIndex = 0;
             
         }
         #endregion
@@ -181,6 +199,45 @@ namespace webTest.Model
                 RaisePropertyChanged("UserAgentTemplate");
             }
         }
+
+        public ProxyServer ProxyServer
+        {
+            get
+            {
+                return proxys[SelectedProxyIndex];
+            }
+        }
+
+        public ObservableCollection<ProxyServer> Proxys
+        {
+            get
+            {
+                return proxys;
+            }
+            set
+            {
+                if (proxys == value)
+                    return;
+                proxys = value;
+                RaisePropertyChanged("Proxys");
+            }
+        }
+
+        public int SelectedProxyIndex
+        {
+            get
+            {
+                return selectedPorxyIndex;
+            }
+            set
+            {
+                if (selectedPorxyIndex == value)
+                    return;
+                selectedPorxyIndex = value;
+                RaisePropertyChanged("SelectedProxyIndex");
+            }
+        }
+
 
         #region INotifyPropertyChanged Members
 

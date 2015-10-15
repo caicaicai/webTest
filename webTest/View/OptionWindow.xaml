@@ -48,15 +48,21 @@
                         <RowDefinition Height="30"/>
                     </Grid.RowDefinitions>
                     <Label Grid.Row="0" VerticalContentAlignment="Bottom">Proxy Server List</Label>
-                    <ListBox Grid.Row="1" />
+                    <ListBox Grid.Row="1" ItemsSource="{Binding option.Proxys}" SelectedIndex="{Binding option.SelectedProxyIndex}" >
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Server}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
                     <Grid Grid.Row="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0" Content="Add" Margin="0,3,3,3"/>
-                        <Button Grid.Column="1" Content="Remove" Margin="3"/>
+                        <Button Command="{Binding AddProxy}" Grid.Column="0" Content="Add" Margin="0,3,3,3" />
+                        <Button Command="{Binding RemoveProxy}" Grid.Column="1" Content="Remove" Margin="3"/>
                         <Button Grid.Column="2" Content="Check" Margin="3,3,0,3"/>
                     </Grid>
                     <Grid Grid.Row="3">

@@ -8,7 +8,9 @@ using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 using GalaSoft.MvvmLight.CommandWpf;
 using GalaSoft.MvvmLight.Messaging;
+using System.Collections.Generic;
 using webTest.Model;
+using webTest.View;
 
 namespace webTest.ViewModel
 {
@@ -16,13 +18,17 @@ namespace webTest.ViewModel
     {
         private Option _option;
 
-        private string selectedUserAgent;
+        public ICommand AddProxy { get; private set; }
+        public ICommand RemoveProxy { get; private set; }
 
+        private string selectedUserAgent;
 
         public OptionViewModel(Option option)
         {
             this._option = option;
-            Random rand = new Random();
+
+            AddProxy = new RelayCommand(() => AddProxyExec(), () => { return true; });
+            RemoveProxy = new RelayCommand(() => RemoveProxyExec(), () => { return true; });
         }
         public Option option
         {
@@ -52,6 +58,23 @@ namespace webTest.ViewModel
                 RaisePropertyChanged("SelectedUserAgent");
                 option.UserAgent = value;
                 option.UseUserAgent = true;
+            }
+        }
+
+        private void AddProxyExec()
+        {
+            var dialog = new MyDialog();
+            if (dialog.ShowDialog() == true)
+            {
+                option.Proxys.Add(new ProxyServer(dialog.ResponseText, true));
+            }
+        }
+
+        private void RemoveProxyExec()
+        {
+            if (option.Proxys.Count > 0)
+            {
+                option.Proxys.RemoveAt(option.SelectedProxyIndex);
             }
         }
 

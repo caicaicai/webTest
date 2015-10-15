@@ -63,3 +63,11 @@ C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.View.JsonViewForm.r
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.csproj.GenerateResource.Cache
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.exe
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.pdb
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\View\HTMLViewWindow.baml
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\View\OptionWindow.baml
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\View\HTMLViewWindow.g.cs
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\View\OptionWindow.g.cs
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.View.AboutBox.resources
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\webTest.csprojResolveAssemblyReference.cache
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\View\MyDialog.baml
+C:\Users\94763_000\Desktop\webTest\webTest\obj\Debug\View\MyDialog.g.cs
