@@ -35,6 +35,7 @@ namespace webTest.Model
 
         private ObservableCollection<ProxyServer> proxys;
         private int selectedPorxyIndex;
+        private bool useProxy;
 
         #region 构造函数
         public Option()
@@ -67,6 +68,7 @@ namespace webTest.Model
             Proxys = new ObservableCollection<ProxyServer>();
             Proxys.Add(new ProxyServer("127.0.0.1:1080", true ));
             SelectedProxyIndex = 0;
+            UseProxy = false;
             
         }
         #endregion
@@ -235,6 +237,22 @@ namespace webTest.Model
                     return;
                 selectedPorxyIndex = value;
                 RaisePropertyChanged("SelectedProxyIndex");
+            }
+        }
+
+        public bool UseProxy
+        {
+            get
+            {
+                return useProxy;
+            }
+            set
+            {
+                if (useProxy == value)
+                    return;
+
+                useProxy = value;
+                RaisePropertyChanged("UseProxy");
             }
         }
 

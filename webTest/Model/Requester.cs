@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.IO;
 using System.Web;
+using System.Text.RegularExpressions;
 
 namespace webTest.Model
 {
@@ -67,12 +68,17 @@ namespace webTest.Model
                 request.CookieContainer = myContainer;
             }
 
-
-            if(option.Proxy.Count > 0){
+            if(option.UseProxy && option.Proxys.Count > 0){
                 WebProxy myProxy = new WebProxy();
                 string proxyAddress;
 
-                proxyAddress = "http://proxy.server/";
+                proxyAddress = option.ProxyServer.Server;
+                Regex regex = new Regex(@"http://");
+                Match match = regex.Match(proxyAddress);
+                if (!match.Success)
+                {
+                    proxyAddress = "http://" + proxyAddress;
+                }
                 if (proxyAddress.Length > 0)
                 {
                     /*
@@ -85,12 +91,10 @@ namespace webTest.Model
                     password =Console.ReadLine();
                         */
                     // Create a new Uri object.
+
                     Uri newUri = new Uri(proxyAddress);
-                    // Associate the newUri object to 'myProxy' object so that new myProxy settings can be set.
                     myProxy.Address = newUri;
-                    // Create a NetworkCredential object and associate it with the 
-                    // Proxy property of request object.
-                    //myProxy.Credentials = new NetworkCredential(username, password);
+
                     request.Proxy = myProxy;
                 }
             }

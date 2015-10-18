@@ -70,8 +70,8 @@
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0" Content="Import" Margin="0,3,3,3"/>
-                        <Button Grid.Column="1" Content="Export" Margin="3,3,0,3"/>
+                        <Button Command="{Binding ImportProxys}" Grid.Column="0" Content="Import" Margin="0,3,3,3"/>
+                        <Button Command="{Binding ExportProxys}" Grid.Column="1" Content="Export" Margin="3,3,0,3"/>
                     </Grid>
                 </Grid>
                 <Border Grid.Column="1" BorderBrush="DarkGray" BorderThickness="1,0,0,0">
@@ -94,12 +94,12 @@
                                     </Label>
                                 </Border>
                                 <Grid Grid.Column="1" VerticalAlignment="Stretch">
-                                    <TextBox VerticalContentAlignment="Center"/>
+                                    <TextBox Text="{Binding ProxySpider.TargetServer}" VerticalContentAlignment="Center"/>
                                 </Grid>
                             </Grid>
                         </Grid>
                         <Grid Grid.Row="1">
-                            <TextBox Text="log stuff" Padding="10"/>
+                            <TextBox Text="{Binding ProxySpider.SpiderLog}" Padding="10"/>
                         </Grid>
                         <Border Grid.Row="2" BorderBrush="DarkGray" BorderThickness="1,0,1,0">
                             <Grid >
@@ -111,9 +111,9 @@
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="1" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">Depth</Label>
-                                <TextBox Grid.Column="2" Text="3" HorizontalContentAlignment="left" VerticalContentAlignment="Center"/>
+                                <TextBox Grid.Column="2" Text="{Binding ProxySpider.Depth}" HorizontalContentAlignment="left" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
                                 <Button Content="Add To List" Grid.Column="3" />
-                                <Button Content="Crawling" Grid.Column="4" />
+                                <Button Command="{Binding RunSpider}" Content="Crawling" Grid.Column="4" />
                             </Grid>
                         </Border>
                         <Border Grid.Row="3" BorderBrush="DarkGray" BorderThickness="1,1,1,1">
@@ -124,11 +124,13 @@
                                     <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Button Content="Random Proxy" Grid.Column="1" />
-                                <Button Content="Round Proxy" Grid.Column="2" />
-                                <Button Content="Loop Proxy" Grid.Column="3" />
-                                <Button Content="Selected Proxy" Grid.Column="4" />
+                                <CheckBox IsChecked="{Binding option.UseProxy}" Grid.Column="1" Margin="5">启用代理</CheckBox>
+                                <Button Content="Random Proxy" Grid.Column="2" />
+                                <Button Content="Round Proxy" Grid.Column="3" />
+                                <Button Content="Loop Proxy" Grid.Column="4" />
+                                <Button Content="Selected Proxy" Grid.Column="5" />
                             </Grid>
                         </Border>
                     </Grid>

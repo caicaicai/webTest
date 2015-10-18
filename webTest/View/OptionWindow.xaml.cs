@@ -27,5 +27,16 @@ namespace webTest.View
             DataContext = new OptionViewModel(option);
             
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            TextBox depth = (TextBox)sender;
+            int value;
+            if(!int.TryParse(depth.Text, out value))
+            {
+                MessageBox.Show("Depth only accept integer!");
+                depth.Text = "1";
+            }
+        }
     }
 }
