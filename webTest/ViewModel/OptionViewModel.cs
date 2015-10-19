@@ -32,6 +32,8 @@ namespace webTest.ViewModel
         public ICommand PushIpToOption { get; private set; }
         public ICommand CheckProxy { get; private set; }
 
+        public List<string> badCheckedProxys;
+
 
 
         private string selectedUserAgent;
@@ -48,7 +50,7 @@ namespace webTest.ViewModel
             RunSpider = new RelayCommand(() => ProxySpider.run(), () => { return true; });
             PushIpToOption = new RelayCommand(() => PushIpToOptionExec(), () => { return true; });
             CheckProxy = new RelayCommand(() => CheckProxyExec(), () => { return true; });
-
+            badCheckedProxys = new List<string>();
 
             proxySpider = new ProxySpider();
         }
@@ -165,7 +167,26 @@ namespace webTest.ViewModel
 
         private void CheckProxyExec()
         {
+            badCheckedProxys.Clear();
             Parallel.ForEach(option.Proxys, ProxyServer => checkProxy(ProxyServer));
+            Console.WriteLine("start to clear bad proxy, count: {0}", badCheckedProxys.Count);
+
+            List<int> badInt = new List<int>();
+
+            for (int i = 0; i < option.Proxys.Count; i++)
+            {
+                if (badCheckedProxys.Contains(option.Proxys[i].Server))
+                {
+                    badInt.Add(i);
+                }
+            }
+
+            foreach (int i in badInt)
+            {
+                option.Proxys.RemoveAt(i);
+            }
+
+            Console.WriteLine("clear end...");
         }
 
         private void checkProxy(ProxyServer proxyServer)
@@ -190,7 +211,7 @@ namespace webTest.ViewModel
             {
                 Console.WriteLine(e.Message);
                 Console.WriteLine("this should be removed;{0}", proxyServer.Server);
-                option.Proxys.Remove(proxyServer);
+                badCheckedProxys.Add(proxyServer.Server);
             }
             
         }

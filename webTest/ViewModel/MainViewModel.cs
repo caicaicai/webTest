@@ -67,9 +67,7 @@ namespace webTest.ViewModel
             ////    // Code runs "for real"
             ////}
 
-            ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => {
-                return true; 
-            });
+            ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => { return true; });
             DeleteGroup = new RelayCommand(() => DeleteGroupExecute(), () => { return SelectedGroupIndex != TabItemsGroup.Count - 1; });
             AddGroup = new RelayCommand(() => AddGroupExecute(), () => { return true; });
             TabItemsGroupRename = new RelayCommand<object>((param) => TabItemsGroupRenameExecute(param), (param) => { return true; });
