@@ -2,10 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="webTest.View.MyDialog"
-        Title="Dialog" Height="139" Width="327">
+        Title="Dialog" Height="151.802" Width="327">
     <StackPanel Margin="0">
         <TextBlock Text="Setup Your Content" HorizontalAlignment="Center" Padding="10" />
         <TextBox x:Name="ResponseTextBox" Padding="10"/>
-        <Button Content="OK" Click="OKButton_Click" Padding="10" />
+        <Button Content="OK" VerticalContentAlignment="Center" Click="OKButton_Click" Padding="10" Height="40" />
     </StackPanel>
 </Window>

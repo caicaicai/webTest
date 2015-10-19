@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 using System.Net;
@@ -27,15 +28,15 @@ namespace webTest.Model
 
         public ProxySpider()
         {
-            this.TargetServer = "http://www.youdaili.net/Daili/http/3736.html";
-            this.SpiderLog = "";
-            this.Depth = 2;
-            this.currentDepth = 0;
+            TargetServer = "http://www.youdaili.net/";
+            SpiderLog = "";
+            Depth = 1;
+            currentDepth = 0;
 
-            this.visited = new List<string>();
-            this.urls = new List<string>();
-            this.glob_visited = new List<string>();
-            this.ips = new List<string>();
+            visited = new List<string>();
+            urls = new List<string>();
+            glob_visited = new List<string>();
+            ips = new List<string>();
 
             
 
@@ -43,33 +44,42 @@ namespace webTest.Model
 
         public void run()
         {
-            this.glob_visited.Add(this.targetServer);
-            while(this.currentDepth < this.depth){
-                foreach (string url in this.glob_visited)
+            SpiderLog = "";
+            currentDepth = 0;
+            visited.Clear();
+            urls.Clear();
+            glob_visited.Clear();
+            Ips.Clear();
+            glob_visited.Add(targetServer);
+
+            SpiderLog += String.Format("start fetch..") + "\n";
+
+            while (currentDepth < Depth){
+                foreach (string url in glob_visited)
                 {
-                    if (!this.visited.Contains(url))
+                    if (!visited.Contains(url))
                     {
-                        this.visited.Add(url);
-                        this.urls.Add(url);
+                        visited.Add(url);
+                        urls.Add(url);
                     }
                 }
-                this.glob_visited.Clear();
+                glob_visited.Clear();
 
-                foreach (string url in this.urls)
-                {
-                    Console.WriteLine("fetching {0}", url);
-                    this.fetch(url);
-                }
-                this.urls.Clear();
-
-                Console.WriteLine("current fetch depth {0}", this.currentDepth);
+                Parallel.ForEach(urls, url => fetch(url));
+                urls.Clear();
                 this.currentDepth++;
                
             }
+
+            SpiderLog += String.Format("fetch end..") + "\n";
+            SpiderLog += String.Format("count {0} ips get.", Ips.Count) + "\n";
+            Console.WriteLine("fetch end..");
         }
 
         public void fetch(string url)
         {
+            Console.WriteLine("{0}, Thread Id= {1}", url, Thread.CurrentThread.ManagedThreadId);
+            
             try
             {
                 var request = (HttpWebRequest)WebRequest.Create(new Uri(url));
@@ -82,45 +92,25 @@ namespace webTest.Model
                 string responseFromServer = reader.ReadToEnd();
                 response.Close();
 
-                Console.WriteLine("perpareing regx");
-                Console.WriteLine(responseFromServer);
-                Match proxyMatch = new Regex(@"(\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}:\d{1,5})", RegexOptions.IgnoreCase).Match(responseFromServer);
+                Match proxyMatch = new Regex(@"([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}:[0-9]{1,5})", RegexOptions.IgnoreCase).Match(responseFromServer);
 
-                Console.WriteLine("match:{0}", proxyMatch.Success);
-                int matchCount = 0;
                 while (proxyMatch.Success)
                 {
-                    Console.WriteLine("Match" + (++matchCount));
-                    for (int i = 1; i <= 2; i++)
-                    {
-                        Group g = proxyMatch.Groups[i];
-                        Console.WriteLine("Group" + i + "='" + g + "'");
-                        CaptureCollection cc = g.Captures;
-                        for (int j = 0; j < cc.Count; j++)
-                        {
-                            Capture c = cc[j];
-                            System.Console.WriteLine("Capture" + j + "='" + c + "', Position=" + c.Index);
-                        }
-                    }
+                    Group g = proxyMatch.Groups[0];
+                    Thread.MemoryBarrier();
+                    Ips.Add(g.ToString());
+                    Thread.MemoryBarrier();
+
                     proxyMatch = proxyMatch.NextMatch();
                 }
 
-                Match httpMatch = new Regex("(?<Protocol>w+)://(?<Domain>[w@][w.:@]+)/?[w.?=%&=-@/$,]*", RegexOptions.IgnoreCase).Match(responseFromServer);
-                int httpCount = 0;
+                Match httpMatch = new Regex(@"<(?<Tag_Name>(a))\b[^>]*?\b(?<URL_Type>(?(1)href))\s*=\s*(?:""(?<URL>(?:\\""|[^""])*)""|'(?<URL>(?:\\'|[^'])*)')", RegexOptions.IgnoreCase).Match(responseFromServer);
                 while (httpMatch.Success)
                 {
-                    Console.WriteLine("Match" + (++httpCount));
-                    for (int i = 1; i <= 2; i++)
-                    {
-                        Group g = httpMatch.Groups[i];
-                        Console.WriteLine("Group" + i + "='" + g + "'");
-                        CaptureCollection cc = g.Captures;
-                        for (int j = 0; j < cc.Count; j++)
-                        {
-                            Capture c = cc[j];
-                            System.Console.WriteLine("Capture" + j + "='" + c + "', Position=" + c.Index);
-                        }
-                    }
+                    Thread.MemoryBarrier();
+                    glob_visited.Add(httpMatch.Groups[4].ToString());
+                    Thread.MemoryBarrier();
+
                     httpMatch = httpMatch.NextMatch();
                 }
 
@@ -180,6 +170,23 @@ namespace webTest.Model
                 RaisePropertyChanged("Depth");
             }
         }
+
+        public List<string> Ips
+        {
+            get
+            {
+                return ips;
+            }
+            set
+            {
+                if (ips == value)
+                    return;
+
+                ips = value;
+                RaisePropertyChanged("Ips");
+            }
+        }
+        
 
 
 

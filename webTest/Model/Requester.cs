@@ -38,10 +38,11 @@ namespace webTest.Model
         public void DoRequest()
         {
 
-
             var targetUri = UriBuilder(tabItem.RequestUrl, tabItem.QueryStr);
 
             var request = (HttpWebRequest)WebRequest.Create(targetUri);
+
+            request.Timeout = 5000;
 
             if (option.UseUserAgent)
             {
@@ -116,7 +117,7 @@ namespace webTest.Model
                 dataStream.Close();
             }
 
-            var response = (HttpWebResponse)request.GetResponse();
+            //var response = (HttpWebResponse)request.GetResponse();
 
             // Display the status.
             //Console.WriteLine(((HttpWebResponse)response).StatusDescription);

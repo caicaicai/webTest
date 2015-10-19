@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 
 namespace webTest.Model
 {
+    [Serializable()]
     public class ProxyServer{
         public string Server{ get; set;}
         public bool Available { get; set; }
@@ -22,8 +23,6 @@ namespace webTest.Model
     public class Option : INotifyPropertyChanged
     {
         #region proxy property
-        private List<string> proxy;
-        private Boolean isRandomProxy;
         public int currentProxy;
         #endregion
 
@@ -36,12 +35,11 @@ namespace webTest.Model
         private ObservableCollection<ProxyServer> proxys;
         private int selectedPorxyIndex;
         private bool useProxy;
+        private bool autoNextProxy;
 
         #region 构造函数
         public Option()
         {
-            proxy = new List<string>();
-            isRandomProxy = false;
 
             // ++ before its been return
             currentProxy = -1;
@@ -69,62 +67,11 @@ namespace webTest.Model
             Proxys.Add(new ProxyServer("127.0.0.1:1080", true ));
             SelectedProxyIndex = 0;
             UseProxy = false;
+            AutoNextProxy = false;
             
         }
         #endregion
         
-
-        #region Proxy stuff
-        public List<string> Proxy
-        {
-            get
-            {
-                return proxy;
-            }
-            set
-            {
-                if (proxy == value)
-                    return;
-
-                proxy = value;
-                RaisePropertyChanged("Proxy");
-
-            }
-        }
-        public Boolean IsRandomProxy
-        {
-            get
-            {
-                return isRandomProxy;
-            }
-            set
-            {
-                if (isRandomProxy == value)
-                    return;
-
-                isRandomProxy = value;
-                RaisePropertyChanged("IsRandomProxy");
-            }
-        }
-        public string pickAProxy
-        {
-            get
-            {
-                if (Proxy.Count > 0)
-                {
-                    if (IsRandomProxy)
-                    {
-                        Random rnd = new Random();
-                        int r = rnd.Next(Proxy.Count);
-                        return Proxy[r];
-                    }
-                    currentProxy++;
-                    return Proxy[currentProxy];
-                }
-                return null;
-            }
-        }
-        #endregion
 
         public string Cookie
         {
@@ -206,7 +153,19 @@ namespace webTest.Model
         {
             get
             {
-                return proxys[SelectedProxyIndex];
+                int current = SelectedProxyIndex;
+                if (AutoNextProxy)
+                {
+                    if (SelectedProxyIndex == Proxys.Count - 1)
+                    {
+                        SelectedProxyIndex = 0;
+                    }
+                    else
+                    {
+                        SelectedProxyIndex++;
+                    }
+                }
+                return proxys[current];
             }
         }
 
@@ -253,6 +212,22 @@ namespace webTest.Model
 
                 useProxy = value;
                 RaisePropertyChanged("UseProxy");
+            }
+        }
+
+        public bool AutoNextProxy
+        {
+            get
+            {
+                return autoNextProxy;
+            }
+            set
+            {
+                if (autoNextProxy == value)
+                    return;
+
+                autoNextProxy = value;
+                RaisePropertyChanged("AutoNetxProxy");
             }
         }
 

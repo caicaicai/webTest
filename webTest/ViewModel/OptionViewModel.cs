@@ -11,6 +11,9 @@ using GalaSoft.MvvmLight.Messaging;
 using System.Collections.Generic;
 using webTest.Model;
 using webTest.View;
+using System.Threading.Tasks;
+using System.Net;
+using System.Text.RegularExpressions;
 
 namespace webTest.ViewModel
 {
@@ -23,23 +26,31 @@ namespace webTest.ViewModel
         public ICommand RemoveProxy { get; private set; }
         public ICommand ImportProxys { get; private set; }
         public ICommand ExportProxys { get; private set; }
+        public ICommand ClearProxys { get; private set; }
 
         public ICommand RunSpider { get; private set; }
+        public ICommand PushIpToOption { get; private set; }
+        public ICommand CheckProxy { get; private set; }
+
 
 
         private string selectedUserAgent;
 
         public OptionViewModel(Option option)
         {
-            this._option = option;
+            _option = option;
 
-            this.AddProxy = new RelayCommand(() => AddProxyExec(), () => { return true; });
-            this.RemoveProxy = new RelayCommand(() => RemoveProxyExec(), () => { return true; });
-            this.ImportProxys = new RelayCommand(() => ImportProxysExec(), () => { return true; });
-            this.ExportProxys = new RelayCommand(() => ExportProxysExec(), () => { return true; });
-            this.RunSpider = new RelayCommand(() => this.ProxySpider.run(), () => { return true; });
+            AddProxy = new RelayCommand(() => AddProxyExec(), () => { return true; });
+            RemoveProxy = new RelayCommand(() => RemoveProxyExec(), () => { return true; });
+            ImportProxys = new RelayCommand(() => ImportProxysExec(), () => { return true; });
+            ExportProxys = new RelayCommand(() => ExportProxysExec(), () => { return true; });
+            ClearProxys = new RelayCommand(() => ClearProxysExec(), () => { return true; });
+            RunSpider = new RelayCommand(() => ProxySpider.run(), () => { return true; });
+            PushIpToOption = new RelayCommand(() => PushIpToOptionExec(), () => { return true; });
+            CheckProxy = new RelayCommand(() => CheckProxyExec(), () => { return true; });
 
-            this.proxySpider = new ProxySpider();
+
+            proxySpider = new ProxySpider();
         }
 
         public Option option
@@ -111,7 +122,7 @@ namespace webTest.ViewModel
                         {
                             StreamReader reader = new StreamReader(myStream);
                             string line;
-                            option.Proxys.Clear();
+                            //option.Proxys.Clear();
                             while ((line = reader.ReadLine()) != null)
                             {
                                 option.Proxys.Add(new ProxyServer(line, true));
@@ -150,6 +161,55 @@ namespace webTest.ViewModel
                 }
             }
 
+        }
+
+        private void CheckProxyExec()
+        {
+            Parallel.ForEach(option.Proxys, ProxyServer => checkProxy(ProxyServer));
+        }
+
+        private void checkProxy(ProxyServer proxyServer)
+        {
+            Console.WriteLine("start to check");
+            var request = (HttpWebRequest)WebRequest.Create("http://www.baidu.com");
+            string server = proxyServer.Server;
+            Match match = new Regex(@"http://").Match(proxyServer.Server);
+            if (!match.Success)
+            {
+                server = "http://" + proxyServer.Server;
+            }
+            WebProxy myProxy = new WebProxy(proxyServer.Server);
+            request.Proxy = myProxy;
+            request.Timeout = 5000;
+            Console.WriteLine("before try");
+            try
+            {
+                var response = (HttpWebResponse)request.GetResponse();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("this should be removed;{0}", proxyServer.Server);
+                option.Proxys.Remove(proxyServer);
+            }
+            
+        }
+
+        private void ClearProxysExec()
+        {
+            option.Proxys.Clear();
+
+        }
+
+        private void PushIpToOptionExec()
+        {
+            foreach(string ip in ProxySpider.Ips)
+            {
+                option.Proxys.Add(new ProxyServer(ip, true));
+            }
+            string count = proxySpider.Ips.Count.ToString();
+            MessageBox.Show(String.Format("success push ips {0} to option.",count));
+            proxySpider.Ips.Clear();
         }
 
         public ProxySpider ProxySpider

@@ -62,16 +62,18 @@
                             <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
                         <Button Command="{Binding AddProxy}" Grid.Column="0" Content="Add" Margin="0,3,3,3" />
-                        <Button Command="{Binding RemoveProxy}" Grid.Column="1" Content="Remove" Margin="3"/>
-                        <Button Grid.Column="2" Content="Check" Margin="3,3,0,3"/>
+                        <Button Command="{Binding RemoveProxy}" Grid.Column="1" Content="Remove" Margin="0,3,0,3"/>
+                        <Button Command="{Binding CheckProxy}" Grid.Column="2" Content="Check" Margin="3,3,0,3"/>
                     </Grid>
                     <Grid Grid.Row="3">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*"/>
                             <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
                         </Grid.ColumnDefinitions>
                         <Button Command="{Binding ImportProxys}" Grid.Column="0" Content="Import" Margin="0,3,3,3"/>
-                        <Button Command="{Binding ExportProxys}" Grid.Column="1" Content="Export" Margin="3,3,0,3"/>
+                        <Button Command="{Binding ExportProxys}" Grid.Column="1" Content="Export" Margin="0,3,0,3"/>
+                        <Button Command="{Binding ClearProxys}" Grid.Column="2" Content="Clear" Margin="3,3,0,3"/>
                     </Grid>
                 </Grid>
                 <Border Grid.Column="1" BorderBrush="DarkGray" BorderThickness="1,0,0,0">
@@ -112,7 +114,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="1" HorizontalContentAlignment="Right" VerticalContentAlignment="Center">Depth</Label>
                                 <TextBox Grid.Column="2" Text="{Binding ProxySpider.Depth}" HorizontalContentAlignment="left" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged"/>
-                                <Button Content="Add To List" Grid.Column="3" />
+                                <Button Command="{Binding PushIpToOption}" Content="Add To List" Grid.Column="3" />
                                 <Button Command="{Binding RunSpider}" Content="Crawling" Grid.Column="4" />
                             </Grid>
                         </Border>
@@ -120,17 +122,11 @@
                             <Grid >
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="130"/>
+                                    <ColumnDefinition Width="130"/>
                                 </Grid.ColumnDefinitions>
-                                <CheckBox IsChecked="{Binding option.UseProxy}" Grid.Column="1" Margin="5">启用代理</CheckBox>
-                                <Button Content="Random Proxy" Grid.Column="2" />
-                                <Button Content="Round Proxy" Grid.Column="3" />
-                                <Button Content="Loop Proxy" Grid.Column="4" />
-                                <Button Content="Selected Proxy" Grid.Column="5" />
+                                <CheckBox IsChecked="{Binding option.UseProxy}" Grid.Column="1" Margin="5">Enable Proxy</CheckBox>
+                                <CheckBox IsChecked="{Binding option.AutoNextProxy}" Grid.Column="2" Margin="5">Auto Netx Proxy</CheckBox>
                             </Grid>
                         </Border>
                     </Grid>
