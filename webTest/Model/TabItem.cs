@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Net;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace webTest.Model
 {
@@ -23,6 +24,8 @@ namespace webTest.Model
             PostData = "";
             QueryStr = "";
             Note = "";
+            ResponseContent = "Right Click The Tab Title To Remove The Tab, Default Tab Can Not Be Removed.";
+            
             
         }
         #endregion
@@ -56,7 +59,7 @@ namespace webTest.Model
             {
                 if (_note == value)
                     return;
-
+                Console.WriteLine(value);
                 _note = value;
                 RaisePropertyChanged("Title");
             }
@@ -75,9 +78,21 @@ namespace webTest.Model
                     return;
 
                 _response = value;
-                ResponseContent = new StreamReader(value.GetResponseStream()).ReadToEnd();
+
+                ResponseContent = UnHex(new StreamReader(value.GetResponseStream()).ReadToEnd());
                 RaisePropertyChanged("Response");
             }
+        }
+
+        public static string UnHex(string hexString)
+        {
+            StringBuilder sb = new StringBuilder();
+            string pattern = @"\\u[0-9a-fA-F]{4}";
+            var replaced = Regex.Replace(hexString, pattern, (_match) =>
+            {
+                return char.ConvertFromUtf32(Int32.Parse(_match.Value.Substring(2, 4), System.Globalization.NumberStyles.HexNumber));
+            });
+            return replaced.ToString();
         }
 
         private string _responseContent;

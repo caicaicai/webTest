@@ -39,10 +39,10 @@ namespace webTest.Model
         {
 
             var targetUri = UriBuilder(tabItem.RequestUrl, tabItem.QueryStr);
-
+            Console.WriteLine(targetUri.ToString());
             var request = (HttpWebRequest)WebRequest.Create(targetUri);
 
-            request.Timeout = 5000;
+            //request.Timeout = 5000;
 
             if (option.UseUserAgent)
             {
@@ -125,7 +125,7 @@ namespace webTest.Model
             tabItem.Response = (HttpWebResponse)request.GetResponse();
         }
 
-        public static Uri UriBuilder(string urlBase, string queryStr)
+        public Uri UriBuilder(string urlBase, string queryStr)
         {
             Uri uri = new Uri(urlBase);
             /*
@@ -145,7 +145,7 @@ namespace webTest.Model
             http://dl.xiaocaicai.com/method.php
             */
             var clearQueryStr = "";
-            if(queryStr.Length > 0){
+            if (queryStr.Length > 0){
                 if (uri.Query.Length > 0)
                 {
 
@@ -174,7 +174,15 @@ namespace webTest.Model
             }
             else
             {
-                return new Uri(urlBase);
+                if (option.UseUriRewrite && option.UriRewrite.Length > 0)
+                {
+                    return new Uri(String.Format("{0}{1}{2}{3}{4}", uri.Scheme, Uri.SchemeDelimiter, option.UriRewrite, uri.AbsolutePath, uri.Query));
+                }
+                return new Uri(String.Format("{0}{1}{2}{3}{4}", uri.Scheme, Uri.SchemeDelimiter, uri.Authority, uri.AbsolutePath, uri.Query));
+            }
+            if (option.UseUriRewrite && option.UriRewrite.Length > 0)
+            {
+                return new Uri(String.Format("{0}{1}{2}{3}{4}", uri.Scheme, Uri.SchemeDelimiter, option.UriRewrite, uri.AbsolutePath, clearQueryStr));
             }
             return new Uri(String.Format("{0}{1}{2}{3}{4}", uri.Scheme, Uri.SchemeDelimiter, uri.Authority, uri.AbsolutePath, clearQueryStr));
         }

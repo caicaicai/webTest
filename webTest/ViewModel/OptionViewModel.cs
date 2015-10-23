@@ -171,19 +171,12 @@ namespace webTest.ViewModel
             Parallel.ForEach(option.Proxys, ProxyServer => checkProxy(ProxyServer));
             Console.WriteLine("start to clear bad proxy, count: {0}", badCheckedProxys.Count);
 
-            List<int> badInt = new List<int>();
-
             for (int i = 0; i < option.Proxys.Count; i++)
             {
                 if (badCheckedProxys.Contains(option.Proxys[i].Server))
                 {
-                    badInt.Add(i);
+                    option.Proxys.RemoveAt(i);
                 }
-            }
-
-            foreach (int i in badInt)
-            {
-                option.Proxys.RemoveAt(i);
             }
 
             Console.WriteLine("clear end...");

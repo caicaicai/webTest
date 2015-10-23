@@ -37,6 +37,9 @@ namespace webTest.Model
         private bool useProxy;
         private bool autoNextProxy;
 
+        private string uriRewrite;
+        private bool useUriRewrite;
+
         #region 构造函数
         public Option()
         {
@@ -68,6 +71,9 @@ namespace webTest.Model
             SelectedProxyIndex = 0;
             UseProxy = false;
             AutoNextProxy = false;
+
+            UseUriRewrite = false;
+            UriRewrite = "www.baidu.com";
             
         }
         #endregion
@@ -228,6 +234,37 @@ namespace webTest.Model
 
                 autoNextProxy = value;
                 RaisePropertyChanged("AutoNetxProxy");
+            }
+        }
+
+        public string UriRewrite
+        {
+            get
+            {
+                return uriRewrite;
+            }
+            set
+            {
+                if (uriRewrite == value)
+                    return;
+
+                uriRewrite = value;
+                RaisePropertyChanged("UriRewrite");
+            }
+        }
+
+        public bool UseUriRewrite
+        {
+            get
+            {
+                return useUriRewrite;
+            }
+            set
+            {
+                if (useUriRewrite == value)
+                    return;
+                useUriRewrite = value;
+                RaisePropertyChanged("UseUriRewrite");
             }
         }
 

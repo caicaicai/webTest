@@ -39,6 +39,8 @@ namespace webTest.ViewModel
         public ICommand AddGroup { get; private set; }
         public ICommand TabItemsGroupRename { get; private set; }
 
+        public ICommand DeleteTab { get; private set; }
+
 
         public ICommand SpecialView { get; private set; }
         public ICommand TabSelectionChanged { get; private set; }
@@ -69,6 +71,7 @@ namespace webTest.ViewModel
 
             ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => { return true; });
             DeleteGroup = new RelayCommand(() => DeleteGroupExecute(), () => { return SelectedGroupIndex != TabItemsGroup.Count - 1; });
+            DeleteTab = new RelayCommand(() => DeleteTabExecute(), () => { return CurrentTabItemsGroup.SelectedTabIndex != CurrentTabItemsGroup.TabItems.Count - 1; });
             AddGroup = new RelayCommand(() => AddGroupExecute(), () => { return true; });
             TabItemsGroupRename = new RelayCommand<object>((param) => TabItemsGroupRenameExecute(param), (param) => { return true; });
             Save = new RelayCommand(() => SaveExecute(), () => {return true;});
@@ -124,6 +127,29 @@ namespace webTest.ViewModel
             {
                 SelectedGroupIndex++;
                 TabItemsGroup.RemoveAt(SelectedGroupIndex - 1);
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        private void DeleteTabExecute()
+        {
+
+            if (CurrentTabItemsGroup.SelectedTabIndex == CurrentTabItemsGroup.TabItems.Count - 1)
+            {
+                //Of course, this statement will never be executed
+                MessageBox.Show("至少保留一个标签！");
+                return;
+            }
+
+            try
+            {
+                
+                CurrentTabItemsGroup.TabItems.RemoveAt(CurrentTabItemsGroup.SelectedTabIndex);
+                SelectedGroupIndex = 0;
 
             }
             catch (Exception e)
