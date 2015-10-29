@@ -40,6 +40,31 @@ namespace webTest.Model
         private string uriRewrite;
         private bool useUriRewrite;
 
+        private int requestThread;
+
+        public int RequestThread
+        {
+            get { return requestThread; }
+            set
+            {
+                requestThread = value;
+                RaisePropertyChanged("RequestThread");
+            }
+        }
+
+        private int requestTimes;
+
+        public int RequestTimes
+        {
+            get { return requestTimes; }
+            set
+            {
+                requestTimes = value;
+                RaisePropertyChanged("RequestTimes");
+            }
+        }
+
+
         #region 构造函数
         public Option()
         {
@@ -74,6 +99,9 @@ namespace webTest.Model
 
             UseUriRewrite = false;
             UriRewrite = "www.baidu.com";
+
+            RequestThread = 1;
+            RequestTimes = 1;
             
         }
         #endregion

@@ -24,7 +24,13 @@ namespace webTest.Model
             PostData = "";
             QueryStr = "";
             Note = "";
-            ResponseContent = "Right Click The Tab Title To Remove The Tab, Default Tab Can Not Be Removed.";
+            ResponseContent = @"Right Click The Tab Title To Remove The Tab, Default Tab Can Not Be Removed.
+{{RandomNumberWithLength:16}}
+{{RandomStringWithLength:16}}
+{{RandomNumberAndStringWithLength:16}}
+{{Range:10000}}0 - 10000
+{{FullRange:10000}}00000 - 10000
+                ";
             
             
         }

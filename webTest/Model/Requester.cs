@@ -28,25 +28,26 @@ namespace webTest.Model
     {
         private TabItem tabItem;
         private Option option;
+        private ParameterInterpreter pi;
 
-        public Requester(TabItem _tabItem, Option _option)
+        public Requester(TabItem _tabItem, Option _option, ParameterInterpreter _pi)
         {
             tabItem = _tabItem;
             option = _option;
+            pi = _pi;
         }
 
         public void DoRequest()
         {
+            var targetUri = UriBuilder(pi.generater(tabItem.RequestUrl), pi.generater(tabItem.QueryStr));
 
-            var targetUri = UriBuilder(tabItem.RequestUrl, tabItem.QueryStr);
-            Console.WriteLine(targetUri.ToString());
             var request = (HttpWebRequest)WebRequest.Create(targetUri);
 
             //request.Timeout = 5000;
 
             if (option.UseUserAgent)
             {
-                request.UserAgent = option.UserAgent;
+                request.UserAgent = pi.generater(option.UserAgent);
             }
 
             if(option.UseCookie)
@@ -59,7 +60,7 @@ namespace webTest.Model
                 foreach(string cookie in option.Cookie.Split(';'))
                 {
                     string[] s = cookie.Split('=');
-                    cookies.Add(s[0].Trim(), s[1].Trim());
+                    cookies.Add(s[0].Trim(), pi.generater(s[1].Trim()));
                 }
 
                 foreach(KeyValuePair<string, string> cookie in cookies){

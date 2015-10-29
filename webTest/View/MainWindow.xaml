@@ -4,7 +4,7 @@
         xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
         DataContext="{Binding Main, Source={StaticResource Locator}}"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-        Title="WebTester" Height="650" Width="650" ScrollViewer.HorizontalScrollBarVisibility="Auto" MinHeight="650" MinWidth="650">
+        Title="WebTester" Height="650" Width="800" ScrollViewer.HorizontalScrollBarVisibility="Auto" MinHeight="650" MinWidth="650">
     <Window.Resources>
         <Style x:Key="MyButton" TargetType="Button">
             <Setter Property="OverridesDefaultStyle" Value="True" />
@@ -129,15 +129,33 @@
                             <Grid Margin="0,5,0,0" Grid.Row="5">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="160"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="80"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <Grid Grid.Column="1" Margin="0,0,5,0">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="1*"/>
-                                        <ColumnDefinition Width="1*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Label Content="Method" Grid.Column="0" HorizontalContentAlignment="Center"  VerticalAlignment="Center" Margin="0" Height="25" />
+                                <Grid Grid.Column="2">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Content="thread:"/>
+                                        <TextBox Grid.Column="1" Text=""/>
+                                    </Grid>
+                                </Grid>
+                                <Grid Grid.Column="3">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"/>
+                                            <ColumnDefinition Width="1*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0" Content="times:"/>
+                                        <TextBox Grid.Column="1" Text=""/>
+                                    </Grid>
+                                </Grid>
+                                <Grid Grid.Column="4" Margin="0,0,5,0">
                                     <ComboBox ItemsSource="{Binding MethodListData}" SelectedItem="{Binding ReqMethod}" Grid.Column="1" HorizontalContentAlignment="Center" VerticalAlignment="Center" Margin="0" Height="25" >
                                         <ComboBox.ItemTemplate>
                                             <DataTemplate>
@@ -146,7 +164,7 @@
                                         </ComboBox.ItemTemplate>
                                     </ComboBox>
                                 </Grid>
-                                <Grid Grid.Column="2">
+                                <Grid Grid.Column="5">
                                     <Button Height="25" Content="{Binding RequestButton}" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.ShowPopUp}" Name="btn" VerticalAlignment="Bottom" Margin="0,0,0,0"/>
                                 </Grid>
                             </Grid>

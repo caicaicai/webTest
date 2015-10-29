@@ -107,6 +107,7 @@
     <Compile Include="3rd\SimpleJson.cs" />
     <Compile Include="Model\Config.cs" />
     <Compile Include="Model\Option.cs" />
+    <Compile Include="Model\ParameterInterpreter.cs" />
     <Compile Include="Model\ProxySpider.cs" />
     <Compile Include="Model\Requester.cs" />
     <Compile Include="Model\TabItem.cs" />
