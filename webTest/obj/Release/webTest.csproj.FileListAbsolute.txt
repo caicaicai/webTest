@@ -98,4 +98,3 @@ C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.View.Json
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.csproj.GenerateResource.Cache
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.exe
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.pdb
-C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.csprojResolveAssemblyReference.cache

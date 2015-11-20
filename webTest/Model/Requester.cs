@@ -43,7 +43,17 @@ namespace webTest.Model
 
             var request = (HttpWebRequest)WebRequest.Create(targetUri);
 
+
             //request.Timeout = 5000;
+            if(option.Timeout > 0)
+            {
+                request.Timeout = option.Timeout;
+            }
+
+            if(option.Host.Length > 0)
+            {
+                request.Host = option.Host;
+            }
 
             if (option.UseUserAgent)
             {
@@ -175,13 +185,13 @@ namespace webTest.Model
             }
             else
             {
-                if (option.UseUriRewrite && option.UriRewrite.Length > 0)
+                if (option.UriRewrite.Length > 0)
                 {
                     return new Uri(String.Format("{0}{1}{2}{3}{4}", uri.Scheme, Uri.SchemeDelimiter, option.UriRewrite, uri.AbsolutePath, uri.Query));
                 }
                 return new Uri(String.Format("{0}{1}{2}{3}{4}", uri.Scheme, Uri.SchemeDelimiter, uri.Authority, uri.AbsolutePath, uri.Query));
             }
-            if (option.UseUriRewrite && option.UriRewrite.Length > 0)
+            if (option.UriRewrite.Length > 0)
             {
                 return new Uri(String.Format("{0}{1}{2}{3}{4}", uri.Scheme, Uri.SchemeDelimiter, option.UriRewrite, uri.AbsolutePath, clearQueryStr));
             }

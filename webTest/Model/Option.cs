@@ -37,8 +37,8 @@ namespace webTest.Model
         private bool useProxy;
         private bool autoNextProxy;
 
-        private string uriRewrite;
         private bool useUriRewrite;
+        private string uriRewrite;
 
         private int requestThread;
 
@@ -97,11 +97,13 @@ namespace webTest.Model
             UseProxy = false;
             AutoNextProxy = false;
 
-            UseUriRewrite = false;
-            UriRewrite = "www.baidu.com";
+            UriRewrite = "";
 
             RequestThread = 1;
             RequestTimes = 1;
+
+            Host = "";
+            Timeout = 0;
             
         }
         #endregion
@@ -295,6 +297,25 @@ namespace webTest.Model
                 RaisePropertyChanged("UseUriRewrite");
             }
         }
+
+
+        private string host;
+
+        public string Host
+        {
+            get { return host; }
+            set { host = value; }
+        }
+
+        private int timeout;
+
+        public int Timeout
+        {
+            get { return timeout; }
+            set { timeout = value; }
+        }
+
+
 
 
         #region INotifyPropertyChanged Members

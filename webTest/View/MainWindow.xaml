@@ -210,7 +210,7 @@
                                     </Button.Background>
                                 </Button>
                             </Grid>
-                            <Grid Grid.Column="3" IsEnabled="{Binding option.UseUriRewrite}">
+                            <Grid Grid.Column="3">
                                 <Label Content="UriRewrite :" Width="100" HorizontalAlignment="Left"/>
                                 <Label Content="{Binding option.UriRewrite}" Margin="100,0,0,0" HorizontalContentAlignment="Left" />
                             </Grid>

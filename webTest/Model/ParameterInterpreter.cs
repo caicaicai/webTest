@@ -21,11 +21,35 @@ namespace webTest.Model
             parameter = Regex.Replace(parameter, @"({{)(\w+):(\w+)(}})", (m) => {
 
                 //MethodInfo theMethod = thisType.GetMethod(m.Groups[2].Value, BindingFlags.Instance | BindingFlags.Public);
-                return InvokeStringMethod("ParameterInterpreter", "RandomNumberWithLength", "16");
+                /*
+                Console.WriteLine("0:" + m.Groups[0].Value);
+                Console.WriteLine("1:" + m.Groups[1].Value);
+                Console.WriteLine("2:" + m.Groups[2].Value);
+                Console.WriteLine("3:" + m.Groups[3].Value);
+
+                {{RandomNumberWithLength:16}}
+                {{RandomStringWithLength:16}}
+                {{RandomNumberAndStringWithLength:16}}
+                {{Range:10000}}0 - 10000
+                {{FullRange:10000}}00000 - 10000
+
+                */
+                switch (m.Groups[2].Value)
+                {
+                    case "RandomNumberWithLength":
+                        return RandomNumberWithLength(m.Groups[3].Value);
+                    case "RandomStringWithLength":
+                        return RandomStringWithLength(m.Groups[3].Value);
+                    case "RandomNumberAndStringWithLength":
+                        return RandomNumberAndStringWithLength(m.Groups[3].Value);
+                    default:
+                        return parameter;
+                }
 
             });
-            Console.WriteLine("handel result : " + parameter);
+
             return parameter;
+            
         }
 
         private static string RandomNumberWithLength(string param)
@@ -41,24 +65,32 @@ namespace webTest.Model
             return output.ToString();
         }
 
-        public static string InvokeStringMethod(string typeName, string methodName, string stringParam)
+        private static string RandomStringWithLength(string param)
         {
-            // Get the Type for the class
-            Type calledType = Type.GetType(typeName);
+            int CodeLength = Int32.Parse(param);
+            Random random = new Random();
+            StringBuilder output = new StringBuilder();
+            for (int i = 0; i < CodeLength; i++)
+            {
+                output.Append(random.Next(0, 9));
+            }
 
-            // Invoke the method itself. The string returned by the method winds up in s.
-            // Note that stringParam is passed via the last parameter of InvokeMember,
-            // as an array of Objects.
-            String s = (String)calledType.InvokeMember(
-                            methodName,
-                            BindingFlags.InvokeMethod | BindingFlags.Public |
-                                BindingFlags.Static,
-                            null,
-                            null,
-                            new Object[] { stringParam });
-
-            // Return the string that was returned by the called method.
-            return s;
+            return output.ToString();
         }
+
+        private static string RandomNumberAndStringWithLength(string param)
+        {
+            int CodeLength = Int32.Parse(param);
+            Random random = new Random();
+            StringBuilder output = new StringBuilder();
+            for (int i = 0; i < CodeLength; i++)
+            {
+                output.Append(random.Next(0, 9));
+            }
+
+            return output.ToString();
+        }
+
+
     }
 }
