@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using webTest.Model;
 
 namespace webTest.View
 {
@@ -101,5 +102,10 @@ namespace webTest.View
             }
         }
         #endregion
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

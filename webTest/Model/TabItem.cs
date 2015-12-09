@@ -7,9 +7,27 @@ using System.ComponentModel;
 using System.Net;
 using System.IO;
 using System.Text.RegularExpressions;
+using GalaSoft.MvvmLight.Messaging;
 
 namespace webTest.Model
 {
+    [Serializable()]
+    public struct MainLabs
+    {
+        public string TITLE { get; set; }
+        public string URL { get; set; }
+        public string QUERYSTR { get; set; }
+        public string POSTDATA { get; set; }
+        public string NOTE { get; set; }
+        public MainLabs(string title, string url, string query, string postData, string note)
+        {
+            TITLE = title;
+            URL = url;
+            QUERYSTR = query;
+            POSTDATA = postData;
+            NOTE = note;
+        }
+    }
 
     [Serializable()]
     public class TabItem : INotifyPropertyChanged
@@ -31,8 +49,10 @@ namespace webTest.Model
 {{Range:10000}}0 - 10000
 {{FullRange:10000}}00000 - 10000
                 ";
-            
-            
+
+            initLabs();
+            Times = 1;
+
         }
         #endregion
 
@@ -181,6 +201,7 @@ namespace webTest.Model
 
                 _reqMethod = value;
                 RaisePropertyChanged("ReqMethod");
+                initLabs();
             }
         }
 
@@ -236,6 +257,44 @@ namespace webTest.Model
                 RaisePropertyChanged("QueryStr");
             }
         }
+
+        private MainLabs mainLab;
+
+        public MainLabs MainLab
+        {
+            get { return mainLab; }
+            set {
+                mainLab = value;
+                RaisePropertyChanged("MainLab");
+            }
+        }
+
+        public void initLabs()
+        {
+            if(ReqMethod.Equals(RequestMethod.SOAP))
+            {
+                MainLab = new MainLabs("Title", "URL", "SOAPAction", "SOAP-ENV:Body", "Note");
+            }
+            else
+            {
+                MainLab = new MainLabs("Title", "URL", "QueryStr", "PostData", "Note");
+            }
+
+            Console.WriteLine(MainLab.TITLE);
+        }
+        private int times;
+
+        public int Times
+        {
+            get { return times; }
+            set {
+                times = value;
+                RaisePropertyChanged("Times");
+            }
+        }
+
+
+
 
         #endregion
 

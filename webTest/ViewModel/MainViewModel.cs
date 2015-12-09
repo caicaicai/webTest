@@ -15,6 +15,8 @@ using System.Linq;
 
 namespace webTest.ViewModel
 {
+    
+
     /// <summary>
     /// This class contains properties that the main View can data bind to.
     /// <para>
@@ -53,6 +55,7 @@ namespace webTest.ViewModel
 
         private ObservableCollection<TabItemsGroup> _tabItemsGroup;
         private int _selectedGroupIndex;
+
 
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
@@ -101,17 +104,32 @@ namespace webTest.ViewModel
             {
                 CurrentTabItemsGroup.NewTab();
             }
+
             ParameterInterpreter pi = new ParameterInterpreter();
             Requester rq = new Requester(CurrentTabItemsGroup.CurrentItem, option, pi);
+            
             try
             {
                 CurrentTabItemsGroup.CurrentItem.IsRequesting = true;
-                backgroundWorker.RunWorkerAsync(rq);
+                CurrentTabItemsGroup.CurrentItem.ResponseContent = ".....";
+                if(CurrentTabItemsGroup.CurrentItem.Times == 0)
+                {
+                    CurrentTabItemsGroup.CurrentItem.Times = 1;
+                }
+                if (CurrentTabItemsGroup.CurrentItem.ReqMethod.Equals(RequestMethod.SOAP))
+                {
+                    backgroundWorker.RunWorkerAsync(new SOAP(CurrentTabItemsGroup.CurrentItem));
+                }
+                else
+                {
+                    backgroundWorker.RunWorkerAsync(rq);
+                }
+
             }
             catch (Exception e)
             {
                 //MessageBox.Show(e.Message);
-                Console.WriteLine(e);
+                Console.WriteLine(e.StackTrace);
             }
         }
 
@@ -240,7 +258,7 @@ namespace webTest.ViewModel
         {
             try
             {
-                Requester rq = (Requester)e.Argument;
+                RequestBase rq = (RequestBase)e.Argument;
                 // Return the value through the Result property.
                 //e.Result = rq.DoRequest();
                 rq.DoRequest();
@@ -331,6 +349,7 @@ namespace webTest.ViewModel
                 RaisePropertyChanged("option");
             }
         }
+
 
     }
 

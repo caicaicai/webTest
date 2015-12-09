@@ -48,19 +48,20 @@
                                 <Label HorizontalAlignment="Left" VerticalAlignment="top" Margin="0,5,0,5">
                                     UseUriRewrite
                                 </Label>
-                                <TextBox Margin="120,5,10,5" TextWrapping="Wrap" Text="{Binding option.UriRewrite }"/>
+                                <TextBox Margin="120,5,10,5" TextWrapping="Wrap" Text="{Binding option.UriRewrite }" VerticalContentAlignment="Center"/>
                             </Grid>
                             <Grid Grid.Row="1">
                                 <Label HorizontalAlignment="Left" VerticalAlignment="top" Margin="0,5,0,5">
                                     Host
                                 </Label>
-                                <TextBox Margin="120,5,10,5" TextWrapping="Wrap" Text="{Binding option.Host }"/>
+                                <TextBox Margin="120,5,10,5" TextWrapping="Wrap" Text="{Binding option.Host }" VerticalContentAlignment="Center"/>
                             </Grid>
                             <Grid Grid.Row="2">
                                 <Label HorizontalAlignment="Left" VerticalAlignment="top" Margin="0,5,0,5">
                                     TimeOut
                                 </Label>
-                                <TextBox Margin="120,5,10,5" TextWrapping="Wrap" Text="{Binding option.Timeout }"/>
+                                <TextBox Margin="120,5,555,5" TextWrapping="Wrap" Text="{Binding option.Timeout }" VerticalContentAlignment="Center"/>
+                                <Label x:Name="label" Content="ms(0 为不设置超时时间)" HorizontalAlignment="Left" Margin="215,5,0,0" VerticalAlignment="Top" Width="155" Height="31"/>
                             </Grid>
                         </Grid>
                     </GroupBox>

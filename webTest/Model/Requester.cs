@@ -20,11 +20,12 @@ namespace webTest.Model
         PUT,
         DELETE,
         TRACE,
-        OPTIONS
+        OPTIONS,
+        SOAP
     };
     #endregion
 
-    class Requester
+    class Requester: RequestBase
     {
         private TabItem tabItem;
         private Option option;
@@ -37,20 +38,34 @@ namespace webTest.Model
             pi = _pi;
         }
 
-        public void DoRequest()
+        public override void DoRequest()
         {
+            while (tabItem.Times > 0)
+            {
+                tabItem.ResponseContent = "........";
+                request();
+                tabItem.Times--;
+                
+            }
+            tabItem.Times = 1;
+
+        }
+
+        public void request()
+        {
+
             var targetUri = UriBuilder(pi.generater(tabItem.RequestUrl), pi.generater(tabItem.QueryStr));
 
             var request = (HttpWebRequest)WebRequest.Create(targetUri);
 
 
             //request.Timeout = 5000;
-            if(option.Timeout > 0)
+            if (option.Timeout > 0)
             {
                 request.Timeout = option.Timeout;
             }
 
-            if(option.Host.Length > 0)
+            if (option.Host.Length > 0)
             {
                 request.Host = option.Host;
             }
@@ -60,27 +75,29 @@ namespace webTest.Model
                 request.UserAgent = pi.generater(option.UserAgent);
             }
 
-            if(option.UseCookie)
+            if (option.UseCookie)
             {
                 CookieContainer myContainer = new CookieContainer();
 
                 Dictionary<string, string> cookies = new Dictionary<string, string>();
 
                 //the option.coolie should be key:value;key:value;
-                foreach(string cookie in option.Cookie.Split(';'))
+                foreach (string cookie in option.Cookie.Split(';'))
                 {
                     string[] s = cookie.Split('=');
                     cookies.Add(s[0].Trim(), pi.generater(s[1].Trim()));
                 }
 
-                foreach(KeyValuePair<string, string> cookie in cookies){
+                foreach (KeyValuePair<string, string> cookie in cookies)
+                {
                     myContainer.Add(new Cookie(cookie.Key, cookie.Value) { Domain = targetUri.Host });
                 }
 
                 request.CookieContainer = myContainer;
             }
 
-            if(option.UseProxy && option.Proxys.Count > 0){
+            if (option.UseProxy && option.Proxys.Count > 0)
+            {
                 WebProxy myProxy = new WebProxy();
                 string proxyAddress;
 
@@ -110,10 +127,10 @@ namespace webTest.Model
                     request.Proxy = myProxy;
                 }
             }
-            
+
             request.Method = Enum.GetName(typeof(RequestMethod), tabItem.ReqMethod);
 
-            if(tabItem.ReqMethod == RequestMethod.POST)
+            if (tabItem.ReqMethod == RequestMethod.POST)
             {
                 //string postData = "This is a test that posts this string to a Web server.";
                 byte[] byteArray = Encoding.UTF8.GetBytes(tabItem.PostData);
