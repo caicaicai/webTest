@@ -37,11 +37,13 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Menu IsMainMenu="True" BorderBrush="#FFA4A2A2" BorderThickness="0,0,0,1">
-                <MenuItem Header="File" >
-                    <MenuItem Header="_Open Config File" Command="{Binding Open}"/>
-                    <MenuItem Header="_Save Config File" Command="{Binding Save}"/>
+                <MenuItem Header="_File" >
+                    <MenuItem Header="_New" Command="{Binding New}"/>
+                    <MenuItem Header="_Open" Command="{Binding Open}"/>
+                    <MenuItem Header="_Save" Command="{Binding Save}"/>
+                    <MenuItem Header="Save As ..." Command="{Binding SaveAs}"/>
                 </MenuItem>
-                <MenuItem Header="_Option" Command="{Binding OpenOption}" />
+                <MenuItem Header="Option" Command="{Binding OpenOption}" />
                 <MenuItem Header="_About" Command="{Binding About}" />
             </Menu>
         </Grid>

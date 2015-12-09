@@ -37,6 +37,7 @@ namespace webTest.Model
         
         public static Config Load(string config_file_path)
         {
+            webTest.Properties.Settings.Default.configPath = config_file_path;
             try
             {
                 /*
@@ -68,6 +69,7 @@ namespace webTest.Model
 
         public static void Save(string config_file_path, Config config)
         {
+            webTest.Properties.Settings.Default.configPath = config_file_path;
             try
             {
                 Stream stream = File.Open(config_file_path, FileMode.Create);

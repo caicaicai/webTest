@@ -13,5 +13,10 @@ namespace webTest
     /// </summary>
     public partial class App : Application
     {
+        private void OnExit(object sender, ExitEventArgs e)
+        {
+            webTest.Properties.Settings.Default.Save();
+
+        }
     }
 }

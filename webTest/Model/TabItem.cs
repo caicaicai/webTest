@@ -19,7 +19,7 @@ namespace webTest.Model
         public string QUERYSTR { get; set; }
         public string POSTDATA { get; set; }
         public string NOTE { get; set; }
-        public MainLabs(string title, string url, string query, string postData, string note)
+        public MainLabs(string title, string url, string query, string postData, string note):this()
         {
             TITLE = title;
             URL = url;

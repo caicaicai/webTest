@@ -31,7 +31,9 @@ namespace webTest.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        public ICommand New { get; private set; }
         public ICommand Save { get; private set; }
+        public ICommand SaveAs { get; private set; }
         public ICommand Open { get; private set; }
         public ICommand OpenOption { get; private set; }
         public ICommand About { get; private set; }
@@ -78,7 +80,9 @@ namespace webTest.ViewModel
             AddGroup = new RelayCommand(() => AddGroupExecute(), () => { return true; });
             TabItemsGroupRename = new RelayCommand<object>((param) => TabItemsGroupRenameExecute(param), (param) => { return true; });
             Save = new RelayCommand(() => SaveExecute(), () => {return true;});
+            SaveAs = new RelayCommand(() => SaveAsExecute(), () => { return true; });
             Open = new RelayCommand(() => OpenExecute(), () => { return true; });
+            New = new RelayCommand(() => NewExecute(), () => { return true; });
             OpenOption = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<Option>(option, "option")); });
             About = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<string>("PlaceHolder","About")); });
             SpecialView = new RelayCommand<object>((param) => SpecialViewExecute(param), (param) => { return true; });
@@ -87,11 +91,28 @@ namespace webTest.ViewModel
             backgroundWorker.DoWork += BackgroundWorker_DoWork;
             backgroundWorker.RunWorkerCompleted += BackgroundWorker_RunWorkerCompleted;
 
+
+            initConfig();
+            
+            //load last config.
+            if (ViewModelBase.IsInDesignModeStatic)
+            {
+                // Create design time view services and models
+            }
+            else
+            {
+                // Create run time view services and models
+                LoadLastConfig();
+            }
+
+        }
+
+        private void initConfig()
+        {
             TabItemsGroup = new ObservableCollection<TabItemsGroup> { };
             TabItemsGroup.Add(new TabItemsGroup());
             SelectedGroupIndex = 0;
             option = new Option();
-
         }
 
         #region Exec Stuff
@@ -182,7 +203,7 @@ namespace webTest.ViewModel
             TabItemsGroup.Add(new TabItemsGroup());
         }
 
-        private void SaveExecute()
+        private void SaveAsExecute()
         {
             // Configure save file dialog box
             Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
@@ -198,6 +219,21 @@ namespace webTest.ViewModel
             {
                 // Save Config 
                 Config.Save(dlg.FileName, new Config(TabItemsGroup, option));
+            }
+        }
+
+        private void SaveExecute()
+        {
+
+            string config_path = webTest.Properties.Settings.Default.configPath;
+
+            if(config_path.Length > 0)
+            {
+                Config.Save(config_path, new Config(TabItemsGroup, option));
+            }
+            else
+            {
+                SaveAsExecute();
             }
         }
 
@@ -219,6 +255,37 @@ namespace webTest.ViewModel
                 Config cfg = Config.Load(dlg.FileName);
                 TabItemsGroup = cfg.TabItemsGroup;
                 SelectedGroupIndex = 0;
+            }
+        }
+
+        private void NewExecute()
+        {
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("当前配置还未保存?", "保存", System.Windows.MessageBoxButton.YesNo);
+            if (messageBoxResult == MessageBoxResult.Yes)
+            {
+                SaveExecute();
+            }
+            initConfig();
+            SelectedGroupIndex = 0;
+            webTest.Properties.Settings.Default.configPath = "";
+
+        }
+
+        private void LoadLastConfig()
+        {
+            string path = webTest.Properties.Settings.Default.configPath;
+            if(path.Length > 0)
+            {
+                try
+                {
+                    Config cfg = Config.Load(path);
+                    TabItemsGroup = cfg.TabItemsGroup;
+                    SelectedGroupIndex = 0;
+                }catch(Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                
             }
         }
 
