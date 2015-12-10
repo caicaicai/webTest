@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Net;
 using System.IO;
+using System.Diagnostics;
 
 namespace webTest.Model
 {
@@ -20,7 +21,14 @@ namespace webTest.Model
 
         public override void DoRequest()
         {
-            while(tabItem.Times > 0)
+            log.logWithTime(String.Format("Start--------------------------------------------"));
+            log.log(String.Format("URL:  {0}", tabItem.RequestUrl));
+            log.log(String.Format("SOAPAction:  {0}", tabItem.QueryStr));
+            log.log(String.Format("SOAP-ENV:Body:  {0}", tabItem.PostData));
+            log.log(String.Format("Method:  {0}", tabItem.ReqMethod));
+            log.log(String.Format("RequestCount:  {0}", tabItem.Times));
+            var watch = Stopwatch.StartNew();
+            while (tabItem.Times > 0)
             {
                 tabItem.ResponseContent = "........";
                 tabItem.ResponseContent = CallWebService(tabItem.RequestUrl, tabItem.QueryStr, tabItem.PostData);
@@ -28,9 +36,11 @@ namespace webTest.Model
                 
             }
             tabItem.Times = 1;
-            
+            log.log(String.Format("Total Calls Time : {0} ms.", watch.ElapsedMilliseconds.ToString()));
+            log.logWithTime(String.Format("End---------------------------------------------"));
+
         }
-        public static string CallWebService(string url, string action, string body)
+        public  string CallWebService(string url, string action, string body)
         {
             var _url = url;
             var _action = action;
@@ -38,6 +48,10 @@ namespace webTest.Model
             XmlDocument soapEnvelopeXml = CreateSoapEnvelope(body);
             HttpWebRequest webRequest = CreateWebRequest(_url, _action);
             InsertSoapEnvelopeIntoWebRequest(soapEnvelopeXml, webRequest);
+
+            log.log(String.Format("----Request--{0}--", tabItem.Times));
+            var watch = Stopwatch.StartNew();
+            
 
             // begin async call to web request.
             IAsyncResult asyncResult = webRequest.BeginGetResponse(null, null);
@@ -54,6 +68,18 @@ namespace webTest.Model
                 {
                     soapResult = rd.ReadToEnd();
                 }
+
+                watch.Stop();
+                log.log(String.Format("Calls Time : {0} ms", watch.ElapsedMilliseconds.ToString()));
+                log.log(String.Format("----Response--{0}--", tabItem.Times));
+                log.log(String.Format("Headers : {0}", tabItem.Response.Headers));
+                log.log(String.Format("CharacterSet : {0}.", tabItem.Response.CharacterSet));
+                log.log(String.Format("Method : {0}", tabItem.Response.Method));
+                log.log(String.Format("ProtocolVersion : {0}", tabItem.Response.ProtocolVersion));
+                log.log(String.Format("ResponseUri : {0}", tabItem.Response.ResponseUri));
+                log.log(String.Format("StatusCode : {0}", tabItem.Response.StatusCode));
+                log.log(String.Format("StatusDescription : {0}", tabItem.Response.StatusDescription));
+
                 return soapResult;
             }
         }

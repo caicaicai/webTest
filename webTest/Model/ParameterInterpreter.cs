@@ -16,7 +16,6 @@ namespace webTest.Model
         }
         public string generater(string parameter)
         {
-            Console.WriteLine("handel with " + parameter);
 
             parameter = Regex.Replace(parameter, @"({{)(\w+):(\w+)(}})", (m) => {
 

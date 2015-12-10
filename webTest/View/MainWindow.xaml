@@ -4,7 +4,7 @@
         xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="webTest.View.MainWindow"
-        Title="webTest" Height="650" Width="800" ScrollViewer.HorizontalScrollBarVisibility="Auto" MinHeight="650" MinWidth="650">
+        Title="webTest" Height="650" Width="800" ScrollViewer.HorizontalScrollBarVisibility="Auto" MinHeight="650" MinWidth="650" Closed="Window_Closed">
     <Window.Resources>
         <Style x:Key="MyButton" TargetType="{x:Type Button}">
             <Setter Property="OverridesDefaultStyle" Value="True" />
@@ -44,6 +44,7 @@
                     <MenuItem Header="Save As ..." Command="{Binding SaveAs}"/>
                 </MenuItem>
                 <MenuItem Header="Option" Command="{Binding OpenOption}" />
+                <MenuItem Header="_LogViewer" Command="{Binding LogViewer}" />
                 <MenuItem Header="_About" Command="{Binding About}" />
             </Menu>
         </Grid>
@@ -104,6 +105,7 @@
                                 <RowDefinition Height="30"/>
                                 <RowDefinition Height="30"/>
                                 <RowDefinition Height="30"/>
+                                <RowDefinition Height="8"/>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="30"/>
                             </Grid.RowDefinitions>
@@ -119,11 +121,19 @@
                                 <Label Content="{Binding MainLab.QUERYSTR}" HorizontalAlignment="Left" HorizontalContentAlignment="Right"  VerticalAlignment="Top" Width="120" Height="25"/>
                                 <TextBox Text="{Binding QueryStr}" Height="25" VerticalAlignment="Top" VerticalContentAlignment="Center" Margin="125,0,0,0" />
                             </Grid>
-                            <Grid Margin="0,0,0,5" Grid.Row="3">
+                            <Grid Margin="0,0,0,0" Grid.Row="3">
                                 <Label Content="{Binding MainLab.POSTDATA}" HorizontalAlignment="Left" HorizontalContentAlignment="Right"  VerticalAlignment="Top" Width="120" Height="25"/>
-                                <TextBox Text="{Binding PostData}" Height="25" VerticalAlignment="Top" VerticalContentAlignment="Center" Margin="125,0,0,0" />
+                                <TextBox Text="{Binding PostData}" VerticalContentAlignment="Top" Margin="125,0,0,0" AcceptsReturn="True" AcceptsTab="True"/>
                             </Grid>
-                            <Grid Margin="0,0,0,0" Grid.Row="4">
+                            <GridSplitter 
+                                ResizeDirection="Rows"
+                                Grid.Row="4"
+                                Width="Auto" 
+                                Height="2"
+                                HorizontalAlignment="Stretch" 
+                                VerticalAlignment="Stretch" 
+                                Margin="0"/>
+                            <Grid Margin="0,0,0,0" Grid.Row="5">
                                 <Label Content="{Binding MainLab.NOTE}" HorizontalAlignment="Left" HorizontalContentAlignment="Right"  VerticalAlignment="Top" Width="120" Height="25"/>
                                 <toolkit:RichTextBox x:Name="_richTextBox"
 									Text="{Binding Note}" 
@@ -133,7 +143,7 @@
                                     </toolkit:RichTextBox.TextFormatter>
                                 </toolkit:RichTextBox>
                             </Grid>
-                            <Grid Margin="0,5,0,0" Grid.Row="5">
+                            <Grid Margin="0,5,0,0" Grid.Row="6">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="80"/>
@@ -230,7 +240,6 @@
                                 <Label Content="{Binding option.UriRewrite}" Margin="100,0,0,0" HorizontalContentAlignment="Left" />
                             </Grid>
                             <Grid Grid.Column="4">
-                                <Label Content="Status :" Width="50" HorizontalAlignment="Left"/>
 
                             </Grid>
                         </Grid>

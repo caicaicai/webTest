@@ -7,6 +7,8 @@ using System.Net;
 using System.IO;
 using System.Web;
 using System.Text.RegularExpressions;
+using webTest.ViewModel;
+using System.Diagnostics;
 
 namespace webTest.Model
 {
@@ -31,6 +33,8 @@ namespace webTest.Model
         private Option option;
         private ParameterInterpreter pi;
 
+        
+
         public Requester(TabItem _tabItem, Option _option, ParameterInterpreter _pi)
         {
             tabItem = _tabItem;
@@ -40,6 +44,26 @@ namespace webTest.Model
 
         public override void DoRequest()
         {
+            log.logWithTime(String.Format("Start--------------------------------------------"));
+            log.log(String.Format("URL:  {0}", tabItem.RequestUrl));
+            log.log(String.Format("QueryStr:  {0}", tabItem.QueryStr));
+            log.log(String.Format("PostData:  {0}", tabItem.PostData));
+            log.log(String.Format("Method:  {0}", tabItem.ReqMethod));
+            log.log(String.Format("RequestCount:  {0}", tabItem.Times));
+            var watch = Stopwatch.StartNew();
+            if (option.UseCookie)
+            {
+                log.log(String.Format("Cookie:  {0}", option.Cookie));
+            }
+            if (option.UseUserAgent)
+            {
+                log.log(String.Format("UserAgent:  {0}", option.UserAgent));
+            }
+            if (option.Timeout > 0)
+            {
+                log.log(String.Format("TimeOut:  {0}", option.Timeout));
+            }
+
             while (tabItem.Times > 0)
             {
                 tabItem.ResponseContent = "........";
@@ -47,6 +71,8 @@ namespace webTest.Model
                 tabItem.Times--;
                 
             }
+            log.log(String.Format("Total Calls Time : {0} ms.", watch.ElapsedMilliseconds.ToString()));
+            log.logWithTime(String.Format("End---------------------------------------------"));
             tabItem.Times = 1;
 
         }
@@ -58,6 +84,7 @@ namespace webTest.Model
 
             var request = (HttpWebRequest)WebRequest.Create(targetUri);
 
+            
 
             //request.Timeout = 5000;
             if (option.Timeout > 0)
@@ -80,17 +107,19 @@ namespace webTest.Model
                 CookieContainer myContainer = new CookieContainer();
 
                 Dictionary<string, string> cookies = new Dictionary<string, string>();
-
-                //the option.coolie should be key:value;key:value;
-                foreach (string cookie in option.Cookie.Split(';'))
+                if(option.Cookie.Length > 0)
                 {
-                    string[] s = cookie.Split('=');
-                    cookies.Add(s[0].Trim(), pi.generater(s[1].Trim()));
-                }
+                    //the option.coolie should be key:value;key:value;
+                    foreach (string cookie in option.Cookie.Split(';'))
+                    {
+                        string[] s = cookie.Split('=');
+                        cookies.Add(s[0].Trim(), pi.generater(s[1].Trim()));
+                    }
 
-                foreach (KeyValuePair<string, string> cookie in cookies)
-                {
-                    myContainer.Add(new Cookie(cookie.Key, cookie.Value) { Domain = targetUri.Host });
+                    foreach (KeyValuePair<string, string> cookie in cookies)
+                    {
+                        myContainer.Add(new Cookie(cookie.Key, cookie.Value) { Domain = targetUri.Host });
+                    }
                 }
 
                 request.CookieContainer = myContainer;
@@ -149,8 +178,22 @@ namespace webTest.Model
 
             // Display the status.
             //Console.WriteLine(((HttpWebResponse)response).StatusDescription);
-
+            log.log(String.Format("----Request--{0}--", tabItem.Times));
+            log.log(String.Format("Requesting :{0}", targetUri.ToString()));
+            var watch = Stopwatch.StartNew();
             tabItem.Response = (HttpWebResponse)request.GetResponse();
+            watch.Stop();
+            log.log(String.Format("Calls Time : {0} ms", watch.ElapsedMilliseconds.ToString()));
+            log.log(String.Format("----Response--{0}--",tabItem.Times));
+            log.log(String.Format("Headers : {0}", tabItem.Response.Headers));
+            log.log(String.Format("CharacterSet : {0}.", tabItem.Response.CharacterSet));
+            log.log(String.Format("Method : {0}", tabItem.Response.Method));
+            log.log(String.Format("ProtocolVersion : {0}", tabItem.Response.ProtocolVersion));
+            log.log(String.Format("ResponseUri : {0}", tabItem.Response.ResponseUri));
+            log.log(String.Format("StatusCode : {0}", tabItem.Response.StatusCode));
+            log.log(String.Format("StatusDescription : {0}", tabItem.Response.StatusDescription));
+
+
         }
 
         public Uri UriBuilder(string urlBase, string queryStr)

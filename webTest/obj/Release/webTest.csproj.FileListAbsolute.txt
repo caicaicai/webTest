@@ -40,6 +40,8 @@ C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\webTest.View.AboutBox.res
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\OptionWindow.baml
 C:\Users\94763_000\Desktop\webTest\webTest\obj\Release\View\OptionWindow.g.cs
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\webTest.exe.config
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\webTest.exe.manifest
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\webTest.application
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\webTest.exe
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\webTest.pdb
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\bin\Release\GalaSoft.MvvmLight.dll
@@ -82,6 +84,7 @@ C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\OptionWindow
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\MyDialog.baml
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\XMLViewerWindow.baml
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\HTMLViewWindow.g.cs
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\LogViewerWindow.g.cs
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\MainWindow.g.cs
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\OptionWindow.g.cs
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\MyDialog.g.cs
@@ -91,11 +94,13 @@ C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\GeneratedInternal
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest_MarkupCompile.cache
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest_MarkupCompile.lref
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\App.baml
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\View\LogViewerWindow.baml
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.g.resources
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.Properties.Resources.resources
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.View.AboutBox.resources
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.View.JsonViewForm.resources
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.csproj.GenerateResource.Cache
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.exe.manifest
+C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.application
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.exe
 C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.pdb
-C:\Users\f132819\Desktop\小菜菜\webTest\webTest\obj\Release\webTest.csprojResolveAssemblyReference.cache

@@ -85,7 +85,6 @@ namespace webTest.Model
             {
                 if (_note == value)
                     return;
-                Console.WriteLine(value);
                 _note = value;
                 RaisePropertyChanged("Title");
             }
@@ -280,7 +279,6 @@ namespace webTest.Model
                 MainLab = new MainLabs("Title", "URL", "QueryStr", "PostData", "Note");
             }
 
-            Console.WriteLine(MainLab.TITLE);
         }
         private int times;
 

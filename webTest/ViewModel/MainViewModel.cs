@@ -36,6 +36,7 @@ namespace webTest.ViewModel
         public ICommand SaveAs { get; private set; }
         public ICommand Open { get; private set; }
         public ICommand OpenOption { get; private set; }
+        public ICommand LogViewer { get; private set; }
         public ICommand About { get; private set; }
 
         public ICommand ShowPopUp { get; private set; }
@@ -59,20 +60,23 @@ namespace webTest.ViewModel
         private int _selectedGroupIndex;
 
 
+        public static Logger logger;
+
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
         /// 
         public MainViewModel()
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+            if (IsInDesignMode)
+            {
+                // Code runs in Blend --> create design time data.
+            }
+            else
+            {
+                // Code runs "for real"
+            }
 
             ShowPopUp = new RelayCommand(() => ShowPopUpExecute(), () => { return true; });
             DeleteGroup = new RelayCommand(() => DeleteGroupExecute(), () => { return SelectedGroupIndex != TabItemsGroup.Count - 1; });
@@ -84,6 +88,7 @@ namespace webTest.ViewModel
             Open = new RelayCommand(() => OpenExecute(), () => { return true; });
             New = new RelayCommand(() => NewExecute(), () => { return true; });
             OpenOption = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<Option>(option, "option")); });
+            LogViewer = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<Logger>(logger, "logviewer"));});
             About = new RelayCommand(() => { Messenger.Default.Send(new NotificationMessage<string>("PlaceHolder","About")); });
             SpecialView = new RelayCommand<object>((param) => SpecialViewExecute(param), (param) => { return true; });
             SaveGroupName = new RelayCommand(() => SaveGroupNameExecute(), () => { return true; });
@@ -105,6 +110,8 @@ namespace webTest.ViewModel
                 LoadLastConfig();
             }
 
+            logger.logWithTime("started...");
+
         }
 
         private void initConfig()
@@ -113,6 +120,8 @@ namespace webTest.ViewModel
             TabItemsGroup.Add(new TabItemsGroup());
             SelectedGroupIndex = 0;
             option = new Option();
+
+            logger = new Logger();
         }
 
         #region Exec Stuff
@@ -260,7 +269,7 @@ namespace webTest.ViewModel
 
         private void NewExecute()
         {
-            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("当前配置还未保存?", "保存", System.Windows.MessageBoxButton.YesNo);
+            MessageBoxResult messageBoxResult = System.Windows.MessageBox.Show("Save the current configuration?", "Config", System.Windows.MessageBoxButton.YesNo);
             if (messageBoxResult == MessageBoxResult.Yes)
             {
                 SaveExecute();

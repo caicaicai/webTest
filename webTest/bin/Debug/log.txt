@@ -1,0 +1,3548 @@
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+11:38:58  started...
+11:39:56  started...
+11:42:31  started...
+11:42:40  started...
+11:42:53  started...
+11:43:04  started...
+11:43:14  started...
+requesting...
+requesting...
+requesting...
+requesting...
+requesting...
+13:51:14  started...
+requesting...
+requesting...
+13:53:25  started...
+13:54:04  started...
+13:54:47  started...
+14:00:01  started...
+14:01:46  started...
+requesting...
+14:02:07  Requesting :http://5star.cn/5api.php?method=catalog_product_attribute_set.list
+requesting...
+14:02:16  Requesting :http://5star.cn/5api.php?method=catalog_product_attribute_set.list
+14:08:41  started...
+14:10:00  started...
+14:10:48  started...
+14:12:49  started...
+14:13:05  HTTP Request DO
+URL:http://www.baidu.com,
+14:13:05  Requesting :http://www.baidu.com/
+14:16:01  HTTP Request DO
+URL:http://www.baidu.com,
+14:16:01  Requesting :http://www.baidu.com/
+14:16:13  HTTP Request DO
+URL:http://www.baidu.com,
+14:16:13  Requesting :http://www.baidu.com/
+14:16:54  started...
+14:16:59  HTTP Request DO
+URL:http://www.baidu.com
+14:16:59  Requesting :http://www.baidu.com/
+14:21:41  started...
+14:21:46  HTTP REQUEST DO
+URL:http://www.baidu.com
+QueryStr:
+PostData:
+RequestCount:1
+14:21:46  Requesting :http://www.baidu.com/
+14:22:30  started...
+14:22:39  HTTP REQUEST DO
+URL:http://www.baidu.com
+QueryStr:
+PostData:
+RequestCount:1
+14:22:39  Requesting :http://www.baidu.com/
+14:22:42  HTTP REQUEST DO
+URL:http://www.baidu.com
+QueryStr:
+PostData:
+RequestCount:1
+14:22:42  Requesting :http://www.baidu.com/
+14:22:45  HTTP REQUEST DO
+URL:http://www.baidu.com
+QueryStr:
+PostData:
+RequestCount:10
+14:22:45  Requesting :http://www.baidu.com/
+14:22:45  Requesting :http://www.baidu.com/
+14:22:46  Requesting :http://www.baidu.com/
+14:22:46  Requesting :http://www.baidu.com/
+14:22:46  Requesting :http://www.baidu.com/
+14:22:46  Requesting :http://www.baidu.com/
+14:22:46  Requesting :http://www.baidu.com/
+14:22:46  Requesting :http://www.baidu.com/
+14:22:46  Requesting :http://www.baidu.com/
+14:22:46  Requesting :http://www.baidu.com/
+14:22:57  HTTP REQUEST DO
+URL:http://www.baidu.com
+QueryStr:
+PostData:
+RequestCount:1
+14:22:57  Requesting :http://www.baidu.com/
+14:23:03  HTTP REQUEST DO
+URL:http://www.baidu.com
+QueryStr:
+PostData:
+RequestCount:1
+14:23:03  Requesting :http://www.baidu.com/
+14:23:34  started...
+14:23:39  HTTP REQUEST DO
+14:23:39  ---------------------------------------------
+URL:http://www.baidu.com
+QueryStr:
+PostData:
+RequestCount:1
+14:23:39  Requesting :http://www.baidu.com/
+14:24:18  started...
+14:24:24  ---------------------------------------------
+14:24:24  HTTP REQUEST DO
+URL:http://www.baidu.com
+QueryStr:
+PostData:
+Method:GET
+RequestCount:1
+14:24:24  Requesting :http://www.baidu.com/
+14:24:51  started...
+14:24:55  ---------------------------------------------
+14:24:55  HTTP REQUEST DO
+URL:	http://www.baidu.com
+QueryStr:	
+PostData:	
+Method:	GET
+RequestCount:1
+14:24:55  Requesting :http://www.baidu.com/
+14:26:46  started...
+14:26:52  ---------------------------------------------
+14:26:52  HTTP REQUEST DO
+URL:		http://www.baidu.com
+QueryStr:	
+PostData:	
+Method:	GET
+RequestCount:	1
+14:26:52  Requesting :http://www.baidu.com/
+14:27:20  ---------------------------------------------
+14:27:20  HTTP REQUEST DO
+URL:		http://www.baidu.com
+QueryStr:	
+PostData:	
+Method:	GET
+RequestCount:	1
+14:27:20  Requesting :http://www.baidu.com/
+14:27:24  ---------------------------------------------
+14:27:24  HTTP REQUEST DO
+URL:		http://www.baidu.com
+QueryStr:	
+PostData:	
+Method:	GET
+RequestCount:	10
+14:27:24  Requesting :http://www.baidu.com/
+14:27:24  Requesting :http://www.baidu.com/
+14:27:25  Requesting :http://www.baidu.com/
+14:27:25  Requesting :http://www.baidu.com/
+14:27:25  Requesting :http://www.baidu.com/
+14:27:25  Requesting :http://www.baidu.com/
+14:27:25  Requesting :http://www.baidu.com/
+14:27:25  Requesting :http://www.baidu.com/
+14:27:25  Requesting :http://www.baidu.com/
+14:27:25  Requesting :http://www.baidu.com/
+14:28:23  started...
+14:28:27  ---------------------------------------------
+14:28:27  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  GET
+RequestCount:  1
+14:28:27  Requesting :http://www.baidu.com/
+14:28:39  ---------------------------------------------
+14:28:39  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  321
+PostData:  3213
+Method:  GET
+RequestCount:  1
+14:28:39  Requesting :http://www.baidu.com/?321
+14:28:47  ---------------------------------------------
+14:28:47  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  321
+PostData:  3213
+Method:  GET
+RequestCount:  1
+14:28:47  Requesting :http://www.baidu.com/?321
+14:28:50  ---------------------------------------------
+14:28:50  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  321
+PostData:  3213
+Method:  POST
+RequestCount:  1
+14:28:50  Requesting :http://www.baidu.com/?321
+14:29:05  ---------------------------------------------
+14:29:05  HTTP REQUEST DO
+URL:  http://dl.xiaocaicai.com/json.php
+QueryStr:  321
+PostData:  3213
+Method:  POST
+RequestCount:  1
+14:29:05  Requesting :http://dl.xiaocaicai.com/json.php?321
+14:29:29  ---------------------------------------------
+14:29:29  HTTP REQUEST DO
+URL:  http://dl.xiaocaicai.com/json.php
+QueryStr:  321
+PostData:  3213
+Method:  POST
+RequestCount:  1
+14:29:29  Requesting :http://dl.xiaocaicai.com/json.php?321
+14:30:57  started...
+14:31:04  ---------------------------------------------
+14:31:04  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  321
+PostData:  3213
+Method:  POST
+RequestCount:  10
+14:31:05  Requesting :http://www.baidu.com/?321
+14:31:08  ---------------------------------------------
+14:31:08  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  10
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:08  Requesting :http://www.baidu.com/
+14:31:12  ---------------------------------------------
+14:31:12  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:31:12  Requesting :http://www.baidu.com/
+14:31:24  ---------------------------------------------
+14:31:24  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:31:24  Requesting :http://www.baidu.com/
+14:31:26  ---------------------------------------------
+14:31:26  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:31:26  Requesting :http://www.baidu.com/
+14:31:37  ---------------------------------------------
+14:31:37  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  100
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:37  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:38  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:39  Requesting :http://www.baidu.com/
+14:31:40  Requesting :http://www.baidu.com/
+14:31:40  Requesting :http://www.baidu.com/
+14:32:36  started...
+14:34:24  started...
+14:34:32  ---------------------------------------------
+14:34:32  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  10
+14:34:32  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:33  Requesting :http://www.baidu.com/
+14:34:36  ---------------------------------------------
+14:34:36  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  100
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:36  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:37  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:34:38  Requesting :http://www.baidu.com/
+14:35:38  started...
+14:35:48  ---------------------------------------------
+14:35:48  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:48  Requesting :http://www.baidu.com/
+14:35:49  ---------------------------------------------
+14:35:49  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:49  Requesting :http://www.baidu.com/
+14:35:50  ---------------------------------------------
+14:35:50  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:50  Requesting :http://www.baidu.com/
+14:35:50  ---------------------------------------------
+14:35:50  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:50  Requesting :http://www.baidu.com/
+14:35:50  ---------------------------------------------
+14:35:50  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:50  Requesting :http://www.baidu.com/
+14:35:50  ---------------------------------------------
+14:35:50  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:50  Requesting :http://www.baidu.com/
+14:35:51  ---------------------------------------------
+14:35:51  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:51  Requesting :http://www.baidu.com/
+14:35:51  ---------------------------------------------
+14:35:51  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:51  Requesting :http://www.baidu.com/
+14:35:51  ---------------------------------------------
+14:35:51  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:51  Requesting :http://www.baidu.com/
+14:35:51  ---------------------------------------------
+14:35:51  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:51  Requesting :http://www.baidu.com/
+14:35:52  ---------------------------------------------
+14:35:52  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:52  Requesting :http://www.baidu.com/
+14:35:52  ---------------------------------------------
+14:35:52  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:52  Requesting :http://www.baidu.com/
+14:35:52  ---------------------------------------------
+14:35:52  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:52  Requesting :http://www.baidu.com/
+14:35:52  ---------------------------------------------
+14:35:52  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:52  Requesting :http://www.baidu.com/
+14:35:57  ---------------------------------------------
+14:35:57  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:57  Requesting :http://www.baidu.com/
+14:35:57  ---------------------------------------------
+14:35:57  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:57  Requesting :http://www.baidu.com/
+14:35:58  ---------------------------------------------
+14:35:58  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:58  Requesting :http://www.baidu.com/
+14:35:58  ---------------------------------------------
+14:35:58  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:58  Requesting :http://www.baidu.com/
+14:35:58  ---------------------------------------------
+14:35:58  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:35:58  Requesting :http://www.baidu.com/
+14:36:17  ---------------------------------------------
+14:36:17  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:36:17  Requesting :http://www.baidu.com/
+14:36:24  ---------------------------------------------
+14:36:24  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:36:24  Requesting :http://www.baidu.com/
+14:36:36  ---------------------------------------------
+14:36:36  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:36:36  Requesting :https://www.baidu.com/
+14:36:37  ---------------------------------------------
+14:36:37  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:36:37  Requesting :https://www.baidu.com/
+14:36:38  ---------------------------------------------
+14:36:38  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:36:38  Requesting :https://www.baidu.com/
+14:36:39  ---------------------------------------------
+14:36:39  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:36:39  Requesting :https://www.baidu.com/
+14:36:46  ---------------------------------------------
+14:36:46  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Cookie:  
+UserAgent:  Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)
+14:36:46  Requesting :https://www.baidu.com/
+14:36:49  ---------------------------------------------
+14:36:49  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Cookie:  
+UserAgent:  Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)
+14:36:49  Requesting :https://www.baidu.com/
+14:36:57  ---------------------------------------------
+14:36:57  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+UserAgent:  Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)
+14:36:57  Requesting :https://www.baidu.com/
+14:36:58  ---------------------------------------------
+14:36:58  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+UserAgent:  Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)
+14:36:58  Requesting :https://www.baidu.com/
+14:36:59  ---------------------------------------------
+14:36:59  HTTP REQUEST DO
+URL:  https://www.baidu.com/
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+UserAgent:  Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET4.0E; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C)
+14:36:59  Requesting :https://www.baidu.com/
+14:41:12  started...
+14:41:19  ---------------------------------------------
+14:41:19  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:19  Requesting :http://www.baidu.com/
+14:41:20  ---------------------------------------------
+14:41:20  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:20  Requesting :http://www.baidu.com/
+14:41:21  ---------------------------------------------
+14:41:21  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:21  Requesting :http://www.baidu.com/
+14:41:22  ---------------------------------------------
+14:41:22  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:22  Requesting :http://www.baidu.com/
+14:41:22  ---------------------------------------------
+14:41:22  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:22  Requesting :http://www.baidu.com/
+14:41:22  ---------------------------------------------
+14:41:22  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:23  Requesting :http://www.baidu.com/
+14:41:24  ---------------------------------------------
+14:41:24  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:24  Requesting :http://www.baidu.com/
+14:41:25  ---------------------------------------------
+14:41:25  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:25  Requesting :http://www.baidu.com/
+14:41:25  ---------------------------------------------
+14:41:25  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:41:25  Requesting :http://www.baidu.com/
+14:57:50  started...
+14:58:03  ---------------------------------------------
+14:58:03  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:58:03  Requesting :http://www.baidu.com/
+14:58:05  ---------------------------------------------
+14:58:05  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+14:58:05  Requesting :http://www.baidu.com/
+15:08:34  started...
+15:08:39  ---------------------------------------------
+15:08:39  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:39  Requesting :http://www.baidu.com/
+15:08:40  ---------------------------------------------
+15:08:40  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:40  Requesting :http://www.baidu.com/
+15:08:40  ---------------------------------------------
+15:08:40  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:40  Requesting :http://www.baidu.com/
+15:08:41  ---------------------------------------------
+15:08:41  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:41  Requesting :http://www.baidu.com/
+15:08:42  ---------------------------------------------
+15:08:42  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:42  Requesting :http://www.baidu.com/
+15:08:43  ---------------------------------------------
+15:08:43  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:43  Requesting :http://www.baidu.com/
+15:08:44  ---------------------------------------------
+15:08:44  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:44  Requesting :http://www.baidu.com/
+15:08:44  ---------------------------------------------
+15:08:44  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:44  Requesting :http://www.baidu.com/
+15:08:45  ---------------------------------------------
+15:08:45  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:45  Requesting :http://www.baidu.com/
+15:08:50  ---------------------------------------------
+15:08:50  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:08:50  Requesting :http://www.baidu.com/
+15:09:02  started...
+15:09:05  ---------------------------------------------
+15:09:05  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:09:05  Requesting :http://www.baidu.com/
+15:09:05  ---------------------------------------------
+15:09:05  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:09:05  Requesting :http://www.baidu.com/
+15:09:06  ---------------------------------------------
+15:09:06  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:09:06  Requesting :http://www.baidu.com/
+15:09:06  ---------------------------------------------
+15:09:06  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:09:06  Requesting :http://www.baidu.com/
+15:12:07  started...
+15:12:17  ---------------------------------------------
+15:12:17  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:12:17  Requesting :http://www.baidu.com/
+15:12:18  ---------------------------------------------
+15:12:18  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:12:18  Requesting :http://www.baidu.com/
+15:12:19  ---------------------------------------------
+15:12:19  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:12:19  Requesting :http://www.baidu.com/
+15:12:20  ---------------------------------------------
+15:12:20  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:12:20  Requesting :http://www.baidu.com/
+15:12:21  ---------------------------------------------
+15:12:21  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:12:21  Requesting :http://www.baidu.com/
+15:13:35  started...
+15:13:40  ---------------------------------------------
+15:13:40  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:13:40  Requesting :http://www.baidu.com/
+15:13:41  ---------------------------------------------
+15:13:41  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:13:41  Requesting :http://www.baidu.com/
+15:13:41  ---------------------------------------------
+15:13:41  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:13:41  Requesting :http://www.baidu.com/
+15:13:42  ---------------------------------------------
+15:13:42  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:13:42  Requesting :http://www.baidu.com/
+15:13:42  ---------------------------------------------
+15:13:42  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:13:42  Requesting :http://www.baidu.com/
+15:13:43  ---------------------------------------------
+15:13:43  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:13:43  Requesting :http://www.baidu.com/
+15:13:43  ---------------------------------------------
+15:13:43  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:13:43  Requesting :http://www.baidu.com/
+15:13:46  ---------------------------------------------
+15:13:46  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:13:46  Requesting :http://www.baidu.com/
+15:15:05  started...
+15:15:17  ---------------------------------------------
+15:15:17  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:17  Requesting :http://www.baidu.com/
+15:15:17  ---------------------------------------------
+15:15:17  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:17  Requesting :http://www.baidu.com/
+15:15:18  ---------------------------------------------
+15:15:18  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:18  Requesting :http://www.baidu.com/
+15:15:19  ---------------------------------------------
+15:15:19  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:19  Requesting :http://www.baidu.com/
+15:15:19  ---------------------------------------------
+15:15:19  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:19  Requesting :http://www.baidu.com/
+15:15:20  ---------------------------------------------
+15:15:20  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:20  Requesting :http://www.baidu.com/
+15:15:20  ---------------------------------------------
+15:15:20  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:20  Requesting :http://www.baidu.com/
+15:15:21  ---------------------------------------------
+15:15:21  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:21  Requesting :http://www.baidu.com/
+15:15:21  ---------------------------------------------
+15:15:21  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:21  Requesting :http://www.baidu.com/
+15:15:22  ---------------------------------------------
+15:15:22  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:22  Requesting :http://www.baidu.com/
+15:15:22  ---------------------------------------------
+15:15:22  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:22  Requesting :http://www.baidu.com/
+15:15:22  ---------------------------------------------
+15:15:22  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:22  Requesting :http://www.baidu.com/
+15:15:23  ---------------------------------------------
+15:15:23  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:23  Requesting :http://www.baidu.com/
+15:15:23  ---------------------------------------------
+15:15:23  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:23  Requesting :http://www.baidu.com/
+15:15:24  ---------------------------------------------
+15:15:24  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:24  Requesting :http://www.baidu.com/
+15:15:24  ---------------------------------------------
+15:15:24  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:24  Requesting :http://www.baidu.com/
+15:15:25  ---------------------------------------------
+15:15:25  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:25  Requesting :http://www.baidu.com/
+15:15:25  ---------------------------------------------
+15:15:25  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:25  Requesting :http://www.baidu.com/
+15:15:25  ---------------------------------------------
+15:15:25  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:25  Requesting :http://www.baidu.com/
+15:15:25  ---------------------------------------------
+15:15:25  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:25  Requesting :http://www.baidu.com/
+15:15:25  ---------------------------------------------
+15:15:25  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:25  Requesting :http://www.baidu.com/
+15:15:26  ---------------------------------------------
+15:15:26  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:26  Requesting :http://www.baidu.com/
+15:15:26  ---------------------------------------------
+15:15:26  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:26  Requesting :http://www.baidu.com/
+15:15:26  ---------------------------------------------
+15:15:26  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:26  Requesting :http://www.baidu.com/
+15:15:27  ---------------------------------------------
+15:15:27  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:27  Requesting :http://www.baidu.com/
+15:15:27  ---------------------------------------------
+15:15:27  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:27  Requesting :http://www.baidu.com/
+15:15:29  ---------------------------------------------
+15:15:29  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:29  Requesting :http://www.baidu.com/
+15:15:29  ---------------------------------------------
+15:15:29  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:29  Requesting :http://www.baidu.com/
+15:15:30  ---------------------------------------------
+15:15:30  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:30  Requesting :http://www.baidu.com/
+15:15:31  ---------------------------------------------
+15:15:31  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:31  Requesting :http://www.baidu.com/
+15:15:31  ---------------------------------------------
+15:15:31  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:31  Requesting :http://www.baidu.com/
+15:15:32  ---------------------------------------------
+15:15:32  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:32  Requesting :http://www.baidu.com/
+15:15:32  ---------------------------------------------
+15:15:32  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:32  Requesting :http://www.baidu.com/
+15:15:33  ---------------------------------------------
+15:15:33  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:15:33  Requesting :http://www.baidu.com/
+15:19:46  started...
+15:19:53  ---------------------------------------------
+15:19:53  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time :14
+15:19:55  ---------------------------------------------
+15:19:55  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time :27
+15:19:56  ---------------------------------------------
+15:19:56  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time :22
+15:19:58  ---------------------------------------------
+15:19:58  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time :38
+15:20:00  ---------------------------------------------
+15:20:00  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time :32
+15:20:07  ---------------------------------------------
+15:20:07  HTTP REQUEST DO
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://5star.cn/
+Calls Time :8669
+15:20:19  ---------------------------------------------
+15:20:19  HTTP REQUEST DO
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://5star.cn/
+Calls Time :247
+15:20:22  ---------------------------------------------
+15:20:22  HTTP REQUEST DO
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://5star.cn/
+Calls Time :221
+15:20:24  ---------------------------------------------
+15:20:24  HTTP REQUEST DO
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://5star.cn/
+Calls Time :238
+15:20:25  ---------------------------------------------
+15:20:25  HTTP REQUEST DO
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://5star.cn/
+Calls Time :217
+15:20:40  started...
+15:20:47  ---------------------------------------------
+15:20:47  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time : 37 ms.
+15:20:48  ---------------------------------------------
+15:20:48  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time : 15 ms.
+15:20:52  ---------------------------------------------
+15:20:52  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time : 42 ms.
+15:20:57  ---------------------------------------------
+15:20:57  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+15:21:36  started...
+15:21:38  ---------------------------------------------
+15:21:38  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:21:38  ---------
+Requesting :http://www.baidu.com/
+Calls Time : 32 ms.
+15:21:42  ---------------------------------------------
+15:21:42  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:21:42  ---------
+Requesting :http://www.baidu.com/
+Calls Time : 43 ms.
+15:21:43  ---------------------------------------------
+15:21:43  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:21:43  ---------
+Requesting :http://www.baidu.com/
+Calls Time : 107 ms.
+15:21:44  ---------------------------------------------
+15:21:44  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:21:44  ---------
+Requesting :http://www.baidu.com/
+Calls Time : 14 ms.
+15:21:45  ---------------------------------------------
+15:21:45  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+15:21:45  ---------
+Requesting :http://www.baidu.com/
+Calls Time : 21 ms.
+15:22:01  started...
+15:22:07  ---------------------------------------------
+15:22:07  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 26 ms.
+15:22:08  ---------------------------------------------
+15:22:08  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 12 ms.
+15:22:39  started...
+15:22:43  Start---------------------------------------------
+15:22:43  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 46 ms.
+15:22:44  End---------------------------------------------
+15:22:47  Start---------------------------------------------
+15:22:47  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 81 ms.
+15:22:47  End---------------------------------------------
+15:22:53  Start---------------------------------------------
+15:22:53  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  10
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 42 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 65 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 74 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 92 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 93 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 68 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 88 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 40 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 25 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 23 ms.
+15:22:53  End---------------------------------------------
+15:23:07  Start---------------------------------------------
+15:23:07  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  10
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 22 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 18 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 15 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 23 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 28 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 20 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 21 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 15 ms.
+15:23:07  End---------------------------------------------
+15:23:11  Start---------------------------------------------
+15:23:11  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  10
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 19 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 18 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 20 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 16 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 16 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 28 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 21 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 18 ms.
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+15:23:11  End---------------------------------------------
+15:23:37  started...
+15:23:41  Start---------------------------------------------
+15:23:41  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+15:23:41  End---------------------------------------------
+15:28:44  started...
+15:28:49  Start---------------------------------------------
+15:28:49  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 68 ms.
+----Response----
+CharacterSet : ISO-8859-1 ms.
+ContentEncoding :  ms.
+ContentLength : 32283 ms.
+ContentType : text/html ms.
+Cookies : System.Net.CookieCollection ms.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:28:49 GMT
+Expires: Fri, 11 Dec 2015 07:28:49 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=129808479FDC974B3840F12DE4B3D26B:FG=1; expires=Fri, 09-Dec-16 07:28:49 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+ ms.
+IsFromCache : False ms.
+IsMutuallyAuthenticated : False ms.
+LastModified : 2015/3/12 15:47:33 ms.
+Method : GET ms.
+ProtocolVersion : 1.1 ms.
+ResponseUri : http://www.baidu.com/search/error.html ms.
+Server : Apache ms.
+StatusCode : OK ms.
+StatusDescription : OK ms.
+SupportsHeaders : True ms.
+15:28:49  End---------------------------------------------
+15:29:49  started...
+15:29:56  Start---------------------------------------------
+15:29:56  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 28 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:29:57 GMT
+Expires: Fri, 11 Dec 2015 07:29:57 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=6D8C0DE1E64C5E51E8D71DFDE6AB43ED:FG=1; expires=Fri, 09-Dec-16 07:29:57 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:29:57  End---------------------------------------------
+15:30:06  Start---------------------------------------------
+15:30:06  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 24 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:30:07 GMT
+Expires: Fri, 11 Dec 2015 07:30:07 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=096C7F8231B1C83B10C721CD5744E2E0:FG=1; expires=Fri, 09-Dec-16 07:30:07 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:30:06  End---------------------------------------------
+15:30:16  Start---------------------------------------------
+15:30:16  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 15 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:30:16 GMT
+Expires: Fri, 11 Dec 2015 07:30:16 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=DB58234D95834D06897EA893AD86440F:FG=1; expires=Fri, 09-Dec-16 07:30:16 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:30:16  End---------------------------------------------
+15:30:17  Start---------------------------------------------
+15:30:17  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 16 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:30:18 GMT
+Expires: Fri, 11 Dec 2015 07:30:18 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=94CEFD61F23E2B006E096C3AB540D497:FG=1; expires=Fri, 09-Dec-16 07:30:18 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:30:17  End---------------------------------------------
+15:30:21  Start---------------------------------------------
+15:30:21  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 25 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:30:21 GMT
+Expires: Fri, 11 Dec 2015 07:30:21 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=24EF3B553298026A923B3F29BAB1614C:FG=1; expires=Fri, 09-Dec-16 07:30:21 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:30:21  End---------------------------------------------
+15:30:22  Start---------------------------------------------
+15:30:22  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 13 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:30:22 GMT
+Expires: Fri, 11 Dec 2015 07:30:22 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=53D11403C8046ABBAC7445F357332EED:FG=1; expires=Fri, 09-Dec-16 07:30:22 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:30:22  End---------------------------------------------
+15:30:25  Start---------------------------------------------
+15:30:25  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 20 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:30:25 GMT
+Expires: Fri, 11 Dec 2015 07:30:25 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=1CBC414ABD368FFB87B0B77711A693C1:FG=1; expires=Fri, 09-Dec-16 07:30:25 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:30:25  End---------------------------------------------
+15:30:43  Start---------------------------------------------
+15:30:43  HTTP REQUEST DO
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://5star.cn/
+Calls Time : 8565 ms.
+----Response----
+CharacterSet : UTF-8.
+ContentEncoding : .
+ContentLength : -1.
+ContentType : text/html; charset=UTF-8.
+Cookies : System.Net.CookieCollection.
+Headers : Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Date: Thu, 10 Dec 2015 07:29:29 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Set-Cookie: frontend=t9fmcujbpgifeb90gphgoqldq5; expires=Thu, 10-Dec-2015 08:29:29 GMT; path=/; domain=5star.cn; HttpOnly,CUSTOMER=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,CUSTOMER_INFO=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,CUSTOMER_AUTH=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,username=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly,china_name=deleted; expires=Wed, 10-Dec-2014 07:29:28 GMT; path=/; domain=5star.cn; httponly
+Server: Apache/2.2.15 (CentOS)
+X-Powered-By: PHP/5.3.3
+P3p: CP="CAO PSA OUR"
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/12/10 15:30:51.
+Method : POST.
+ProtocolVersion : 1.1.
+ResponseUri : http://5star.cn/.
+Server : Apache/2.2.15 (CentOS).
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:30:51  End---------------------------------------------
+15:31:09  Start---------------------------------------------
+15:31:09  HTTP REQUEST DO
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  GET
+RequestCount:  1
+---------
+Requesting :http://5star.cn/
+Calls Time : 415 ms.
+----Response----
+CharacterSet : UTF-8.
+ContentEncoding : .
+ContentLength : -1.
+ContentType : text/html; charset=UTF-8.
+Cookies : System.Net.CookieCollection.
+Headers : Date: Thu, 10 Dec 2015 07:29:55 GMT
+Set-Cookie: CACHED_FRONT_FORM_KEY=VQqQJ3czY3ZE7MlO; path=/,frontend=3v0icek5ehg31gi49gu3u9j0u3; expires=Thu, 10-Dec-2015 08:29:55 GMT; path=/; domain=www.5star.cn; HttpOnly,CUSTOMER=deleted; expires=Wed, 10-Dec-2014 07:29:54 GMT; path=/; domain=www.5star.cn; httponly,CUSTOMER_INFO=deleted; expires=Wed, 10-Dec-2014 07:29:54 GMT; path=/; domain=www.5star.cn; httponly,CUSTOMER_AUTH=deleted; expires=Wed, 10-Dec-2014 07:29:54 GMT; path=/; domain=www.5star.cn; httponly
+Server: Apache/2.2.15 (CentOS)
+X-Powered-By: PHP/5.3.3
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+P3p: CP="CAO PSA OUR"
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/12/10 15:31:09.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.5star.cn/.
+Server : Apache/2.2.15 (CentOS).
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:31:09  End---------------------------------------------
+15:31:49  started...
+15:31:53  Start---------------------------------------------
+15:31:53  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 44 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:31:53 GMT
+Expires: Fri, 11 Dec 2015 07:31:53 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=F5B1B5DC3CC54873342185E7BB9D9154:FG=1; expires=Fri, 09-Dec-16 07:31:53 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:31:53  End---------------------------------------------
+15:32:22  started...
+15:32:26  Start---------------------------------------------
+15:32:26  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 16 ms.
+----Response----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+Cookies : System.Net.CookieCollection.
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:32:26 GMT
+Expires: Fri, 11 Dec 2015 07:32:26 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=2297A0475F670E11350ABFF67634BBE2:FG=1; expires=Fri, 09-Dec-16 07:32:26 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:32:26  End---------------------------------------------
+15:33:59  started...
+15:34:03  Start---------------------------------------------
+15:34:03  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 20 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:34:03 GMT
+Expires: Fri, 11 Dec 2015 07:34:03 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=32FBD1ECC7499FD52D520AC3E7EF62EB:FG=1; expires=Fri, 09-Dec-16 07:34:03 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+--
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:34:03  End---------------------------------------------
+15:35:09  started...
+15:35:15  Start---------------------------------------------
+15:35:15  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 57 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:15 GMT
+Expires: Fri, 11 Dec 2015 07:35:15 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=99A290565845CD232B11CB00BA31B2C2:FG=1; expires=Fri, 09-Dec-16 07:35:15 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:35:15  End---------------------------------------------
+15:35:45  Start---------------------------------------------
+15:35:45  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  10
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 44 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878E09CAE741AE5F0772:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 18 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878E092CA5A060E6C82A:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 20 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878ED8D844A4BF72D6AE:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 18 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878EAF7B81FB29AD279A:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 19 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878EB337B43CDCFB5249:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 21 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878E0288173015CA2562:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 20 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878EB310431C502E090F:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 21 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878E5326B01AD47C70D1:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 27 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878EFD2EC3E95A067414:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+Requesting :http://www.baidu.com/
+Calls Time : 21 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:35:46 GMT
+Expires: Fri, 11 Dec 2015 07:35:46 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B86B52A5C3C4878E85AD7543E24164DE:FG=1; expires=Fri, 09-Dec-16 07:35:46 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:35:46  End---------------------------------------------
+15:37:11  started...
+15:37:16  Start---------------------------------------------
+15:37:16  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 37 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:37:16 GMT
+Expires: Fri, 11 Dec 2015 07:37:16 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=C957DC20DD40A12F33306394A5B9B1F4:FG=1; expires=Fri, 09-Dec-16 07:37:16 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+ContentEncoding : .
+ContentLength : 32283.
+ContentType : text/html.
+IsFromCache : False.
+IsMutuallyAuthenticated : False.
+LastModified : 2015/3/12 15:47:33.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+Server : Apache.
+StatusCode : OK.
+StatusDescription : OK.
+SupportsHeaders : True.
+15:37:16  End---------------------------------------------
+15:40:21  started...
+15:40:51  Start---------------------------------------------
+15:40:51  HTTP REQUEST DO
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 13 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:40:51 GMT
+Expires: Fri, 11 Dec 2015 07:40:51 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=F754644E2EFF2E65642FD429234CE33C:FG=1; expires=Fri, 09-Dec-16 07:40:51 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:40:51  End---------------------------------------------
+15:41:19  started...
+15:41:26  Start---------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 35 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:41:26 GMT
+Expires: Fri, 11 Dec 2015 07:41:26 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=157F2D17C3D3CFAAB77D434FB54DFCBB:FG=1; expires=Fri, 09-Dec-16 07:41:26 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:41:26  End---------------------------------------------
+15:42:41  Start---------------------------------------------
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://5star.cn/
+Calls Time : 9204 ms.
+----Response----
+Headers : Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Date: Thu, 10 Dec 2015 07:41:27 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Set-Cookie: frontend=37bqh4rj522h9qa4bu97n1g6i5; expires=Thu, 10-Dec-2015 08:41:27 GMT; path=/; domain=5star.cn; HttpOnly,CUSTOMER=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,CUSTOMER_INFO=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,CUSTOMER_AUTH=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,NEWMESSAGE=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,username=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly,china_name=deleted; expires=Wed, 10-Dec-2014 07:41:26 GMT; path=/; domain=5star.cn; httponly
+Server: Apache/2.2.15 (CentOS)
+X-Powered-By: PHP/5.3.3
+P3p: CP="CAO PSA OUR"
+Keep-Alive: timeout=15, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+.
+----
+CharacterSet : UTF-8.
+Method : POST.
+ProtocolVersion : 1.1.
+ResponseUri : http://5star.cn/.
+StatusCode : OK.
+StatusDescription : OK.
+15:42:50  End---------------------------------------------
+15:43:47  Start---------------------------------------------
+URL:  http://5star.cn
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://5star.cn/
+Calls Time : 251 ms.
+----Response----
+Headers : Date: Thu, 10 Dec 2015 07:42:34 GMT
+Set-Cookie: CACHED_FRONT_FORM_KEY=qNyUF1oyAgUqnxHH; path=/,frontend=8b7esh6ihvo9h0pmk1qqvp0cq3; expires=Thu, 10-Dec-2015 08:42:34 GMT; path=/; domain=5star.cn; HttpOnly,CUSTOMER=deleted; expires=Wed, 10-Dec-2014 07:42:33 GMT; path=/; domain=5star.cn; httponly,CUSTOMER_INFO=deleted; expires=Wed, 10-Dec-2014 07:42:33 GMT; path=/; domain=5star.cn; httponly,CUSTOMER_AUTH=deleted; expires=Wed, 10-Dec-2014 07:42:33 GMT; path=/; domain=5star.cn; httponly
+Server: Apache/2.2.15 (CentOS)
+X-Powered-By: PHP/5.3.3
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+P3p: CP="CAO PSA OUR"
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+.
+----
+CharacterSet : UTF-8.
+Method : POST.
+ProtocolVersion : 1.1.
+ResponseUri : http://5star.cn/.
+StatusCode : OK.
+StatusDescription : OK.
+15:43:48  End---------------------------------------------
+15:44:25  started...
+15:44:33  Start-1-------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 20 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:33 GMT
+Expires: Fri, 11 Dec 2015 07:44:33 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=14C223B4FF517C0F1366B824138F7A3C:FG=1; expires=Fri, 09-Dec-16 07:44:33 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:44:33  End---------------------------------------------
+15:44:41  Start-10-------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  10
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 15 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB6889F36D142DC956D2C:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB68882F27178BA762F03:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 13 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB6880C94442B36D9A994:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 14 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB688E6A3347138AE1469:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 32 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB6887D53809003014FA0:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 18 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB6882734D0005046A6CA:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 19 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB6880F8049D483A737C5:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 14 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB688BD8B5AD825B334A7:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB688B6CA29D7E3A26372:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+----Response----
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:44:41 GMT
+Expires: Fri, 11 Dec 2015 07:44:41 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=CFD24644000CB68823C6757AD3F1AC10:FG=1; expires=Fri, 09-Dec-16 07:44:41 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:44:41  End---------------------------------------------
+15:45:51  started...
+15:46:00  Start--------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  5
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 15 ms.
+----Response--5--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:46:00 GMT
+Expires: Fri, 11 Dec 2015 07:46:00 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=3A21F9F67F918D9266025B87A5AD79FF:FG=1; expires=Fri, 09-Dec-16 07:46:00 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 15 ms.
+----Response--4--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:46:00 GMT
+Expires: Fri, 11 Dec 2015 07:46:00 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=3A21F9F67F918D92367D6996417DA76C:FG=1; expires=Fri, 09-Dec-16 07:46:00 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 20 ms.
+----Response--3--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:46:00 GMT
+Expires: Fri, 11 Dec 2015 07:46:00 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=3A21F9F67F918D92FC4071D0BF9E1FB8:FG=1; expires=Fri, 09-Dec-16 07:46:00 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 17 ms.
+----Response--2--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:46:00 GMT
+Expires: Fri, 11 Dec 2015 07:46:00 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=3A21F9F67F918D9249AD22F6FAE734A1:FG=1; expires=Fri, 09-Dec-16 07:46:00 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 16 ms.
+----Response--1--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:46:00 GMT
+Expires: Fri, 11 Dec 2015 07:46:00 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=3A21F9F67F918D925CCC345796F660A2:FG=1; expires=Fri, 09-Dec-16 07:46:00 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+----
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:46:00  End---------------------------------------------
+15:47:10  started...
+15:47:14  Start--------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 32 ms.
+----Response--1--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:47:14 GMT
+Expires: Fri, 11 Dec 2015 07:47:14 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=C3BA7B5DD1F160A9E5510D7A0F953FA2:FG=1; expires=Fri, 09-Dec-16 07:47:14 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:47:14  End---------------------------------------------
+15:47:39  Start--------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  4
+---------
+Requesting :http://www.baidu.com/
+Calls Time : 24 ms.
+----Response--4--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:47:39 GMT
+Expires: Fri, 11 Dec 2015 07:47:39 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=20D5E8B4A0ACC74F657688108891DD55:FG=1; expires=Fri, 09-Dec-16 07:47:39 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 24 ms.
+----Response--3--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:47:39 GMT
+Expires: Fri, 11 Dec 2015 07:47:39 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=20D5E8B4A0ACC74FA9DC51710812818B:FG=1; expires=Fri, 09-Dec-16 07:47:39 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 14 ms.
+----Response--2--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:47:39 GMT
+Expires: Fri, 11 Dec 2015 07:47:39 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=20D5E8B4A0ACC74FCA5C0DA1E1C62AF0:FG=1; expires=Fri, 09-Dec-16 07:47:39 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+Requesting :http://www.baidu.com/
+Calls Time : 19 ms.
+----Response--1--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:47:39 GMT
+Expires: Fri, 11 Dec 2015 07:47:39 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=20D5E8B4A0ACC74F16BAEEF694CD6989:FG=1; expires=Fri, 09-Dec-16 07:47:39 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:47:39  End---------------------------------------------
+15:48:56  started...
+15:49:02  Start--------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+---------
+----Request--1--
+Requesting :http://www.baidu.com/...
+Calls Time : 16 ms.
+----Response--1--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:49:02 GMT
+Expires: Fri, 11 Dec 2015 07:49:02 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=B825D35F42EB1A8B3E082C00E1776D30:FG=1; expires=Fri, 09-Dec-16 07:49:02 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:49:02  End---------------------------------------------
+15:49:17  Start--------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  2
+---------
+----Request--2--
+Requesting :http://www.baidu.com/...
+Calls Time : 17 ms.
+----Response--2--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:49:17 GMT
+Expires: Fri, 11 Dec 2015 07:49:17 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=F6235963229EE30587C261CD3BB325D2:FG=1; expires=Fri, 09-Dec-16 07:49:17 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+----Request--1--
+Requesting :http://www.baidu.com/...
+Calls Time : 13 ms.
+----Response--1--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:49:17 GMT
+Expires: Fri, 11 Dec 2015 07:49:17 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=F6235963229EE3058452EB83F69EF8B3:FG=1; expires=Fri, 09-Dec-16 07:49:17 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:49:17  End---------------------------------------------
+15:49:23  Start--------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  2
+---------
+----Request--2--
+Requesting :http://www.baidu.com/...
+Calls Time : 14 ms.
+----Response--2--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:49:23 GMT
+Expires: Fri, 11 Dec 2015 07:49:23 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=DCCA255BD684AD8A6CBD02F9FA61C4CF:FG=1; expires=Fri, 09-Dec-16 07:49:23 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+----Request--1--
+Requesting :http://www.baidu.com/...
+Calls Time : 16 ms.
+----Response--1--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:49:23 GMT
+Expires: Fri, 11 Dec 2015 07:49:23 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=DCCA255BD684AD8A0B90D8F28A7DF0BF:FG=1; expires=Fri, 09-Dec-16 07:49:23 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:49:23  End---------------------------------------------
+15:50:24  started...
+15:50:30  Start--------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+----Request--1--
+Requesting :http://www.baidu.com/...
+Calls Time : 11 ms.
+----Response--1--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:50:30 GMT
+Expires: Fri, 11 Dec 2015 07:50:30 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=32B790CC6E2E73AF0F3F0199F3B300D7:FG=1; expires=Fri, 09-Dec-16 07:50:30 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:50:30  End---------------------------------------------
+15:50:32  Start--------------------------------------------
+URL:  http://www.baidu.com
+QueryStr:  
+PostData:  
+Method:  POST
+RequestCount:  1
+----Request--1--
+Requesting :http://www.baidu.com/...
+Calls Time : 11 ms.
+----Response--1--
+Headers : Vary: Accept-Encoding,User-Agent
+Connection: Keep-Alive
+Accept-Ranges: bytes
+Content-Length: 32283
+Cache-Control: max-age=86400
+Content-Type: text/html
+Date: Thu, 10 Dec 2015 07:50:32 GMT
+Expires: Fri, 11 Dec 2015 07:50:32 GMT
+ETag: "7e1b-5111298ba8f40"
+Last-Modified: Thu, 12 Mar 2015 07:47:33 GMT
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Set-Cookie: BAIDUID=71F2772AF66198EC08142CF9AE6127A5:FG=1; expires=Fri, 09-Dec-16 07:50:32 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Server: Apache
+
+.
+CharacterSet : ISO-8859-1.
+Method : GET.
+ProtocolVersion : 1.1.
+ResponseUri : http://www.baidu.com/search/error.html.
+StatusCode : OK.
+StatusDescription : OK.
+15:50:32  End---------------------------------------------

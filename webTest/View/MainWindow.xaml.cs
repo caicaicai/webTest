@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 using System.Windows.Controls;
 using GalaSoft.MvvmLight.Messaging;
 using webTest.Model;
@@ -18,6 +19,7 @@ namespace webTest.View
             InitializeComponent();
             Messenger.Default.Register<NotificationMessage<string>>(this, NotificationMessageReceived);
             Messenger.Default.Register<NotificationMessage<Option>>(this, NotificationMessageReceived);
+            Messenger.Default.Register<NotificationMessage<Logger>>(this, NotificationMessageReceived);
         }
 
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)
@@ -61,11 +63,27 @@ namespace webTest.View
 
         }
 
+        private void NotificationMessageReceived(NotificationMessage<Logger> msg)
+        {
+            if (msg.Notification == "logviewer")
+            {
+                var optionView = new LogViewerWindow(msg.Content);
+                //optionView.ShowInTaskbar = false;
+                //optionView.Owner = this;
+                optionView.Show();
+            }
+
+        }
+
         private void TextBox_LostFocus(object sender, RoutedEventArgs e)
         {
             TextBox tb = (TextBox)sender;
             tb.Visibility = Visibility.Hidden;
         }
 
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            App.Current.Shutdown();
+        }
     }
 }
