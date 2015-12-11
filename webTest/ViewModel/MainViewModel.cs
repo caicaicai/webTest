@@ -160,6 +160,7 @@ namespace webTest.ViewModel
             {
                 //MessageBox.Show(e.Message);
                 Console.WriteLine(e.StackTrace);
+                logger.logWithTime(e.Message);
             }
         }
 

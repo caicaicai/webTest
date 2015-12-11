@@ -16,6 +16,26 @@ namespace webTest.View
 
         public MainWindow()
         {
+            String[] arguments = Environment.GetCommandLineArgs();
+
+            if (arguments.GetLength(0) > 1)
+            {
+                if (arguments[1].EndsWith(".osl"))
+                {
+                    System.Windows.MessageBox.Show(arguments[1]);
+                    string filePathFormMainArgs = arguments[1];
+                    webTest.Properties.Settings.Default.configPath = filePathFormMainArgs;
+                    //if (isFileMagiValid(filePathFormMainArgs))
+                    //{
+                    //    // Step 1 : deserialize filePathFormMainArgs
+                    //    // Step 2 : call the view "File oepn" in the application"
+                    //}
+                }
+            }
+            else
+            {
+                // Call the view "welcome page application"
+            }
             InitializeComponent();
             Messenger.Default.Register<NotificationMessage<string>>(this, NotificationMessageReceived);
             Messenger.Default.Register<NotificationMessage<Option>>(this, NotificationMessageReceived);
