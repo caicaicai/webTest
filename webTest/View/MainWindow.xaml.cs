@@ -22,19 +22,37 @@ namespace webTest.View
             {
                 if (arguments[1].EndsWith(".osl"))
                 {
-                    System.Windows.MessageBox.Show(arguments[1]);
                     string filePathFormMainArgs = arguments[1];
                     webTest.Properties.Settings.Default.configPath = filePathFormMainArgs;
-                    //if (isFileMagiValid(filePathFormMainArgs))
-                    //{
-                    //    // Step 1 : deserialize filePathFormMainArgs
-                    //    // Step 2 : call the view "File oepn" in the application"
-                    //}
                 }
             }
             else
             {
-                // Call the view "welcome page application"
+                if (AppDomain.CurrentDomain.SetupInformation.ActivationArguments.ActivationData != null 
+                    &&  AppDomain.CurrentDomain.SetupInformation.ActivationArguments.ActivationData.Length > 0)
+                    {
+                        string fname = String.Empty;
+                        try
+                        {
+                            fname = AppDomain.CurrentDomain.SetupInformation.ActivationArguments.ActivationData[0];
+            
+                            // It comes in as a URI; this helps to convert it to a path.
+                            Uri uri = new Uri(fname);
+                            fname = uri.LocalPath;
+                            if (fname.EndsWith(".osl"))
+                            {
+                                webTest.Properties.Settings.Default.configPath = fname;
+                            }
+  
+                        }
+                        catch (Exception ex)
+                        {
+                            // For some reason, this couldn't be read as a URI.
+                            // Do what you must...
+                            System.Windows.MessageBox.Show(ex.Message);
+
+                        }
+                    }
             }
             InitializeComponent();
             Messenger.Default.Register<NotificationMessage<string>>(this, NotificationMessageReceived);
