@@ -1,0 +1,663 @@
+17:16:44  started...
+17:16:54  Start--------------------------------------------
+URL:  http://
+QueryStr:  
+PostData:  
+Method:  GET
+RequestCount:  1
+17:16:55  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:16:55  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:00  Start--------------------------------------------
+URL:  http://
+QueryStr:  
+PostData:  
+Method:  GET
+RequestCount:  1
+17:17:12  Start--------------------------------------------
+URL:  http://
+QueryStr:  
+PostData:  
+Method:  GET
+RequestCount:  1
+17:17:13  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:15  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:16  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:16  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:16  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:17  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:17  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:17  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:17  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:17:18  此 BackgroundWorker 当前正忙，无法同时运行多个任务。
+17:18:30  Start--------------------------------------------
+URL:  http://online.dev/5api.php
+QueryStr:  method=customer.create
+PostData:  param={"mobile":"13920949001","password":"111111","smsText":"验证码:%s","lift":"1200","trigger":"1","sessionid":"h9o7i1f2h3otiso5vjcojtada6","verification":"111111","debug":"1"}
+Method:  GET
+RequestCount:  1
+----Request--1--
+Requesting :http://online.dev/5api.php?method=customer.create
+Calls Time : 7786 ms
+----Response--1--
+Headers : Transfer-Encoding: chunked
+Connection: close
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Type: text/html
+Date: Fri, 04 Mar 2016 09:18:37 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Set-Cookie: PHPSESSID=; expires=Sat, 05-Mar-2016 10:18:37 GMT; Max-Age=90000; path=/; domain=online.dev; HttpOnly
+Server: nginx/1.5.10
+X-Powered-By: PHP/5.5.16
+
+
+CharacterSet : ISO-8859-1.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://online.dev/5api.php?method=customer.create
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 7880 ms.
+17:18:37  End---------------------------------------------
+17:18:43  Start--------------------------------------------
+URL:  http://online.dev/5api.php
+QueryStr:  method=customer.create
+PostData:  param={"mobile":"13920949001","password":"111111","smsText":"验证码:%s","lift":"1200","trigger":"1","sessionid":"h9o7i1f2h3otiso5vjcojtada6","verification":"111111","debug":"1"}
+Method:  GET
+RequestCount:  1
+----Request--1--
+Requesting :http://online.dev/5api.php?method=customer.create
+Calls Time : 338 ms
+----Response--1--
+Headers : Transfer-Encoding: chunked
+Connection: close
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Type: text/html
+Date: Fri, 04 Mar 2016 09:18:44 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Set-Cookie: PHPSESSID=; expires=Sat, 05-Mar-2016 10:18:44 GMT; Max-Age=90000; path=/; domain=online.dev; HttpOnly
+Server: nginx/1.5.10
+X-Powered-By: PHP/5.5.16
+
+
+CharacterSet : ISO-8859-1.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://online.dev/5api.php?method=customer.create
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 344 ms.
+17:18:44  End---------------------------------------------
+17:27:17  started...
+17:29:45  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/BrandSync
+SOAP-ENV:Body:  <BrandSync xmlns="http://www.techsun.com/">
+      <Brand>
+        <strCode>string</strCode>
+        <strName>string</strName>
+        <strType>string</strType>
+        <strBrandNumber>string</strBrandNumber>
+        <strSalesDepartment>string</strSalesDepartment>
+        <strVerifyCode>string</strVerifyCode>
+      </Brand>
+    </BrandSync>
+
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 819 ms
+----Response--1--
+Headers : Content-Length: 33253
+Cache-Control: private, max-age=0
+Content-Type: text/html; charset=utf-8
+Date: Thu, 10 Dec 2015 09:53:30 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl&http://www.techsun.com/BrandSync
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 854 ms.
+17:29:46  End---------------------------------------------
+17:29:53  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/BrandedCardSync
+SOAP-ENV:Body:  <BrandedCardSync xmlns="http://www.techsun.com/">
+      <data>
+        <RegeditType>int</RegeditType>
+        <BankNumber>string</BankNumber>
+        <CardIssuingDate>string</CardIssuingDate>
+        <CardExpirationDate>string</CardExpirationDate>
+        <CardNumber>string</CardNumber>
+        <LastName>string</LastName>
+        <FirstName>string</FirstName>
+        <FullName_py>string</FullName_py>
+        <PaperTypeCode>string</PaperTypeCode>
+        <PaperNumber>string</PaperNumber>
+        <Gender>string</Gender>
+        <Address>string</Address>
+        <PostalCode>string</PostalCode>
+        <UnitTelephone>string</UnitTelephone>
+        <HouseTelephone>string</HouseTelephone>
+        <Mobilephone>string</Mobilephone>
+        <FaxNumber>string</FaxNumber>
+        <Email>string</Email>
+        <BirthDate>string</BirthDate>
+        <NationCode>string</NationCode>
+        <EducationCode>string</EducationCode>
+        <CityCode>string</CityCode>
+        <JobCode>string</JobCode>
+        <AttendDate>string</AttendDate>
+        <TendentialStore>string</TendentialStore>
+        <VerifyCode>string</VerifyCode>
+      </data>
+    </BrandedCardSync>
+
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+17:32:19  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+QueryStr:  
+PostData:  
+Method:  GET
+RequestCount:  1
+----Request--1--
+Requesting :http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+Calls Time : 104 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 114 ms.
+17:32:19  End---------------------------------------------
+17:32:39  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 32 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 37 ms.
+17:32:39  End---------------------------------------------
+17:33:32  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>string</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 9 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 18 ms.
+17:33:32  End---------------------------------------------
+17:33:32  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>string</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 8 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 16 ms.
+17:33:32  End---------------------------------------------
+17:33:33  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>string</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 7 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 14 ms.
+17:33:33  End---------------------------------------------
+17:33:33  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>string</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 8 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 15 ms.
+17:33:33  End---------------------------------------------
+17:33:33  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>string</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 7 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 12 ms.
+17:33:33  End---------------------------------------------
+17:33:34  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>string</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 7 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 14 ms.
+17:33:34  End---------------------------------------------
+17:33:35  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>string</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 8 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 14 ms.
+17:33:35  End---------------------------------------------
+17:33:41  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>hahahaha</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 8 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 13 ms.
+17:33:41  End---------------------------------------------
+17:33:41  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>hahahaha</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 8 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 14 ms.
+17:33:42  End---------------------------------------------
+17:33:42  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>hahahaha</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 7 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 12 ms.
+17:33:42  End---------------------------------------------
+17:33:42  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>hahahaha</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 8 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 13 ms.
+17:33:42  End---------------------------------------------
+17:33:42  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/Demo
+SOAP-ENV:Body:  <Demo xmlns="http://www.techsun.com/">
+      <strMessage>hahahaha</strMessage>
+    </Demo>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 8 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 14 ms.
+17:33:42  End---------------------------------------------
+17:35:18  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/CheckMobilePhone
+SOAP-ENV:Body:  <CheckMobilePhone xmlns="http://www.techsun.com/">
+      <strMobilePhone>13915993489</strMobilePhone>
+    </CheckMobilePhone>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 603 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 612 ms.
+17:35:19  End---------------------------------------------
+17:35:32  Start--------------------------------------------
+URL:  http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+SOAPAction:  http://www.techsun.com/CheckMobilePhone
+SOAP-ENV:Body:  <CheckMobilePhone xmlns="http://www.techsun.com/">
+      <strMobilePhone>13337725758</strMobilePhone>
+    </CheckMobilePhone>
+Method:  SOAP
+RequestCount:  1
+----Request--1--
+Calls Time : 465 ms
+----Response--1--
+Headers : Content-Length: 255830
+Cache-Control: private, max-age=0
+Content-Type: text/xml; charset=utf-8
+Date: Fri, 04 Mar 2016 09:32:18 GMT
+Server: Microsoft-IIS/7.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+
+CharacterSet : utf-8.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://10.192.253.142:83/TsWebSvr.asmx?wsdl
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 472 ms.
+17:35:33  End---------------------------------------------
+17:58:04  started...
+17:58:08  Start--------------------------------------------
+URL:  http://online.dev/5api.php
+QueryStr:  method=customer.create&param={"mobile":"13920949001","password":"111111","smsText":"验证码:%s","lift":"1200","trigger":"1","sessionid":"h9o7i1f2h3otiso5vjcojtada6","verification":"111111","debug":"1"}
+PostData:  
+Method:  GET
+RequestCount:  1
+----Request--1--
+Requesting :http://online.dev/5api.php?method=customer.create&param={"mobile":"13920949001","password":"111111","smsText":"验证码:%25s","lift":"1200","trigger":"1","sessionid":"h9o7i1f2h3otiso5vjcojtada6","verification":"111111","debug":"1"}
+Calls Time : 2540 ms
+----Response--1--
+Headers : Transfer-Encoding: chunked
+Connection: close
+Content-Type: text/html
+Date: Fri, 04 Mar 2016 09:58:10 GMT
+Server: nginx/1.5.10
+X-Powered-By: PHP/5.5.16
+
+
+CharacterSet : ISO-8859-1.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://online.dev/5api.php?method=customer.create&param={"mobile":"13920949001","password":"111111","smsText":"验证码:%25s","lift":"1200","trigger":"1","sessionid":"h9o7i1f2h3otiso5vjcojtada6","verification":"111111","debug":"1"}
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 2569 ms.
+17:58:10  End---------------------------------------------
+17:58:11  Start--------------------------------------------
+URL:  http://online.dev/5api.php
+QueryStr:  method=customer.create&param={"mobile":"13920949001","password":"111111","smsText":"验证码:%s","lift":"1200","trigger":"1","sessionid":"h9o7i1f2h3otiso5vjcojtada6","verification":"111111","debug":"1"}
+PostData:  
+Method:  GET
+RequestCount:  1
+----Request--1--
+Requesting :http://online.dev/5api.php?method=customer.create&param={"mobile":"13920949001","password":"111111","smsText":"验证码:%25s","lift":"1200","trigger":"1","sessionid":"h9o7i1f2h3otiso5vjcojtada6","verification":"111111","debug":"1"}
+Calls Time : 2059 ms
+----Response--1--
+Headers : Transfer-Encoding: chunked
+Connection: close
+Content-Type: text/html
+Date: Fri, 04 Mar 2016 09:58:13 GMT
+Server: nginx/1.5.10
+X-Powered-By: PHP/5.5.16
+
+
+CharacterSet : ISO-8859-1.
+Method : GET
+ProtocolVersion : 1.1
+ResponseUri : http://online.dev/5api.php?method=customer.create&param={"mobile":"13920949001","password":"111111","smsText":"验证码:%25s","lift":"1200","trigger":"1","sessionid":"h9o7i1f2h3otiso5vjcojtada6","verification":"111111","debug":"1"}
+StatusCode : OK
+StatusDescription : OK
+Total Calls Time : 2065 ms.
+17:58:13  End---------------------------------------------
