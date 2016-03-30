@@ -70,15 +70,17 @@ namespace webTest.Model
                 }
 
                 watch.Stop();
-                log.log(String.Format("Calls Time : {0} ms", watch.ElapsedMilliseconds.ToString()));
-                log.log(String.Format("----Response--{0}--", tabItem.Times));
-                log.log(String.Format("Headers : {0}", tabItem.Response.Headers));
-                log.log(String.Format("CharacterSet : {0}.", tabItem.Response.CharacterSet));
-                log.log(String.Format("Method : {0}", tabItem.Response.Method));
-                log.log(String.Format("ProtocolVersion : {0}", tabItem.Response.ProtocolVersion));
-                log.log(String.Format("ResponseUri : {0}", tabItem.Response.ResponseUri));
-                log.log(String.Format("StatusCode : {0}", tabItem.Response.StatusCode));
-                log.log(String.Format("StatusDescription : {0}", tabItem.Response.StatusDescription));
+                try
+                {
+                    log.log(String.Format("Calls Time : {0} ms", watch.ElapsedMilliseconds.ToString()));
+                    log.log(webResponse.Headers.ToString());
+                    log.log(soapResult);
+
+                }
+                catch (Exception e)
+                {
+                    log.log(e.Message);
+                }
 
                 return soapResult;
             }

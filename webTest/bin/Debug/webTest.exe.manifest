@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="webTest.exe" size="2382336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="webTest.exe" size="2381824">
       <assemblyIdentity name="webTest" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FxKB9QXzoVF2BgsKBGr/+5J0V1euxRmivcw1rJf0+os=</dsig:DigestValue>
+        <dsig:DigestValue>jsq0MLdkZi1MLKbwe6Pa/4sodbC0Um3/M5pu9wcaVwk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

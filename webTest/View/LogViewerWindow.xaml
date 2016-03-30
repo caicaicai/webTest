@@ -16,7 +16,7 @@
         </Grid>
         <Grid Grid.Row="1">
             <ScrollViewer Name="MyScrollViewer">
-                <TextBox Text="{Binding logger.LogContent}" Background="Black" Foreground="#FFC2F70E" ScrollViewer.CanContentScroll="True" ForceCursor="True" AcceptsTab="True" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextChanged="TextBox_TextChanged" IsReadOnly="True" />
+                <TextBox Text="{Binding logger.LogContent}" Background="Black" Foreground="#FFC2F70E" ScrollViewer.CanContentScroll="True" ForceCursor="True" AcceptsTab="True" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextChanged="TextBox_TextChanged" IsReadOnly="True" TextWrapping="WrapWithOverflow" />
             </ScrollViewer>
         </Grid>
         
