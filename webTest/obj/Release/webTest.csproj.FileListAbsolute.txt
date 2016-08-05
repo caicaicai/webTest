@@ -37,7 +37,6 @@ C:\Users\f132819\Desktop\xcc\webTest\webTest\bin\Release\ro\Xceed.Wpf.AvalonDock
 C:\Users\f132819\Desktop\xcc\webTest\webTest\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\f132819\Desktop\xcc\webTest\webTest\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\f132819\Desktop\xcc\webTest\webTest\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-C:\Users\f132819\Desktop\xcc\webTest\webTest\obj\Release\webTest.csprojResolveAssemblyReference.cache
 C:\Users\f132819\Desktop\xcc\webTest\webTest\obj\Release\View\HTMLViewWindow.baml
 C:\Users\f132819\Desktop\xcc\webTest\webTest\obj\Release\View\MainWindow.baml
 C:\Users\f132819\Desktop\xcc\webTest\webTest\obj\Release\View\OptionWindow.baml

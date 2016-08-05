@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>C:\Users\94763_000\Desktop\|C:\Users\f132819\Desktop\|ftp://xiaocaicai.com/</PublishUrlHistory>
+    <PublishUrlHistory>C:\Users\f132819\Desktop\|C:\Users\94763_000\Desktop\|ftp://xiaocaicai.com/</PublishUrlHistory>
     <InstallUrlHistory>http://webtest.xiaocaicai.com/|http://webtest.xiaocaicai.com/webTest/</InstallUrlHistory>
     <SupportUrlHistory>http://webtest.xiaocaicai.com</SupportUrlHistory>
     <UpdateUrlHistory>http://webtest.xiaocaicai.com/|http://webtest.xiaocaicai.com/webTest/</UpdateUrlHistory>
